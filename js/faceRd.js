@@ -28,3 +28,62 @@ function changePlaySpeed(event) {
     }
 }
 
+//dhtmlx 운용상품 안내 그리드 스크립트
+let grid;
+let ta_center = "text-align: center";
+
+dhtmlxEvent(window, "load", () => {
+    grid = new dhtmlXGridObject("prdInfo");
+    grid.setHeader("제목, 상태, 청취, 재녹취", null,
+        [ta_center, ta_center, ta_center, ta_center]);
+    grid.setColAlign("left, center, center, center");
+    grid.setColTypes("tree, ro, ro, ro");
+    grid.setInitWidths("594", "114", "114", "114");
+    grid.enableColumnAutoSize(true);
+    grid.enableAutoWidth(true);
+    grid.enableAutoHeight(true);
+    grid.setAwaitedRowHeight(40);
+    grid.setImagePath("../dHtmlxSuite/codebase/imgs/");
+    grid.init();
+    grid.load("../dataset/faceRdData.json", "json");
+});
+
+//글자 크기 증가 스크립트
+let scriptTextSize = 14;
+let scriptLineHeight = 16;
+let scriptTTSText = document.getElementsByClassName("ttsText");
+let scriptAdvicerText = document.getElementsByClassName("adviceText");
+let scriptClientText = document.getElementsByClassName("clientText");
+function onClickScriptTxtSzDown() {
+    console.log(scriptTTSText)
+    console.log(scriptAdvicerText)
+    console.log(scriptClientText)
+
+    scriptTextSize--;
+    scriptLineHeight = scriptLineHeight - 2;
+    for (let i = 0; i < scriptTTSText.length; i++) {
+        scriptTTSText[i].style.fontSize = scriptTextSize + "px";
+    }
+    for (let i = 0; i < scriptAdvicerText.length; i++) {
+        scriptAdvicerText[i].style.fontSize = scriptTextSize + "px";
+    }
+    for (let i = 0; i < scriptClientText.length; i++) {
+        scriptClientText[i].style.fontSize = scriptTextSize + "px";
+    }
+};
+function onClickScriptTxtSzUp() {
+    console.log(scriptTTSText)
+    console.log(scriptAdvicerText)
+    console.log(scriptClientText)
+    scriptTextSize++;
+    scriptLineHeight = scriptLineHeight + 2;
+    for (let i = 0; i < scriptTTSText.length; i++) {
+        scriptTTSText[i].style.fontSize = scriptTextSize + "px";
+    }
+    for (let i = 0; i < scriptAdvicerText.length; i++) {
+        scriptAdvicerText[i].style.fontSize = scriptTextSize + "px";
+    }
+    for (let i = 0; i < scriptClientText.length; i++) {
+        scriptClientText[i].style.fontSize = scriptTextSize + "px";
+    }
+};

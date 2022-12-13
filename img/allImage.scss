@@ -78,6 +78,11 @@
     background: transparent url(../img/pngImg/icon_down_triangle.png) 0% 0% no-repeat padding-box;
     @include screenImgSize(24px, 24px, 24px);
 }
+//위 삼각형
+.upTriagle {
+    background: transparent url(../img/pngImg/icon_up_triangle.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 24px);
+}
 //텍스트 사이즈 변경안내 이미지
 .textSize {
     background: transparent url(../img/pngImg/icon_text_size.png) 0% 0% no-repeat padding-box;
@@ -88,8 +93,33 @@
     background: transparent url(../img/pngImg/icon_complete.png) 0% 0% no-repeat padding-box;
     @include screenImgSize(24px, 24px, 24px);
 }
+// 청취 소리 이미지
 .listeningImg {
     background: transparent url(../img/pngImg/icon_listening.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 24px);
+}
+// Tree Grid 리스트 아이템 머릿말 이미지
+.itemHeadBlackImg { //검정
+    background: transparent url(../img/pngImg/icon_head_item_black.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(16px, 16px, 16px);
+}
+.itemHeadBlueImg {  //파랑
+    background: transparent url(../img/pngImg/icon_head_item_blue.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(16px, 16px, 16px);
+}
+// 마이크 이미지
+.mikeImg {
+    background: transparent url(../img/pngImg/icon_mike.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 24px);
+}
+// 녹화 진행중인 파란색 이미지
+.recordIngImg {
+    background: transparent url(../img/pngImg/icon_record_ing_blue.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 24px);
+}
+// 대기중인 이미지
+.standByImg {
+    background: transparent url(../img/pngImg/icon_stand_by.png) 0% 0% no-repeat padding-box;
     @include screenImgSize(24px, 24px, 24px);
 }
 /*
@@ -115,7 +145,6 @@
     background: transparent url(../img/pngImg/icon_checkbox_btn_on.png) 0% 0% no-repeat padding-box;
     @include screenImgSize(16px, 16px, 16px);
 }
-
 /*
     택스트 색
 */

@@ -149,9 +149,12 @@
 .prdInfo {
   display: flex;
   flex-direction: column !important;
-  justify-content: flex-start;
-  align-items: normal;
-  height: 100%;
+  justify-content: flex-start !important;
+  align-items: normal !important;
+  height: 100% !important;
+}
+.prdInfo * {
+  color: #0f0f0f;
 }
 .prdInfo table {
   width: 98%;
@@ -159,13 +162,10 @@
 }
 .prdInfo table tr {
   height: 36px;
-}
-.prdInfo table tr th {
-  border: 1px solid #D9D9D9;
-  background-color: #C9E9E6;
+  border: 1px solid #D9D9D9 !important;
 }
 .prdInfo table tr td {
-  border: 1px solid #D9D9D9;
+  border: 1px solid #D9D9D9 !important;
 }
 .prdInfo div {
   display: flex;
@@ -173,6 +173,32 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.prdInfo .xhdr .hdr {
+  margin-right: 0px !important;
+}
+.prdInfo .xhdr .hdr tr:nth-child(2) td {
+  background-color: #C9E9E6 !important;
+}
+.prdInfo .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.prdInfo .objbox div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.prdInfo .objbox .treegrid_cell img {
+  display: none !important;
+}
+.prdInfo .objbox .treegrid_cell .grid_collapse_icon {
+  display: flex !important;
+  position: absolute;
+  right: 355px;
 }
 
 .prdExpScript > div:last-child {
@@ -239,4 +265,17 @@
 
 .prdScriptBody > * {
   font-size: 14px;
+}
+.prdScriptBody .clientText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.prdScriptBody .clientText span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }/*# sourceMappingURL=faceRd.css.map */

@@ -153,23 +153,24 @@
 
 // 운용상품 안내 
 .prdInfo {
-    @include dp_flex(column !important, flex-start, normal);
-    height: 100%;
+    @include dp_flex(column !important, flex-start !important, normal !important);
+    height: 100% !important;
+
+    *{
+        color: #0f0f0f;
+    }
 
     table {
         width: 98%;
         border-collapse: collapse;
 
+        
         tr {
             height: 36px;
-
-            th {
-                border: 1px solid #D9D9D9;
-                background-color: #C9E9E6;
-            }
+            border: 1px solid #D9D9D9 !important;
 
             td {
-                border: 1px solid #D9D9D9;
+                border: 1px solid #D9D9D9 !important;
             }
         }
     }
@@ -177,6 +178,35 @@
     div {
         @include dp_flex;
         width: 100%;
+    }
+
+    // dhmlx css
+    .xhdr .hdr{
+        margin-right: 0px !important;
+
+        tr:nth-child(2) td  {
+            background-color: #C9E9E6 !important ;
+        }
+    }
+
+    .objbox {
+        @include dp_flex($al_item: flex-start);
+
+        div {
+            @include dp_flex($jt_content: flex-start);
+        }
+
+        .treegrid_cell {
+            img {
+                display: none !important;
+            }
+
+            .grid_collapse_icon {
+                display: flex !important;
+                position: absolute;
+                right: 355px;
+            }
+        }
     }
 }
 
@@ -228,5 +258,14 @@
 .prdScriptBody {
     >* {
         font-size: 14px;
+    }
+
+    .clientText {
+        @include dp_flex(column);
+
+        span {
+            @include dp_flex($jt_content: flex-start);
+            width: 100%;
+        }
     }
 }

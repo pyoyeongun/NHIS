@@ -99,6 +99,13 @@
   background-size: 24px;
 }
 
+.upTriagle {
+  background: transparent url(../img/pngImg/icon_up_triangle.png) 0% 0% no-repeat padding-box;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
 .textSize {
   background: transparent url(../img/pngImg/icon_text_size.png) 0% 0% no-repeat padding-box;
   width: 30px;
@@ -115,6 +122,41 @@
 
 .listeningImg {
   background: transparent url(../img/pngImg/icon_listening.png) 0% 0% no-repeat padding-box;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
+.itemHeadBlackImg {
+  background: transparent url(../img/pngImg/icon_head_item_black.png) 0% 0% no-repeat padding-box;
+  width: 16px;
+  height: 16px;
+  background-size: 16px;
+}
+
+.itemHeadBlueImg {
+  background: transparent url(../img/pngImg/icon_head_item_blue.png) 0% 0% no-repeat padding-box;
+  width: 16px;
+  height: 16px;
+  background-size: 16px;
+}
+
+.mikeImg {
+  background: transparent url(../img/pngImg/icon_mike.png) 0% 0% no-repeat padding-box;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
+.recordIngImg {
+  background: transparent url(../img/pngImg/icon_record_ing_blue.png) 0% 0% no-repeat padding-box;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
+.standByImg {
+  background: transparent url(../img/pngImg/icon_stand_by.png) 0% 0% no-repeat padding-box;
   width: 24px;
   height: 24px;
   background-size: 24px;

@@ -1,0 +1,170 @@
+{
+    "rows": [
+        {
+            "id": "100",
+            "data": [
+                "녹취고지1",
+                "<span class='completeImg'></span>",
+                "<span class='listeningImg'></span>",
+                "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+            ]
+        },
+        {
+            "id": "200",
+            "data": [
+                "녹취고지2",
+                "<span class='completeImg'></span>",
+                "<span class='listeningImg'></span>",
+                "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+            ]
+        },
+        {
+            "id": "300",
+            "data": [
+                "<p>녹취고지3</p>",
+                "<span class='completeImg'></span>",
+                "<span class='listeningImg'></span>",
+                "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+            ]
+        },
+        {
+            "id": "400",
+            "data": [
+                "<p>녹취고지4</p>",
+                "<span class='completeImg'></span>",
+                "<span class='listeningImg'></span>",
+                "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+            ]
+        },
+        {
+            "id": "500",
+            "data": [
+                "<p>녹취고지5</p>",
+                "<span class='completeImg'></span>",
+                "<span class='listeningImg'></span>",
+                "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+            ]
+        },
+        {
+            "id": "600",
+            "data": [
+                "<p>녹취고지6</p>",
+                "",
+                "",
+                ""
+            ],
+            "rows": [
+                {
+                    "id": "600_1",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지6-1</p>",
+                        "<span class='completeImg'></span>",
+                        "<span class='listeningImg'></span>",
+                        "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+                    ]
+                },
+                {
+                    "id": "600_2",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지6-2</p>",
+                        "<span class='completeImg'></span>",
+                        "<span class='listeningImg'></span>",
+                        "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+                    ]
+                },
+                {
+                    "id": "600_3",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지6-3</p>",
+                        "<span class='recordIngImg'></span>",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "id": "600_4",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지6-4</p>",
+                        "<span class='standByImg'></span>",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "id": "600_5",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지6-5</p>",
+                        "<span class='standByImg'></span>",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "700",
+            "data": [
+                "<p>녹취고지7</p>",
+                "<span class='completeImg'></span>",
+                "<span class='listeningImg'></span>",
+                "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+            ],
+            "rows": [
+                {
+                    "id": "700_1",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지7-1</p>",
+                        "<span class='standByImg'></span>",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "id": "700_2",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지7-2</p>",
+                        "<span class='standByImg'></span>",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "id": "700_3",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지7-3</p>",
+                        "<span class='standByImg'></span>",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "id": "700_4",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지7-4</p>",
+                        "<span class='standByImg'></span>",
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "id": "700_5",
+                    "data": [
+                        "<span class='itemHeadBlackImg'></span><p>녹취 고지7-5</p>",
+                        "<span class='standByImg'></span>",
+                        "",
+                        ""
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "800",
+            "data": [
+                "<p>녹취고지8</p>",
+                "<span class='completeImg'></span>",
+                "<span class='listeningImg'></span>",
+                "<button type='button' onClick=''><span class='mikeImg'></span></button>"
+            ]
+        }
+    ]
+}
