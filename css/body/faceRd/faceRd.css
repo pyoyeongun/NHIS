@@ -1,0 +1,232 @@
+.containBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: normal;
+  height: 100%;
+}
+.containBox > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1215686275);
+  margin: 7px;
+}
+.containBox > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 12px 0px 12px;
+}
+.containBox > div > div > p {
+  padding-left: 10px;
+}
+.containBox > div > div:first-child {
+  border-bottom: 1px solid #B8C0C7;
+  height: 17px;
+}
+.containBox:nth-child(2) > div > div:last-child {
+  height: 58px;
+}
+.containBox:nth-child(3) {
+  height: 893px;
+}
+
+.boxTitle {
+  font-size: 18px;
+}
+
+.rcdPlayer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.rcdPlayer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  border-right: 1px solid #B8C0C7;
+}
+.rcdPlayer ul * {
+  font-size: 14px;
+}
+.rcdPlayer ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin-right: 8px;
+}
+.rcdPlayer ul li > label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.rcdPlayer ul li > label > input {
+  display: none;
+}
+.rcdPlayer ul li > label > span {
+  margin-right: 4px;
+}
+.rcdPlayer ul:nth-child(1) {
+  width: 48%;
+}
+.rcdPlayer ul:nth-child(2) {
+  width: 20%;
+}
+.rcdPlayer ul:nth-child(3) {
+  border-right: 0px;
+  width: 29%;
+}
+.rcdPlayer .playSpeed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EAEAEA;
+  border-radius: 100px;
+  height: 30px;
+  margin-left: 12px;
+}
+.rcdPlayer .playSpeed > li {
+  width: 25%;
+  height: 100%;
+  margin: 0px;
+}
+
+.checkedPlaySpeed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #00B140;
+  border-radius: 100px;
+  width: 90;
+  height: 28px;
+}
+
+.memberInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.memberInfo span {
+  justify-content: flex-start;
+  width: 25%;
+  padding-left: 10px;
+}
+.memberInfo span .blueText {
+  margin-right: 8px;
+  width: 39%;
+}
+
+.prdInfo {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: flex-start;
+  align-items: normal;
+  height: 100%;
+}
+.prdInfo table {
+  width: 98%;
+  border-collapse: collapse;
+}
+.prdInfo table tr {
+  height: 36px;
+}
+.prdInfo table tr th {
+  border: 1px solid #D9D9D9;
+  background-color: #C9E9E6;
+}
+.prdInfo table tr td {
+  border: 1px solid #D9D9D9;
+}
+.prdInfo div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.prdExpScript > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: normal;
+  width: 98%;
+  height: 100%;
+}
+.prdExpScript > div:last-child > p {
+  margin-bottom: 16px;
+  padding: 0px;
+}
+.prdExpScript > div span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.prdScriptHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.prdScriptHeader ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+.prdScriptHeader ul li {
+  margin-left: 8px;
+  float: left;
+}
+.prdScriptHeader ul li:nth-child(1) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 4px;
+  width: 90;
+  height: 28px;
+}
+.prdScriptHeader ul li:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 4px;
+  width: 90;
+  height: 28px;
+}
+
+.prdScriptBody > * {
+  font-size: 14px;
+}/*# sourceMappingURL=faceRd.css.map */

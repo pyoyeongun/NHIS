@@ -1,0 +1,69 @@
+.loginBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.waveBgImg > div {
+  width: 370px;
+  height: 450px;
+  float: left;
+}
+.waveBgImg > div:last-child {
+  background-color: #ffffff;
+}
+.waveBgImg > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.waveBgImg > div > div form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 54px;
+}
+.waveBgImg > div > div form div {
+  width: 290px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+.waveBgImg > div > div form div > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+.waveBgImg > div > div form div > span > label {
+  font-size: 14px;
+  cursor: pointer;
+}
+.waveBgImg > div > div form div > input {
+  width: 290px;
+  height: 36px;
+}
+.waveBgImg > div > div > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  font-size: 14px;
+}
+
+.iconInput {
+  padding-left: 36px;
+}
+
+.loginBtn {
+  background-color: #002E9D;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 14px;
+}/*# sourceMappingURL=login.css.map */

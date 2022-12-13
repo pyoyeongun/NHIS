@@ -1,0 +1,135 @@
+/* 
+    파일명: allImage.css
+    파일내용: 모든 이미지 css
+    작성일: 22.12.09
+    작성자: 표영운
+    수정일:
+    수정내용: 
+  
+ */
+
+ /*
+    @name screenImgSize 
+    무조건 background url()보다는 나중에 사용할 것
+    이미지 가로, 세로, 크기를 정하는 믹스인
+ */
+@mixin screenImgSize($width: 24px, $height: 24px, $bg_size: 24px) {
+    width: $width;
+    height: $height;
+    background-size: $bg_size;
+}
+
+//농협로고 이미지
+.nhLogoImg {
+    background: transparent url(../img/pngImg/icon_logo.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(230px, 44px, 230px);
+}
+.nhLogoHeaderImg {
+    background: transparent url(../img/pngImg/icon_logo.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(126px, 21px, 126px);
+}
+//로그인 배경 이미지
+.loginBgImg {
+    background: transparent url(../img/pngImg/icon_login_background.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(100%, 1080px, 100%);
+}
+//로그인 배경 웨이브 이미지
+.waveBgImg {
+    background: transparent url(../img/pngImg/icon_bg_wave.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(100%, 80%, 100%);
+}
+//완판 알리미 타이틀 + 이미지
+.alramPsImg {
+    width: 150px;
+    height: 24px;
+    background: transparent url(../img/pngImg/icon_alram_ps.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(150px, 24px, 150px);
+}
+//"상품판매 녹취관리시스템" 이미지
+.logoTitleImg{
+    background: transparent url(../img/pngImg/icon_title_logo.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(280px, 30px, 280px);
+}
+.logoTitleAlramImg { //완판 알리미 글자 추가 
+    background: transparent url(../img/pngImg/icon_title_rdMg.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(294px, 18px, 294px);
+}
+.logoTitleFaceRdImg { //대면 녹취
+    background: transparent url(../img/pngImg/icon_title_faceRd.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(74px, 18px, 74px);
+}
+//로그인 박스부분 백그라운드 이미지
+.loginLogoBgImg {
+    background: transparent url(../img/pngImg/icon_login_loge_bg.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(370px, 450px, 100%);    
+}
+//사람모양 아이콘
+.personImg {
+    background: transparent url(../img/pngImg/icon_person.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 36px);
+}
+//자물쇠 아이콘
+.lockImg {
+    background: transparent url(../img/pngImg/icon_lock.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 36px);
+}
+//아래 삼각형
+.downTriagle {
+    background: transparent url(../img/pngImg/icon_down_triangle.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 24px);
+}
+//텍스트 사이즈 변경안내 이미지
+.textSize {
+    background: transparent url(../img/pngImg/icon_text_size.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(30px, 30px, 30px);
+}
+// 완료 상태 이미지
+.completeImg {
+    background: transparent url(../img/pngImg/icon_complete.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 24px);
+}
+.listeningImg {
+    background: transparent url(../img/pngImg/icon_listening.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(24px, 24px, 24px);
+}
+/*
+    버튼 이미지
+*/ 
+.plusBtn {
+    background: transparent url(../img/pngImg/icon_plus_btn.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(30px, 30px, 30px);
+}
+.minusBtn {
+    background: transparent url(../img/pngImg/icon_minus_btn.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(30px, 30px, 30px);
+}
+.playBtn {
+    background: transparent url(../img/pngImg/icon_play_btn.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(30px, 30px, 30px);
+}
+.checkboxOffBtn{
+    background: transparent url(../img/pngImg/icon_checkbox_btn_off.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(16px, 16px, 16px);
+}
+.checkboxOnBtn{
+    background: transparent url(../img/pngImg/icon_checkbox_btn_on.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(16px, 16px, 16px);
+}
+
+/*
+    택스트 색
+*/
+.redText {
+    color: #FF2E69;
+}
+.blueText {
+    color: #0A74DC;
+}
+
+/*
+    Gif 이미지
+*/
+.waveGifImg {
+    background: transparent url() 0% 0% no-repeat padding-box;
+    @include screenImgSize(323px, 10px, 323px);
+}

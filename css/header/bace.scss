@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "NanumGothicOTF";
+    font-style: normal;
+    src: url(../../font/NanumBarunGothicBold.otf);
+}
+// 필요없는 폰트
+@font-face {
+    font-family: "Noto Sans KR";
+    font-style: normal;
+    src: url(../../font/NotoSansKR-Medium.otf);
+  }
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+* {
+    font: normal normal bold 16px/18px "NanumGothicOTF";
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F2F3F3;
+}
+p {
+    margin: 0px;
+    padding: 0px;
+}
+
+section, div, span {
+    @include dp_flex;
+}
+input {
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+}
+
+textarea {
+    border: 0px;
+    resize: none;
+}
+
+ul {
+    @extend p;
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: 0px;
+    background-color: #ffffff;
+}
+
+input[type="submit"], input[type="checkbox"] {
+    cursor: pointer;
+}

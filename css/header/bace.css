@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "NanumGothicOTF";
+  font-style: normal;
+  src: url(../../font/NanumBarunGothicBold.otf);
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  src: url(../../font/NotoSansKR-Medium.otf);
+}
+* {
+  font: normal normal bold 16px/18px "NanumGothicOTF";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  background-color: #F2F3F3;
+}
+
+p, ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+section, div, span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+}
+
+textarea {
+  border: 0px;
+  resize: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0px;
+  background-color: #ffffff;
+}
+
+input[type=submit], input[type=checkbox] {
+  cursor: pointer;
+}/*# sourceMappingURL=bace.css.map */

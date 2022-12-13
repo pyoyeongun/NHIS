@@ -1,0 +1,65 @@
+<!-- 
+    파일명: index.html
+    파일내용: 로그인 화면 페이지
+    작성일: 22.12.09
+    작성자: 표영운
+    수정일:
+    수정자:
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="../css/header/bace.css">            <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../img/allImage.css">               <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../css/body/login/login.css">                  <!--로그인 css-->
+ </head>
+<body class="loginBgImg">
+    <section class="loginBox">
+        <div class="waveBgImg">
+            <div class="loginLogoBgImg">
+                <div>
+                    <span class="nhLogoImg"></span>
+                    <span class="logoTitleImg"></span>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <!-- 원판 알리미 로고 -->
+                    <span class="alramPsImg"></span>
+
+                    <!-- 로그인 input -->
+                    <form action="">
+                        <div>
+                            <input type="text" class="personImg iconInput" placeholder="아이디">
+                        </div>
+                        <div>
+                            <input type="password" class="lockImg iconInput" placeholder="비밀번호">
+                        </div>
+                        <div>
+                            <input class="loginBtn" type="submit" value="로그인">
+                        </div>
+                        <div>
+                            <span>
+                                <input type="checkbox" id="saveId" value="아이디 저장">
+                                <label for="saveId">아이디 저장</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="savePwd" value="비밀전호 저장">
+                                <label for="savePwd">비밀번호 저장</plabel>
+                            </span>
+                        </div>
+                    </form>
+
+                    <!-- 비밀번호 오류 -->
+                    <p class="redText">비밀번호를 다시 확인해주세요</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

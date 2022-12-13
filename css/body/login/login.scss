@@ -1,0 +1,69 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+.loginBox {
+    @include dp_flex;
+    width: 100%;
+    height: 100%;
+}
+
+.waveBgImg {
+    >div {
+        width: 370px;
+        height: 450px;
+        float: left;
+
+        &:last-child {
+            background-color: #ffffff;
+        }
+
+        >div {
+            @include dp_flex($flex_dr: column);
+
+            form {
+                @include dp_flex(column);
+                margin-top: 54px;
+                
+                div {
+                    width: 290px;
+                    height: 40px;
+                    margin-bottom: 12px;
+
+                    >span {
+                        @include dp_flex($jt_content: flex-start);
+                        width: 50%;
+                        
+                        >label {
+                            font-size: 14px;
+                        cursor: pointer;
+                    }
+                    }
+                    >input {
+                        width: 290px;
+                        height: 36px;
+                    }
+                }
+                
+            }
+            
+            >p {
+                @include dp_flex($jt_content: flex-end);
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+    }
+}
+.iconInput {
+    padding-left: 36px;
+}
+.loginBtn {
+    background-color: #002E9D;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+}
