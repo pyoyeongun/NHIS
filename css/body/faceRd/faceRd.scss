@@ -5,7 +5,7 @@
     align-items: $al_item;
 }
 
-@mixin customBtnStyle($br-radius: 4px, $wd: 90, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
     @include dp_flex;
     background-color: $bg-color ;
     border: 1px solid;
@@ -64,6 +64,7 @@
 //플레이어
 .rcdPlayer {
     @include dp_flex($jt_content: space-around);
+
     ul {
         @include dp_flex;
         float: left;
@@ -78,29 +79,34 @@
             float: left;
             margin-right: 8px;
 
-            > label {
+            >label {
                 @include dp_flex;
                 cursor: pointer;
 
-                > input {
+                >input {
                     display: none;
                 }
-                > span {
+
+                >span {
                     margin-right: 4px;
                 }
             }
         }
+
         &:nth-child(1) {
             width: 48%;
         }
+
         &:nth-child(2) {
             width: 20%;
         }
+
         &:nth-child(3) {
             border-right: 0px;
             width: 29%;
         }
     }
+
     .playSpeed {
         @include dp_flex($jt_content: space-around);
         background-color: #EAEAEA;
@@ -108,16 +114,27 @@
         height: 30px;
         margin-left: 12px;
 
-        > li {
+        >li {
             width: 25%;
             height: 100%;
             margin: 0px;
+
+            >label {
+                @include dp_flex;
+                cursor: pointer;
+            }
+
+            >input {
+                display: none;
+            }
         }
     }
 }
+
 .checkedPlaySpeed {
-    @include customBtnStyle(100px, $br-color:#00B140, $bg-color: #ffffff);
+    @include customBtnStyle(100px, $br-color: #00B140, $bg-color: #ffffff);
 }
+
 // 고객정보
 .memberInfo {
     @include dp_flex($jt_content: space-between);

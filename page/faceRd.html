@@ -11,10 +11,9 @@
     <link rel="stylesheet" type="text/css" href="../css/header/nhHeader.css"> <!--헤더 css-->
     <link rel="stylesheet" type="text/css" href="../css/body/faceRd/faceRd.css"> <!--대면녹취 css-->
     <link rel="stylesheet" type="text/css" href="../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
-    <script src="../dhtmlxSuite/dhtmlx.i18n.Language.js"></script> <!--DTMLX_language js파일-->
     <script src="../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
     <script src="../js/jquery-3.6.1.min.js"></script> <!--jquery-->
-    <script src="../js/"></script>
+    <script src="../js/faceRd.js"></script>
 </head>
 
 <body>
@@ -32,56 +31,50 @@
             <div class="rcdPlayer">
                 <ul>
                     <li><span class="waveGifImg"></span></li>
-                    <li><p>00:00:00</p></li>
+                    <li>
+                        <p>00:00:00</p>
+                    </li>
                     <li><button type="button" class="playBtn"></button></li>
                 </ul>
                 <ul>
                     <li>
                         <label>
-                            <span class="checkboxOffBtn"></span>
-                            <input class="checkboxOffBtn" type="checkbox">
+                            <span class="checkboxOffBtn" name="TTS"></span>
+                            <input type="checkbox" value="TTS" onchange="changeCheckBox(this)">
                             <p>TTS</p>
                         </label>
                     </li>
                     <li>
                         <label>
-                            <span class="checkboxOffBtn"></span>
-                            <input class="checkboxOffBtn" type="checkbox">
+                            <span class="checkboxOffBtn" name="TTV"></span>
+                            <input type="checkbox" value="TTV" onchange="changeCheckBox(this)">
                             <p>TTV</p>
                         </label>
                     </li>
                     <li>
                         <label>
-                            <span class="checkboxOffBtn"></span>
-                            <input class="checkboxOffBtn" type="checkbox">
+                            <span class="checkboxOffBtn" name="육성"></span>
+                            <input type="checkbox" value="육성" onchange="changeCheckBox(this)">
                             <p>육성</p>
                         </label>
                     </li>
                 </ul>
                 <ul class="playSpeed">
-                    <li class="checkedPlaySpeed">
-                        <label>
-                            <input type="radio" name="playSpd" value="1" checked>
-                            <p>x1</p>
-                        </label>
+                    <li class="speedList checkedPlaySpeed" name="origin" data-value="1">
+                        <input type="radio" name="ps" id="origin" value="1" onchange="changePlaySpeed(this)" checked>
+                        <label for="origin">x1</label>
                     </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="playSpd" value="1.25">
-                            <p>x1.25</p>
-                        </label>
+                    <li class="speedList" name="quet" data-value="1.25">
+                        <input type="radio" name="ps" id="quet" value="1.25" onchange="changePlaySpeed(this)">
+                        <label for="quet">x1.25</label>
                     </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="playSpd" value="1.5">
-                            <p>x1.5</p>
-                        </label>
+                    <li class="speedList" name="half" data-value="1.5">
+                        <input type="radio" name="ps" id="half" value="1.5" onchange="changePlaySpeed(this)">
+                        <label for="half">x1.5</label>
                     </li>
-                    <li>
-                        <label>
-                            <input type="radio" name="playSpd" value="1.75">
-                            <p>x1.75</p>
-                        </label>
+                    <li class="speedList" name="halfQuet" data-value="1.75">
+                        <input type="radio" name="ps" id="halfQuet" value="1.75" onchange="changePlaySpeed(this)">
+                        <label for="halfQuet">x1.75</label>
                     </li>
                 </ul>
             </div>
@@ -108,7 +101,7 @@
                     <p>중간위험(3등급)</p>
                 </span>
             </div>
-        </div> 
+        </div>
     </section>
     <!-- 고객정보와 투자상품 설명 스크립트 -->
     <section class="containBox">
@@ -140,12 +133,13 @@
             </div>
             <div class="prdScriptBody">
                 <p>
-                    이외에도 이자율 변동에 따른 위험, 시장위험, 신용위험, 파생상품 투자위험, 환율변동위험, 환해지위험, 국가 위험, 자금송환 위험, 유동성위험, 환매에 따른 위험, 투자신탁 해산의 위험, 과세위험 등이 발생할 수 있습니다.
+                    이외에도 이자율 변동에 따른 위험, 시장위험, 신용위험, 파생상품 투자위험, 환율변동위험, 환해지위험, 국가 위험, 자금송환 위험, 유동성위험, 환매에 따른 위험, 투자신탁 해산의
+                    위험, 과세위험 등이 발생할 수 있습니다.
                 </p>
                 <p>
                     설명드린 투자위험은 발생가능한 투자위험 중 중요하다고 판단되는 위험을 기재한 것이며, 이외에 발생 가능한투자위험은 규약,투자설명서 상에 기재된 내용을 확인하시기 바랍니다.
                     <br><br>이러한 위험에도 불구하고 본 상품에 가입하시고자 하는 경우 네로 대답해주십시오. 이해되셨습니까?
-                </p>                
+                </p>
                 <span class="blueText">네(다음 진행)</span>
                 <span class="redText">아니오(진행 불가)</span>
             </div>

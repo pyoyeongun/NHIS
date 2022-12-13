@@ -130,6 +130,6 @@
     Gif 이미지
 */
 .waveGifImg {
-    background: transparent url() 0% 0% no-repeat padding-box;
-    @include screenImgSize(323px, 10px, 323px);
+    background: transparent url(../img/pngImg/icon_wave.png) 0% 0% no-repeat padding-box;
+    @include screenImgSize(323px, 30px, 323px);
 }
