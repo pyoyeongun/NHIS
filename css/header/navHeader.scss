@@ -1,0 +1,39 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+  display: flex;
+  flex-direction: $flex_dr;
+  justify-content: $jt_content;
+  align-items: $al_item;
+}
+
+.navBox {
+  @include dp_flex($jt_content: flex-start);
+  background-color: #ffffff;
+  width: 100%;
+  height: 36px;
+
+  .currentPage {
+    color: #005eb8;
+    border-bottom: 2px solid #005eb8;
+  }
+
+  a {
+    @include dp_flex;
+    height: 100%;
+    color: #0f0f0f;
+    text-decoration: none;
+    font-size: 15px;
+
+    &:nth-child(1) {
+      width: 92px;
+    }
+    &:nth-child(2) {
+      width: 126px;
+    }
+    &:nth-child(3) {
+      width: 126px;
+    }
+    &:nth-child(4) {
+      width: 112px;
+    }
+  }
+}

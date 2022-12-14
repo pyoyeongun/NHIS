@@ -45,7 +45,7 @@ dhtmlxEvent(window, "load", () => {
     grid.setAwaitedRowHeight(40);
     grid.setImagePath("../dHtmlxSuite/codebase/imgs/");
     grid.init();
-    grid.load("../dataset/faceRdData.json", "json");
+    grid.load("../dataset/faceRdData.xml");
 });
 
 //글자 크기 증가 스크립트

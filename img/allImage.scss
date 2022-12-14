@@ -8,157 +8,203 @@
   
  */
 
- /*
+/*
     @name screenImgSize 
     무조건 background url()보다는 나중에 사용할 것
     이미지 가로, 세로, 크기를 정하는 믹스인
  */
 @mixin screenImgSize($width: 24px, $height: 24px, $bg_size: 24px) {
-    width: $width;
-    height: $height;
-    background-size: $bg_size;
+  width: $width;
+  height: $height;
+  background-size: $bg_size;
 }
 
 //농협로고 이미지
 .nhLogoImg {
-    background: transparent url(../img/pngImg/icon_logo.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(230px, 44px, 230px);
+  background: transparent url(../img/pngImg/icon_logo.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(230px, 44px, 230px);
 }
 .nhLogoHeaderImg {
-    background: transparent url(../img/pngImg/icon_logo.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(126px, 21px, 126px);
+  background: transparent url(../img/pngImg/icon_logo.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(126px, 21px, 126px);
 }
 //로그인 배경 이미지
 .loginBgImg {
-    background: transparent url(../img/pngImg/icon_login_background.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(100%, 1080px, 100%);
+  background: transparent url(../img/pngImg/icon_login_background.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(100%, 1080px, 100%);
 }
 //로그인 배경 웨이브 이미지
 .waveBgImg {
-    background: transparent url(../img/pngImg/icon_bg_wave.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(100%, 80%, 100%);
+  background: transparent url(../img/pngImg/icon_bg_wave.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(100%, 80%, 100%);
 }
 //완판 알리미 타이틀 + 이미지
 .alramPsImg {
-    width: 150px;
-    height: 24px;
-    background: transparent url(../img/pngImg/icon_alram_ps.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(150px, 24px, 150px);
+  width: 150px;
+  height: 24px;
+  background: transparent url(../img/pngImg/icon_alram_ps.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(150px, 24px, 150px);
 }
 //"상품판매 녹취관리시스템" 이미지
-.logoTitleImg{
-    background: transparent url(../img/pngImg/icon_title_logo.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(280px, 30px, 280px);
+.logoTitleImg {
+  background: transparent url(../img/pngImg/icon_title_logo.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(280px, 30px, 280px);
 }
-.logoTitleAlramImg { //완판 알리미 글자 추가 
-    background: transparent url(../img/pngImg/icon_title_rdMg.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(294px, 18px, 294px);
+.logoTitleAlramImg {
+  //완판 알리미 글자 추가
+  background: transparent url(../img/pngImg/icon_title_rdMg.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(294px, 18px, 294px);
 }
-.logoTitleFaceRdImg { //대면 녹취
-    background: transparent url(../img/pngImg/icon_title_faceRd.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(74px, 18px, 74px);
+.logoTitleFaceRdImg {
+  //대면 녹취
+  background: transparent url(../img/pngImg/icon_title_faceRd.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(74px, 18px, 74px);
 }
 //로그인 박스부분 백그라운드 이미지
 .loginLogoBgImg {
-    background: transparent url(../img/pngImg/icon_login_loge_bg.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(370px, 450px, 100%);    
+  background: transparent url(../img/pngImg/icon_login_loge_bg.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(370px, 450px, 100%);
 }
 //사람모양 아이콘
 .personImg {
-    background: transparent url(../img/pngImg/icon_person.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 36px);
+  background: transparent url(../img/pngImg/icon_person.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(24px, 24px, 36px);
 }
 //자물쇠 아이콘
 .lockImg {
-    background: transparent url(../img/pngImg/icon_lock.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 36px);
+  background: transparent url(../img/pngImg/icon_lock.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(24px, 24px, 36px);
 }
 //아래 삼각형
 .downTriagle {
-    background: transparent url(../img/pngImg/icon_down_triangle.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 24px);
+  background: transparent url(../img/pngImg/icon_down_triangle.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(24px, 24px, 24px);
 }
 //위 삼각형
 .upTriagle {
-    background: transparent url(../img/pngImg/icon_up_triangle.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 24px);
+  background: transparent url(../img/pngImg/icon_up_triangle.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(24px, 24px, 24px);
 }
 //텍스트 사이즈 변경안내 이미지
 .textSize {
-    background: transparent url(../img/pngImg/icon_text_size.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(30px, 30px, 30px);
+  background: transparent url(../img/pngImg/icon_text_size.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(30px, 30px, 30px);
 }
 // 완료 상태 이미지
 .completeImg {
-    background: transparent url(../img/pngImg/icon_complete.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 24px);
+  background: transparent url(../img/pngImg/icon_complete.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(24px, 24px, 24px);
 }
 // 청취 소리 이미지
 .listeningImg {
-    background: transparent url(../img/pngImg/icon_listening.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 24px);
+  background: transparent url(../img/pngImg/icon_listening.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(24px, 24px, 24px);
 }
 // Tree Grid 리스트 아이템 머릿말 이미지
-.itemHeadBlackImg { //검정
-    background: transparent url(../img/pngImg/icon_head_item_black.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(16px, 16px, 16px);
+.itemHeadBlackImg {
+  //검정
+  background: transparent url(../img/pngImg/icon_head_item_black.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(16px, 16px, 16px);
 }
-.itemHeadBlueImg {  //파랑
-    background: transparent url(../img/pngImg/icon_head_item_blue.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(16px, 16px, 16px);
+.itemHeadBlueImg {
+  //파랑
+  background: transparent url(../img/pngImg/icon_head_item_blue.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(16px, 16px, 16px);
 }
 // 마이크 이미지
 .mikeImg {
-    background: transparent url(../img/pngImg/icon_mike.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 24px);
+  background: transparent url(../img/pngImg/icon_mike.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(24px, 24px, 24px);
 }
 // 녹화 진행중인 파란색 이미지
 .recordIngImg {
-    background: transparent url(../img/pngImg/icon_record_ing_blue.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 24px);
+  background: transparent url(../img/pngImg/icon_record_ing_blue.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(24px, 24px, 24px);
 }
 // 대기중인 이미지
 .standByImg {
-    background: transparent url(../img/pngImg/icon_stand_by.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(24px, 24px, 24px);
+  background: transparent url(../img/pngImg/icon_stand_by.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(24px, 24px, 24px);
+}
+// 로그아웃 이미지
+.logoutImg {
+  background: transparent url(../img/pngImg/icon_logout.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(20px, 20px, 20px);
 }
 /*
     버튼 이미지
-*/ 
+*/
 .plusBtn {
-    background: transparent url(../img/pngImg/icon_plus_btn.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(30px, 30px, 30px);
+  background: transparent url(../img/pngImg/icon_plus_btn.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(30px, 30px, 30px);
 }
 .minusBtn {
-    background: transparent url(../img/pngImg/icon_minus_btn.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(30px, 30px, 30px);
+  background: transparent url(../img/pngImg/icon_minus_btn.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(30px, 30px, 30px);
 }
 .playBtn {
-    background: transparent url(../img/pngImg/icon_play_btn.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(30px, 30px, 30px);
+  background: transparent url(../img/pngImg/icon_play_btn.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(30px, 30px, 30px);
 }
-.checkboxOffBtn{
-    background: transparent url(../img/pngImg/icon_checkbox_btn_off.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(16px, 16px, 16px);
+.checkboxOffBtn {
+  background: transparent url(../img/pngImg/icon_checkbox_btn_off.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(16px, 16px, 16px);
 }
-.checkboxOnBtn{
-    background: transparent url(../img/pngImg/icon_checkbox_btn_on.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(16px, 16px, 16px);
+.checkboxOnBtn {
+  background: transparent url(../img/pngImg/icon_checkbox_btn_on.png) 0% 0%
+    no-repeat padding-box;
+  @include screenImgSize(16px, 16px, 16px);
 }
 /*
     택스트 색
 */
 .redText {
-    color: #FF2E69;
+  color: #ff2e69;
 }
 .blueText {
-    color: #0A74DC;
+  color: #0a74dc;
 }
 
 /*
     Gif 이미지
 */
 .waveGifImg {
-    background: transparent url(../img/pngImg/icon_wave.png) 0% 0% no-repeat padding-box;
-    @include screenImgSize(323px, 30px, 323px);
+  background: transparent url(../img/pngImg/icon_wave.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(323px, 30px, 323px);
+}
+
+/*
+
+*/
+input[type='date' i]::-webkit-calendar-picker-indicator {
+  background: transparent url(../img/pngImg/icon_daliy.png) 0% 0% no-repeat
+    padding-box;
+  @include screenImgSize(24px, 24px, 24px);
 }

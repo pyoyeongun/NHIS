@@ -9,10 +9,10 @@
 
  */
 /*
-   @name screenImgSize 
-   무조건 background url()보다는 나중에 사용할 것
-   이미지 가로, 세로, 크기를 정하는 믹스인
-*/
+    @name screenImgSize 
+    무조건 background url()보다는 나중에 사용할 것
+    이미지 가로, 세로, 크기를 정하는 믹스인
+ */
 .nhLogoImg {
   background: transparent url(../img/pngImg/icon_logo.png) 0% 0% no-repeat padding-box;
   width: 230px;
@@ -162,6 +162,13 @@
   background-size: 24px;
 }
 
+.logoutImg {
+  background: transparent url(../img/pngImg/icon_logout.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
 /*
     버튼 이미지
 */
@@ -204,11 +211,11 @@
     택스트 색
 */
 .redText {
-  color: #FF2E69;
+  color: #ff2e69;
 }
 
 .blueText {
-  color: #0A74DC;
+  color: #0a74dc;
 }
 
 /*
@@ -219,4 +226,14 @@
   width: 323px;
   height: 30px;
   background-size: 323px;
+}
+
+/*
+
+*/
+input[type=date i]::-webkit-calendar-picker-indicator {
+  background: transparent url(../img/pngImg/icon_daliy.png) 0% 0% no-repeat padding-box;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
 }/*# sourceMappingURL=allImage.css.map */
