@@ -34,18 +34,13 @@ let ta_center = "text-align: center";
 
 dhtmlxEvent(window, "load", () => {
     grid = new dhtmlXGridObject("prdInfo");
-    grid.setHeader("제목, 상태, 청취, 재녹취", null,
-        [ta_center, ta_center, ta_center, ta_center]);
-    grid.setColAlign("left, center, center, center");
-    grid.setColTypes("tree, ro, ro, ro");
-    grid.setInitWidths("594", "114", "114", "114");
     grid.enableColumnAutoSize(true);
     grid.enableAutoWidth(true);
     grid.enableAutoHeight(true);
     grid.setAwaitedRowHeight(40);
-    grid.setImagePath("../dHtmlxSuite/codebase/imgs/");
+    grid.setImagePath("./dHtmlxSuite/codebase/imgs/");
     grid.init();
-    grid.load("../dataset/faceRdData.xml");
+    grid.load("./dataset/faceRdData.json", "json");
 });
 
 //글자 크기 증가 스크립트
