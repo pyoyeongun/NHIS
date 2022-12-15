@@ -1,0 +1,184 @@
+<!-- 
+    파일명: popListen.html
+    파일내용: 청취 팝업 샘플 페이지
+            해당페이지는 팝업 샘플 페이지 입니다.
+    작성일: 22.12.15
+    작성자: 표영운
+    수정일:
+    수정자:
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pop workspace</title>
+    <link rel="stylesheet" type="text/css" href="../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../css/footer/mgFooter.css"> <!-- footer css-->
+    <link rel="stylesheet" type="text/css" href="../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/listenPop.css"> <!--청취 pop-->
+    <script src="../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <script src="../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../js/pop/rcdListPop.js"></script> <!--청취 팝업 js-->
+</head>
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+            <span class="logoTitleFaceRdImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+    <!-- 네비게이션 탭바 -->
+    <nav class="navBox">
+        <a class="currentPage" href="../page/rcdMg.html">녹취관리</a>
+        <a href="../page/scriptSel.html">스크립트 조회</a>
+        <a href="">다운로드 이력</a>
+        <a href="">시스템 관리</a>
+    </nav>
+
+    <section class="popBox" id="listenPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>청취</p>
+                <div>
+                    <button class="popBasicBtnStyle1"><p>추가녹취</p></button>
+                    <button class="popBasicBtnStyle1"><p>재녹취</p></button>
+                    <button><span class="cancelWhiteImg" onclick="listenPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 1. 고객정보 table -->
+                <div class="clientInfo">
+                    <h1>1. 고객정보</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>고객명</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>김강찬</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>녹취일에 사용된 스크립트</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <button type="button">
+                                        <span class="pdfImg"></span>
+                                        <p>다운로드</p>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>고개번호</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>00000000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>녹취일자</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>2022-11-11</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>고객성향등급</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>지점명</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>영엄본점</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>영업본점</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>상품위험등급</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>권유자명</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>테스트</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div><p>상품명</p></div>
+                            </td>
+                            <td colspan="3">
+                                <div><p>DB지수연계더블플러스증권투자신탁SEK-11회[ELS-파생형]A</p></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 2. 녹취 목록 리스트 -->
+                <div class="rcdListBox">
+                    <h1>2. 녹취 목록</h1>
+                    <div id="rcdListGrid"></div>
+                </div>
+                <!-- 3. 플레이어 -->
+                <div class="playerSection">
+                    <div>
+                        <h1>3. 플레이어</h1>
+                        <p>
+                            [현재 재생 중인 파일: <span>20211003_투자 위험에 대한 설명_051729.mp3</span>]
+                        </p>
+                    </div>
+                    <div class="playerBox">
+                        <p>/*플레이어*/</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

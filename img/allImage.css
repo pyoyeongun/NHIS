@@ -120,6 +120,13 @@
   background-size: 24px;
 }
 
+.completeBlueImg {
+  background: transparent url(../img/pngImg/icon_complete_blue.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
 .listeningImg {
   background: transparent url(../img/pngImg/icon_listening.png) 0% 0% no-repeat padding-box;
   width: 24px;
@@ -169,6 +176,125 @@
   background-size: 20px;
 }
 
+.magnifierBlackImg {
+  background: transparent url(../img/pngImg/icon_magnifier_black.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.resetImg {
+  background: transparent url(../img/pngImg/icon_reset.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.startArrGrayImg {
+  background: transparent url(../img/pngImg/icon_start_arrow_gray.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.startArrBlackImg {
+  background: transparent url(../img/pngImg/icon_start_arrow_black.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.leftArrGrayImg {
+  background: transparent url(../img/pngImg/icon_left_arrow_gray.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.leftArrBlackImg {
+  background: transparent url(../img/pngImg/icon_left_arrow_black.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.rightArrGrayImg {
+  background: transparent url(../img/pngImg/icon_right_arrow_gray.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.rightArrBlackImg {
+  background: transparent url(../img/pngImg/icon_right_arrow_black.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.endArrGrayImg {
+  background: transparent url(../img/pngImg/icon_end_arrow_gray.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.endArrBlackImg {
+  background: transparent url(../img/pngImg/icon_end_arrow_black.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.downloadImg {
+  background: transparent url(../img/pngImg/icon_download.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.headsetImg {
+  background: transparent url(../img/pngImg/icon_headset.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.documentImg {
+  background: transparent url(../img/pngImg/icon_document.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.transformImg {
+  background: transparent url(../img/pngImg/icon_transform.png) 0% 0% no-repeat padding-box;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+
+.cancelWhiteImg {
+  background: transparent url(../img/pngImg/icon_cancel_white.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
+.pdfImg {
+  background: transparent url(../img/pngImg/icon_pdf.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.warningImg {
+  background: transparent url(../img/pngImg/icon_warning.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
 /*
     버튼 이미지
 */
@@ -177,6 +303,13 @@
   width: 30px;
   height: 30px;
   background-size: 30px;
+}
+
+.plusCircleBtn {
+  background: transparent url(../img/pngImg/icon_plus_btn_circle.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
 }
 
 .minusBtn {
@@ -193,18 +326,25 @@
   background-size: 30px;
 }
 
-.checkboxOffBtn {
+.checkboxCircleOffBtn {
   background: transparent url(../img/pngImg/icon_checkbox_btn_off.png) 0% 0% no-repeat padding-box;
   width: 16px;
   height: 16px;
   background-size: 16px;
 }
 
-.checkboxOnBtn {
+.checkboxCircleOnBtn {
   background: transparent url(../img/pngImg/icon_checkbox_btn_on.png) 0% 0% no-repeat padding-box;
   width: 16px;
   height: 16px;
   background-size: 16px;
+}
+
+.waveImg {
+  background: transparent url(../img/pngImg/icon_wave.png) 0% 0% no-repeat padding-box;
+  width: 323px;
+  height: 30px;
+  background-size: 323px;
 }
 
 /*
@@ -222,14 +362,14 @@
     Gif 이미지
 */
 .waveGifImg {
-  background: transparent url(../img/pngImg/icon_wave.png) 0% 0% no-repeat padding-box;
+  background: transparent url(../img/gifImg/icon_wave.gif) 0% 0% no-repeat padding-box;
   width: 323px;
   height: 30px;
   background-size: 323px;
 }
 
 /*
-
+  input[type="date" 달력 이미지
 */
 input[type=date i]::-webkit-calendar-picker-indicator {
   background: transparent url(../img/pngImg/icon_daliy.png) 0% 0% no-repeat padding-box;

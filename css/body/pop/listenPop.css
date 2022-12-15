@@ -1,0 +1,170 @@
+.popMain {
+  width: 1200px;
+  height: 642px;
+}
+
+.popBody h1 {
+  width: 100%;
+}
+
+.clientInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 98%;
+  height: 213px;
+  margin-top: 14px;
+}
+.clientInfo > table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: scroll !important;
+}
+.clientInfo > table tr {
+  height: 36px;
+  border: 1px solid #B8C0C7;
+}
+.clientInfo > table tr td {
+  border: 1px solid #B8C0C7;
+}
+.clientInfo > table tr td:nth-child(1) {
+  background-color: #EAEAEA;
+  width: 100px;
+}
+.clientInfo > table tr td:nth-child(2) {
+  width: 451px;
+}
+.clientInfo > table tr td:nth-child(3) {
+  background-color: #EAEAEA;
+  width: 180px;
+}
+.clientInfo > table tr td:nth-child(4) {
+  width: 449px;
+}
+.clientInfo > table tr td > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.clientInfo > table tr td > div button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 4px;
+  width: auto;
+  height: 26px;
+}
+
+.rcdListBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 98%;
+  height: 237px;
+  margin-top: 15px;
+}
+.rcdListBox table {
+  border-collapse: collapse;
+}
+.rcdListBox table tr td {
+  border: 1px solid #B8C0C7 !important;
+}
+.rcdListBox > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1168px !important;
+}
+.rcdListBox .gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 199px !important;
+}
+.rcdListBox .gridbox .xhdr {
+  height: 36px !important;
+}
+.rcdListBox .gridbox .xhdr table {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.rcdListBox .gridbox .xhdr table tr:nth-child(2) td {
+  background-color: #C9E9E6 !important;
+  color: #0f0f0f;
+}
+.rcdListBox .objbox {
+  height: 180px !important;
+  overflow: scroll;
+}
+.rcdListBox .objbox table {
+  position: absolute !important;
+  top: -1px;
+}
+.rcdListBox .objbox::-webkit-scrollbar {
+  position: absolute;
+  width: 3px;
+}
+.rcdListBox .objbox::-webkit-scrollbar-thumb {
+  width: 3px;
+  background-color: #D9D9D9;
+}
+.rcdListBox .objbox::-webkit-scrollbar-track {
+  width: 3px;
+}
+
+.playerSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  height: 91px;
+}
+.playerSection > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.playerSection > div > h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0px;
+}
+.playerSection > div > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+}
+.playerSection .playerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 100%;
+  height: 70px;
+}/*# sourceMappingURL=listenPop.css.map */

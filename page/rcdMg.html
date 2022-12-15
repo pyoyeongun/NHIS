@@ -1,3 +1,12 @@
+<!-- 
+    파일명: rcdMg.html
+    파일내용: 녹취관리 페이지
+    작성일: 22.12.14
+    작성자: 표영운
+    수정일: 22.12.15
+    수정자: 표영운
+    수정내용: 주석 추가 및 page 링크 추가
+ -->
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -10,13 +19,19 @@
     <link rel="stylesheet" type="text/css" href="../img/allImage.css"> <!--모든 이미지 css-->
     <link rel="stylesheet" type="text/css" href="../css/header/nhHeader.css"> <!--헤더 css-->
     <link rel="stylesheet" type="text/css" href="../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../css/footer/mgFooter.css"> <!-- footer css-->
     <link rel="stylesheet" type="text/css" href="../css/body/management/rcdMg.css"> <!--녹취관리 css-->
     <link rel="stylesheet" type="text/css" href="../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
     <script src="../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
     <script src="../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <script src="../js/playSpeed.js"></script> <!--플레이어 배속 js-->
+    <script src="../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../js/isCheckbox.js"></script> <!--체크박스 관련 js-->
+    <script src="../js/rcdMg.js"></script><!--녹취관리 js파일-->
 </head>
 
-<body>
+<body onload="selectLine()">
+    <!-- header -->
     <header class="headerBox">
         <div>
             <span class="nhLogoHeaderImg"></span>
@@ -31,9 +46,10 @@
             </button>
         </div>
     </header>
+    <!-- 네비게이션 탭바 -->
     <nav class="navBox">
         <a class="currentPage" href="../page/rcdMg.html">녹취관리</a>
-        <a href="">스크립트 조회</a>
+        <a href="../page/scriptSel.html">스크립트 조회</a>
         <a href="">다운로드 이력</a>
         <a href="">시스템 관리</a>
     </nav>
@@ -41,15 +57,281 @@
     <section class="searchCdt">
         <div>
             <form>
-                <div>
+                <div class="rcdDate">
                     <p>녹취 일시</p>
                     <input type="date">
                     <input type="date">
                 </div>
+                <div class="rcdStf">
+                    <p>녹취 직원</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="홍길동">홍길동</option>
+                        <option value="임꺽정">임꺽정</option>
+                        <option value="장범준">장범준</option>
+                        <option value="다나카">다나카</option>
+                    </select>
+                </div>
+                <div class="accLink">
+                    <p>계좌번호 연결내용</p>
+                    <input type="checkbox" id="linkOn">
+                    <label for="linkOk">계좌연결</label>
+                    <input type="checkbox" id="linkOff">
+                    <label for="linkOff">미연결</label>
+                </div>
+                <div class="rcdDvs">
+                    <p>녹취구분</p>
+                    <input type="checkbox" id="rcdRegular">
+                    <label for="rcdRegular">일반</label>
+                    <input type="checkbox" id="rcdDivision">
+                    <label for="rcdDivision">분할</label>
+                    <input type="checkbox" id="rcdAdd">
+                    <label for="rcdAdd">추가</label>
+                </div>
+                <div class="prdDvs">
+                    <p>상품구분</p>
+                    <input type="checkbox" id="prdSaleRcd">
+                    <label for="prdSaleRcd">상품판매 녹취</label>
+                    <input type="checkbox" id="ivtTdc">
+                    <label for="ivtTdc">투자성향 분석 녹취</label>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요</option>
+                        <option value="급진">급진</option>
+                        <option value="보수">보수</option>
+                        <option value="일반">일반</option>
+                    </select>
+                </div>
+                <div class="searchEtc">
+                    <p>기타 검색</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요</option>
+                        <option value="7433412">7433412</option>
+                        <option value="312634">312634</option>
+                        <option value="99865">99865</option>
+                    </select>
+                </div>
+                <div class="selectCdt">
+                    <p>검색 조건</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요</option>
+                        <option value="고객명">고객명</option>
+                        <option value="상품명">상품명</option>
+                        <option value="코드번호">코드번호</option>
+                    </select>
+                    <input type="text" placeholder="입력하세요.">
+
+                    <button type="button">
+                        <span class="magnifierBlackImg"></span>
+                        <p>조회</p>
+                    </button>
+                    <button type="reset">
+                        <span class="resetImg"></span>
+                        <p>조회 조건 초기화</p>
+                    </button>
+                </div>
             </form>
         </div>
     </section>
+    <section class="guideText">
+        <div>
+            <p class="blueText">
+                ※ 본 화면의 녹취 목록은 "최초녹취일" 기준으로 보여지며, 
+                청취파일은 "최종녹취파일"로 재생됩니다. 
+                [ 상세보기 ] 버튼 클릭시 최초~최종 녹취파일 전체 청취 가능</p>
+            <p class="blueText">
+                ※ 청취하고자 하는 대상을 더블클릭하시면, 청취 화면이 열립니다.
+            </p>
+        </div>
+    </section>
+    <!-- 녹취리스트 그리드 -->
+    <section class="rcdListGrid">
+        <div id="rcdSel"></div>
+    </section>
+    <!-- 녹취 플레이어 -->
+    <section class="rcdPlayer">
+        <div>
+            <p>/*플레이어 들어가는 구간*/</p>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footerBox">
+        <div>
+            <p>
+                전체건수<span class="blueText">503</span>건
+            </p>
+            <select>
+                <option value="50" selected>50행</option>
+                <option value="100">100행</option>
+                <option value="200">200행</option>
+            </select>
+        </div>
+        <ul>
+            <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
+            <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
+            <li>
+                <span class="pageNum currentMovePage" onchange="curentPage()"><p>1</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>2</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>3</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>4</p></span>
+            </li>
+            <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
+            <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
+        </ul>
+        <div>
+            <button>
+                <span class="downloadImg"></span>
+                <p>엑셀</p>
+            </button>
+            <button>
+                <span class="downloadImg"></span>
+                <p>현장 재녹취 이력</p>
+            </button>
+            <button>
+                <span class="downloadImg"></span>
+                <p>ADW 이력</p>
+            </button>
+            <button onclick="">
+                <span class="downloadImg"></span>
+                <p>선택파일</p>
+            </button>
+        </div>
+    </footer>
 
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/listenPop.css"> <!--청취 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../js/pop/rcdListPop.js"></script> <!--청취 팝업 js-->
+
+    <!-- 청취 팝업 -->
+    <section class="popBox" id="listenPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>청취</p>
+                <div>
+                    <button class="popBasicBtnStyle1"><p>추가녹취</p></button>
+                    <button class="popBasicBtnStyle1"><p>재녹취</p></button>
+                    <button><span class="cancelWhiteImg" onclick="listenPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 1. 고객정보 table -->
+                <div class="clientInfo">
+                    <h1>1. 고객정보</h1>
+                    <table>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>고객명</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>김강찬</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>녹취일에 사용된 스크립트</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <button type="button">
+                                        <span class="pdfImg"></span>
+                                        <p>다운로드</p>
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>고개번호</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>00000000</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>녹취일자</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>2022-11-11</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>고객성향등급</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>지점명</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>영엄본점</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>영업본점</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div>
+                                    <p>상품위험등급</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>1</p>
+                                </div>
+                            </td>
+                            <td>
+                                <div><p>권유자명</p></div>
+                            </td>
+                            <td>
+                                <div>
+                                    <p>테스트</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div><p>상품명</p></div>
+                            </td>
+                            <td colspan="3">
+                                <div><p>DB지수연계더블플러스증권투자신탁SEK-11회[ELS-파생형]A</p></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- 2. 녹취 목록 리스트 -->
+                <div class="rcdListBox">
+                    <h1>2. 녹취 목록</h1>
+                    <div id="rcdListGrid"></div>
+                </div>
+                <!-- 3. 플레이어 -->
+                <div class="playerSection">
+                    <div>
+                        <h1>3. 플레이어</h1>
+                        <p>
+                            [현재 재생 중인 파일: <span>20211003_투자 위험에 대한 설명_051729.mp3</span>]
+                        </p>
+                    </div>
+                    <div class="playerBox">
+                        <p>/*플레이어*/</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

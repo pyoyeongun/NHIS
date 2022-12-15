@@ -14,6 +14,8 @@
     width: $wd;
     height: $ht;
 }
+// 그리드 테두리 변수
+$br-style: 1px solid #D9D9D9;
 
 .containBox {
     @include dp_flex(row, center, normal);
@@ -59,6 +61,7 @@
 
 .boxTitle {
     font-size: 18px;
+    font-weight: bold;
 }
 
 //플레이어
@@ -82,7 +85,7 @@
             >label {
                 @include dp_flex;
                 cursor: pointer;
-
+                
                 >input {
                     display: none;
                 }
@@ -167,10 +170,10 @@
         
         tr {
             height: 36px;
-            border: 1px solid #D9D9D9 !important;
+            border: $br-style!important;
 
             td {
-                border: 1px solid #D9D9D9 !important;
+                border: $br-style !important;
             }
         }
     }
@@ -243,11 +246,11 @@
             margin-left: 8px;
             float: left;
 
-            &:nth-child(1) {
-                @include customBtnStyle;
+            &:nth-child(1) > button {
+                    @include customBtnStyle($wd: auto);
             }
 
-            &:nth-child(2) {
+            &:nth-child(2) > button {
                 @include customBtnStyle;
             }
         }

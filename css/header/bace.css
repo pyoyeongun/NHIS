@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "NanumGothicOTF";
+  font-family: "NanumGothicOTFBold";
   font-style: normal;
   src: url(../../font/NanumBarunGothicBold.otf);
 }
 @font-face {
-  font-family: "Noto Sans KR";
+  font-family: "NanumGothicOTF";
   font-style: normal;
-  src: url(../../font/NotoSansKR-Medium.otf);
+  src: url(../../font/NanumBarunGothic.otf);
 }
 * {
-  font: normal normal bold 16px/18px "NanumGothicOTF";
+  font: normal normal normal 16px/18px "NanumGothicOTF";
 }
 
 body {
@@ -25,16 +25,13 @@ p, ul {
   padding: 0px;
 }
 
-section, div, span {
+section,
+div,
+span {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-
-input {
-  border: 1px solid #D9D9D9;
-  border-radius: 4px;
 }
 
 textarea {
@@ -49,9 +46,131 @@ ul {
 button {
   cursor: pointer;
   border: 0px;
+  padding: 8px 16px;
+  background-color: transparent;
+}
+button > span {
+  margin-right: 2px;
+}
+
+h1 {
+  margin: 0px 0px 5px 0px;
+}
+
+input,
+select {
+  border: 1px solid #B8C0C7;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+
+input[type=submit],
+input[type=checkbox] {
+  cursor: pointer;
+}
+
+select {
+  padding-right: 23px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../../img/pngImg/icon_down_triangle.png) 104% 50% no-repeat;
+  background-size: 29px;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.popBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.popBox .overlay {
+  z-index: 1001;
+  background-color: #000000;
+  opacity: 0.25;
+  width: 100%;
+  height: 100%;
+}
+.popBox .popMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  z-index: 1002;
+  position: absolute;
+}
+.popBox .popMain .popHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  border-radius: 4px 4px 0px 0px;
+  background-color: #101846;
+  color: #ffffff;
+}
+.popBox .popMain .popHeader > p, .popBox .popMain .popHeader > ul {
+  margin-left: 14px;
+}
+.popBox .popMain .popHeader div > button {
+  padding: 0px 8px;
+  margin-right: 8px;
+}
+.popBox .popMain .popHeader div > button:last-child {
+  border-left: 1px solid #ffffff;
+}
+.popBox .popMain .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
-input[type=submit], input[type=checkbox] {
-  cursor: pointer;
+.popBasicBtnStyle1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #ffffff;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  color: #ffffff;
+}
+
+.popBasicBtnStyle2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #30375F;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  color: #ffffff;
 }/*# sourceMappingURL=bace.css.map */

@@ -41,6 +41,7 @@
 
 .boxTitle {
   font-size: 18px;
+  font-weight: bold;
 }
 
 .rcdPlayer {
@@ -238,7 +239,7 @@
   margin-left: 8px;
   float: left;
 }
-.prdScriptHeader ul li:nth-child(1) {
+.prdScriptHeader ul li:nth-child(1) > button {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -247,10 +248,10 @@
   border: 1px solid;
   border-color: #353535;
   border-radius: 4px;
-  width: 90px;
+  width: auto;
   height: 28px;
 }
-.prdScriptHeader ul li:nth-child(2) {
+.prdScriptHeader ul li:nth-child(2) > button {
   display: flex;
   flex-direction: row;
   justify-content: center;

@@ -1,0 +1,122 @@
+.sptSel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sptSel > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 14px;
+  width: 96%;
+  height: 30px;
+  padding: 14px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1215686275);
+}
+.sptSel > div > form {
+  border-radius: 4px;
+}
+.sptSel > div > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  border-right: 1px solid #B8C0C7;
+  margin: 0px 0px 12px 12px;
+  float: left;
+}
+.sptSel > div > form > div > p {
+  margin-right: 8px;
+}
+.sptSel > div > form > div > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 100px;
+  width: auto;
+  height: 30px;
+}
+.sptSel > div > form > div:last-child {
+  border: 0px;
+}
+.sptSel > div > form input {
+  width: 240px;
+  height: 30px;
+  margin-right: 8px;
+}
+.sptSel > div > form select {
+  width: 120px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.sptListGrid {
+  margin-top: 16px;
+  height: 846px;
+  width: 100%;
+}
+.sptListGrid table {
+  overflow: scroll !important;
+  border-collapse: collapse;
+  width: 100% !important;
+  position: absolute !important;
+  top: -1px;
+  left: 1px;
+}
+.sptListGrid table tbody tr {
+  height: 36px;
+}
+.sptListGrid table tbody tr td {
+  border: 1px solid #B8C0C7 !important;
+}
+.sptListGrid .gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 97.3% !important;
+  height: 78% !important;
+  position: absolute;
+}
+.sptListGrid .gridbox .xhdr {
+  width: 100% !important;
+  height: 36px !important;
+}
+.sptListGrid .gridbox .xhdr table {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.sptListGrid .gridbox .xhdr table tbody tr:nth-child(2) td {
+  background-color: #C9E9E6 !important;
+  color: #0F0F0F;
+}
+.sptListGrid .gridbox .objbox {
+  width: 100% !important;
+  height: 810px !important;
+}
+.sptListGrid .gridbox .objbox::-webkit-scrollbar {
+  position: absolute;
+  width: 3px !important;
+}
+.sptListGrid .gridbox .objbox::-webkit-scrollbar-thumb {
+  width: 3px !important;
+  background-color: #D9D9D9;
+}
+.sptListGrid .gridbox .objbox::-webkit-scrollbar-track {
+  width: 3px !important;
+}
+.sptListGrid button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}/*# sourceMappingURL=scriptSel.css.map */

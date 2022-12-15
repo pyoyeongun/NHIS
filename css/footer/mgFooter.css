@@ -1,0 +1,65 @@
+.footerBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #ffffff;
+}
+.footerBox p {
+  font-size: 14px;
+}
+.footerBox > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footerBox > div > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+}
+.footerBox > div:first-child {
+  margin-left: 20px;
+}
+.footerBox > div > select {
+  width: 100px;
+  height: 30px;
+  font-size: 14px;
+}
+.footerBox > div > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+}
+.footerBox > ul {
+  height: 30px;
+}
+.footerBox > ul > li {
+  height: 100%;
+  float: left;
+  cursor: pointer;
+}
+.footerBox > ul > li:nth-child(3) {
+  height: 100%;
+  margin: 0px 10px;
+  color: #D9D9D9;
+}
+.footerBox > ul > li > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 100%;
+  float: left;
+}
+
+.currentMovePage {
+  color: #0f0f0f;
+}/*# sourceMappingURL=mgFooter.css.map */

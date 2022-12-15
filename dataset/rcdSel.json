@@ -1,0 +1,538 @@
+{
+    "head": [
+        {
+            "id": "number",
+            "width": "60",
+            "type": "ro",
+            "align": "center",
+            "value": "No"
+        },
+        {
+            "id": "isCheck",
+            "width": "44",
+            "type": "ro",
+            "align": "center",
+            "value": "<input type='checkbox' onchange='selectAll(this)'>"
+        },
+        {
+            "id": "recStartTime",
+            "width": "180",
+            "type": "ro",
+            "align": "center",
+            "value": "녹취시작시간"
+        },
+        {
+            "id": "recTime",
+            "width": "109",
+            "type": "ro",
+            "align": "center",
+            "value": "녹취시간"
+        },
+        {
+            "id": "memberName",
+            "width": "106",
+            "type": "ro",
+            "align": "center",
+            "value": "고객성명"
+        },
+        {
+            "id": "prdDvs",
+            "width": "185",
+            "type": "ro",
+            "align": "center",
+            "value": "상 품구분"
+        },
+        {
+            "id": "dvs",
+            "width": "60",
+            "type": "ro",
+            "align": "center",
+            "value": "구분"
+        },
+        {
+            "id": "accNum",
+            "width": "179",
+            "type": "ro",
+            "align": "center",
+            "value": "계좌번호"
+        },
+        {
+            "id": "file",
+            "width": "79",
+            "type": "ro",
+            "align": "center",
+            "value": "파일"
+        },
+        {
+            "id": "rcdStaff",
+            "width": "128",
+            "type": "ro",
+            "align": "center",
+            "value": "녹취직원"
+        },
+        {
+            "id": "saleStaff",
+            "width": "127",
+            "type": "ro",
+            "align": "center",
+            "value": "판매직원"
+        },
+        {
+            "id": "busiBranch",
+            "width": "107",
+            "type": "ro",
+            "align": "center",
+            "value": "영업점"
+        },
+        {
+            "id": "rcdMethod",
+            "width": "105",
+            "type": "ro",
+            "align": "center",
+            "value": "녹취방식"
+        },
+        {
+            "id": "serialNum",
+            "width": "134",
+            "type": "ro",
+            "align": "center",
+            "value": "일련번호"
+        },
+        {
+            "id": "number",
+            "width": "131",
+            "type": "ro",
+            "align": "center",
+            "value": "수관"
+        },
+        {
+            "id": "authltDown",
+            "width": "132",
+            "type": "ro",
+            "align": "center",
+            "value": "결재/청취/다운"
+        }
+    ],
+    "rows": [
+        {
+            "id": "101",
+            "data": [
+                "1",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "102",
+            "data": [
+                "2",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "103",
+            "data": [
+                "3",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "104",
+            "data": [
+                "4",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "105",
+            "data": [
+                "5",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='addDvs'>추가</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button><span class='downloadImg'></span><p>다운로드</p></button>"
+            ]
+        },
+        {
+            "id": "106",
+            "data": [
+                "6",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button><span class='downloadImg'></span><p>다운로드</p></button>"
+            ]
+        },
+        {
+            "id": "107",
+            "data": [
+                "7",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button><span class='downloadImg'></span><p>다운로드</p></button>"
+            ]
+        },
+        {
+            "id": "108",
+            "data": [
+                "8",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button><span class='downloadImg'></span><p>다운로드</p></button>"
+            ]
+        },
+        {
+            "id": "109",
+            "data": [
+                "9",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='addDvs'>추가</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button><span class='documentImg'></span><p>결재요청</p></button>"
+            ]
+        },
+        {
+            "id": "110",
+            "data": [
+                "10",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "111",
+            "data": [
+                "11",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "112",
+            "data": [
+                "12",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "113",
+            "data": [
+                "13",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "114",
+            "data": [
+                "14",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "115",
+            "data": [
+                "15",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "116",
+            "data": [
+                "16",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button><span class='documentImg'></span><p>결재요청</p></button>"
+            ]
+        },
+        {
+            "id": "117",
+            "data": [
+                "17",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button><span class='documentImg'></span><p>결재요청</p></button>"
+            ]
+        },
+        {
+            "id": "118",
+            "data": [
+                "18",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "119",
+            "data": [
+                "19",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        },
+        {
+            "id": "120",
+            "data": [
+                "20",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "21-05-10 / 18:46:59",
+                "00:02:33",
+                "강감찬",
+                "ELS/DLS특정금전신탁",
+                "<span class='regDvs'>일반</span>",
+                "0000-0000-0000-00",
+                "1",
+                "홍길동(과장)",
+                "홍길동(과장)",
+                "서울 본점",
+                "TTS",
+                "1620639683",
+                "수관입니다.",
+                "<button type='button' onclick='listenPopup()'><span class='headsetImg'></span><p>바로청취</p></button>"
+            ]
+        }
+    ]
+}

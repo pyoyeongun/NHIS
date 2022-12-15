@@ -1,0 +1,156 @@
+<!-- 
+    파일명: scriptSel.html
+    파일내용: 스크립트 조회 페이지
+    작성일: 22.12.15
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 조회</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../css/footer/mgFooter.css"> <!-- footer css-->
+    <link rel="stylesheet" type="text/css" href="../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../css/body/management/scriptSel.css"> <!--스크립트 조회 css-->
+    <!-- 기본 javascript -->
+    <script src="../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../js/scriptSel.js"></script><!--스크립트 조회 js파일-->
+
+</head>
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+            <span class="logoTitleFaceRdImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+    <!-- 네비게이션 탭바 -->
+    <nav class="navBox">
+        <a href="../page/rcdMg.html">녹취관리</a>
+        <a class="currentPage" href="../page/scriptSel.html">스크립트 조회</a>
+        <a href="">다운로드 이력</a>
+        <a href="">시스템 관리</a>
+    </nav>
+    <!-- 스크립트 검색기 -->
+    <section class="sptSel">
+        <div>
+            <form>
+                <div>
+                    <p>상품 유형</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="상품유형1">상품유형1</option>
+                        <option value="상품유형2">상품유형2</option>
+                        <option value="상품유형3">상품유형3</option>
+                    </select>
+                </div>
+                <div>
+                    <p>검색 유형</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="검색유형1">검색유형1</option>
+                        <option value="검색유형2">검색유형2</option>
+                        <option value="검색유형3">검색유형3</option>
+                    </select>
+                </div>
+                <div>
+                    <p>판매 상태</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="판매상태1">판매상태1</option>
+                        <option value="판매상태2">판매상태2</option>
+                        <option value="판매상태3">판매상태3</option>
+                    </select>
+                </div>
+                <div>
+                    <p>스크립트 유무</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="스크립트 유무1">스크립트 유무1</option>
+                        <option value="스크립트 유무2">스크립트 유무2</option>
+                        <option value="스크립트 유무3">스크립트 유무3</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" placeholder="입력하세요.">
+                    <button>
+                        <span class="magnifierBlackImg"></span>
+                        <p>조회</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 스크립트 조회 리스트 Grid -->
+    <section class="sptListGrid">
+        <div id="sptList"></div>
+    </section>
+    <!-- footer -->
+    <footer class="footerBox">
+        <div>
+            <p>
+                전체건수<span class="blueText">503</span>건
+            </p>
+            <select>
+                <option value="50" selected>50행</option>
+                <option value="100">100행</option>
+                <option value="200">200행</option>
+            </select>
+        </div>
+        <ul>
+            <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
+            <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
+            <li>
+                <span class="pageNum currentMovePage" onchange="curentPage()"><p>1</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>2</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>3</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>4</p></span>
+            </li>
+            <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
+            <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
+        </ul>
+        <div>
+            <button>
+                <span class="downloadImg"></span>
+                <p>엑셀</p>
+            </button>
+            <button>
+                <span class="downloadImg"></span>
+                <p>현장 재녹취 이력</p>
+            </button>
+            <button>
+                <span class="downloadImg"></span>
+                <p>ADW 이력</p>
+            </button>
+            <button>
+                <span class="downloadImg"></span>
+                <p>선택파일</p>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

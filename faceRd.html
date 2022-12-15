@@ -1,3 +1,12 @@
+<!-- 
+    파일명: faceRd.html
+    파일내용: 대면녹취 페이지
+    작성일: 22.12.12
+    작성자: 표영운
+    수정일: 22.12.14
+    수정자: 표영운
+    수정내용: 운용상품 안내 스크립트 관련 수정 
+ -->
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -13,7 +22,8 @@
     <link rel="stylesheet" type="text/css" href="./dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
     <script src="./dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
     <script src="./js/jquery-3.6.1.min.js"></script> <!--jquery-->
-    <script src="./js/faceRd.js"></script>
+    <script src="./js/playSpeed.js"></script> <!--플레이어 배속 js-->
+    <script src="./js/faceRd.js"></script>  <!--대면녹취 js 파일-->
 </head>
 
 <body>
@@ -41,22 +51,22 @@
                 <ul>
                     <li>
                         <label>
-                            <span class="checkboxOffBtn" name="TTS"></span>
-                            <input type="checkbox" value="TTS" onchange="changeCheckBox(this)">
+                            <span class="checkboxCircleOffBtn" name="TTS"></span>
+                            <input type="checkbox" readonly value="TTS" onchange="changeCheckBox(this)">
                             <p>TTS</p>
                         </label>
                     </li>
                     <li>
                         <label>
-                            <span class="checkboxOffBtn" name="TTV"></span>
-                            <input type="checkbox" value="TTV" onchange="changeCheckBox(this)">
+                            <span class="checkboxCircleOffBtn" name="TTV"></span>
+                            <input type="checkbox" readonly value="TTV" onchange="changeCheckBox(this)">
                             <p>TTV</p>
                         </label>
                     </li>
                     <li>
                         <label>
-                            <span class="checkboxOffBtn" name="육성"></span>
-                            <input type="checkbox" value="육성" onchange="changeCheckBox(this)">
+                            <span class="checkboxCircleOffBtn" name="육성"></span>
+                            <input type="checkbox" readonly value="육성" onchange="changeCheckBox(this)">
                             <p>육성</p>
                         </label>
                     </li>
@@ -118,10 +128,14 @@
                 <p class="boxTitle">투자 위협에 대한 설명</p>
                 <ul>
                     <li>
-                        <button type="button">녹취완료</button>
+                        <button type="button">
+                            <p>녹취완료</p>
+                        </button>
                     </li>
                     <li>
-                        <button type="button">다음</button>
+                        <button type="button">
+                            <p>다음</p>
+                        </button>
                     </li>
                     <li class="textSizeImg"></li>
                     <li>

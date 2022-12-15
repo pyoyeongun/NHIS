@@ -1,0 +1,611 @@
+{
+    "head": [
+        {
+            "id": "number",
+            "width": "60",
+            "type": "ro",
+            "align": "center",
+            "value": "No"
+        },
+        {
+            "id": "saleStatus",
+            "width": "93",
+            "type": "ro",
+            "align": "center",
+            "value": "판매상태"
+        },
+        {
+            "id": "prdType",
+            "width": "94",
+            "type": "ro",
+            "align": "center",
+            "value": "상품유형"
+        },
+        {
+            "id": "prdName",
+            "width": "376",
+            "type": "ro",
+            "align": "center",
+            "value": "상품명"
+        },
+        {
+            "id": "isGroup",
+            "width": "93",
+            "type": "ro",
+            "align": "center",
+            "value": "그룹유무"
+        },
+        {
+            "id": "groupCode",
+            "width": "93",
+            "type": "ro",
+            "align": "center",
+            "value": "그룹코드"
+        },
+        {
+            "id": "prdCode",
+            "width": "154",
+            "type": "ro",
+            "align": "center",
+            "value": "상품코드"
+        },
+        {
+            "id": "isScript",
+            "width": "121",
+            "type": "ro",
+            "align": "center",
+            "value": "스크립트 유무"
+        },
+        {
+            "id": "applyDate",
+            "width": "115",
+            "type": "ro",
+            "align": "center",
+            "value": "적용일"
+        },
+        {
+            "id": "planChDate",
+            "width": "116",
+            "type": "ro",
+            "align": "center",
+            "value": "변경예정일"
+        },
+        {
+            "id": "finalMdDate",
+            "width": "115",
+            "type": "ro",
+            "align": "center",
+            "value": "최종수정일"
+        },
+        {
+            "id": "finalMder",
+            "width": "109",
+            "type": "ro",
+            "align": "center",
+            "value": "최종 수정자"
+        },
+        {
+            "id": "auther",
+            "width": "85",
+            "type": "ro",
+            "align": "center",
+            "value": "결제자"
+        },
+        {
+            "id": "changeListShow",
+            "width": "120",
+            "type": "ro",
+            "align": "center",
+            "value": "변경이력보기"
+        },
+        {
+            "id": "tansRcd",
+            "width": "122",
+            "type": "ro",
+            "align": "center",
+            "value": "수동녹취 전환"
+        }
+    ],
+    "rows": [
+        {
+            "id": "201",
+            "data": [
+                "1",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "202",
+            "data": [
+                "2",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "203",
+            "data": [
+                "3",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "204",
+            "data": [
+                "4",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "205",
+            "data": [
+                "5",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "206",
+            "data": [
+                "6",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "207",
+            "data": [
+                "7",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "208",
+            "data": [
+                "8",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "209",
+            "data": [
+                "9",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "210",
+            "data": [
+                "10",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "211",
+            "data": [
+                "11",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "212",
+            "data": [
+                "12",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "213",
+            "data": [
+                "13",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "214",
+            "data": [
+                "14",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "215",
+            "data": [
+                "15",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "216",
+            "data": [
+                "16",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "217",
+            "data": [
+                "17",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "218",
+            "data": [
+                "18",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "219",
+            "data": [
+                "19",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "220",
+            "data": [
+                "20",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "221",
+            "data": [
+                "21",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "222",
+            "data": [
+                "22",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "223",
+            "data": [
+                "23",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "224",
+            "data": [
+                "24",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        },
+        {
+            "id": "225",
+            "data": [
+                "25",
+                "판매",
+                "신탁",
+                "(무)보너스주는변액저축보험V1(계약유지선택_일시납1형)",
+                "N",
+                "-",
+                "T9706171021012",
+                "등록",
+                "2022-09-20",
+                "2022-09-20",
+                "2022-09-20",
+                "Admin",
+                "Admin",
+                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button'><span class='transformImg'></span></button>"
+            ]
+        }
+    ]
+}

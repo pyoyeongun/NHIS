@@ -1,0 +1,168 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    @include dp_flex;
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+$br-style: 1px solid #B8C0C7;
+
+.popMain {
+    width: 1200px;
+    height: 642px;
+}
+
+.popBody {
+    h1 {
+        width: 100%;
+    }
+}
+// 1. 고객정보
+.clientInfo {
+    @include dp_flex(column, flex-start);
+    width: 98%;
+    height: 213px;
+    margin-top: 14px;
+
+    > table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: scroll !important;
+
+
+        
+        tr {
+            height: 36px;
+            border: $br-style;
+            
+            td {
+                border: $br-style;
+
+                &:nth-child(1) {
+                    background-color: #EAEAEA;
+                    width: 100px;
+                } 
+                &:nth-child(2) {
+                    width: 451px; 
+                }
+                &:nth-child(3) {
+                    background-color: #EAEAEA;
+                    width: 180px; 
+                }
+                &:nth-child(4) {
+                    width: 449px; 
+                    
+                }
+                
+                > div {
+                    @include dp_flex($jt_content: flex-start);
+                    padding-left: 10px;
+
+                    button {
+                        @include customBtnStyle(4px, auto, 26px);
+                    }
+                }
+            }
+        }
+    }
+}
+// 2. 녹취 목록
+.rcdListBox {
+    @include dp_flex(column, flex-start);
+    width: 98%;
+    height: 237px;
+    margin-top: 15px;
+
+    table {
+        border-collapse: collapse;
+
+        tr {
+            td {
+                border: $br-style !important;
+            }
+        }
+    }
+
+    > div {
+        @include dp_flex;
+        width: 1168px !important;
+    }
+
+    .gridbox {
+        @include dp_flex(column);
+        height: 199px !important;
+
+        .xhdr {
+            height: 36px !important;
+    
+            table {
+                margin: 0px !important;
+                padding: 0px !important ;
+                
+                tr:nth-child(2) td {
+                    background-color: #C9E9E6 !important;
+                    color: #0f0f0f;
+                }
+            }
+        }
+    }
+    
+    .objbox {
+        height: 180px !important;
+        overflow: scroll;
+        
+        table {
+            position: absolute !important;
+            top: -1px;
+        }
+        
+        &::-webkit-scrollbar {
+            position: absolute;
+            width: 3px;
+
+            &-thumb {
+                width: 3px;
+                background-color: #D9D9D9;
+            }
+            &-track {
+                width: 3px; 
+            }
+        }
+    }
+}
+
+// 3. 플레이어
+.playerSection {
+    @include dp_flex(column);
+    width: 98%;
+    height: 91px;
+
+    > div {
+        @include dp_flex($jt_content: flex-start);
+        width: 100%;
+        
+        > h1 {
+            @include dp_flex;
+            width: auto;
+            margin: 0px;
+
+        }
+        > p {
+            @include dp_flex;
+            width: auto;
+        }
+    }
+
+    .playerBox {
+        @include dp_flex;
+        @include customBtnStyle(4px, 100%, 70px, #B8C0C7)
+    }
+}
