@@ -204,6 +204,13 @@
   background-size: 30px;
 }
 
+.textSizeImg {
+  background: transparent url(../img/pngImg/icon_text_size.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
 .leftArrGrayImg {
   background: transparent url(../img/pngImg/icon_left_arrow_gray.png) 0% 0% no-repeat padding-box;
   width: 30px;

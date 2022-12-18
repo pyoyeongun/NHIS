@@ -178,7 +178,12 @@
   background: transparent url(../img/pngImg/icon_start_arrow_black.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(30px, 30px, 30px);
 }
+// 텍스트 사이즈 변경 "T" 이미지
+.textSizeImg{
+  background: transparent url(../img/pngImg/icon_text_size.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(30px, 30px, 30px);
 
+}
 // 왼쪽 페이지로 화살표 이미지
 .leftArrGrayImg {
   background: transparent url(../img/pngImg/icon_left_arrow_gray.png) 0% 0% no-repeat padding-box;
