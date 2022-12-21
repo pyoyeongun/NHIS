@@ -8,7 +8,3 @@ dhtmlxEvent(window, "load", () => {
     popGrid.init();
     popGrid.load("../dataset/pop/rcdListPop.json", "json");
 });
-
-function listenPopdown() {
-    document.getElementById("listenPop").style.display = "none";
-}

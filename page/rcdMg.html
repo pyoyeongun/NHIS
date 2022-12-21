@@ -3,9 +3,9 @@
     파일내용: 녹취관리 페이지
     작성일: 22.12.14
     작성자: 표영운
-    수정일: 22.12.15
+    수정일: 22.12.21
     수정자: 표영운
-    수정내용: 주석 추가 및 page 링크 추가
+    수정내용: 청취 요청 팝업 추가
  -->
 <!DOCTYPE html>
 <html lang="ko">
@@ -15,28 +15,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>녹취관리</title>
+    <!-- 기본 css -->
     <link rel="stylesheet" type="text/css" href="../css/header/bace.css"> <!--베이스 css-->
     <link rel="stylesheet" type="text/css" href="../img/allImage.css"> <!--모든 이미지 css-->
     <link rel="stylesheet" type="text/css" href="../css/header/nhHeader.css"> <!--헤더 css-->
     <link rel="stylesheet" type="text/css" href="../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
     <link rel="stylesheet" type="text/css" href="../css/footer/mgFooter.css"> <!-- footer css-->
-    <link rel="stylesheet" type="text/css" href="../css/body/management/rcdMg.css"> <!--녹취관리 css-->
     <link rel="stylesheet" type="text/css" href="../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../css/body/management/rcdMg.css"> <!--녹취관리 css-->
+    <!-- 기본 javascript -->
     <script src="../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
     <script src="../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
     <script src="../js/playSpeed.js"></script> <!--플레이어 배속 js-->
     <script src="../js/pageChange.js"></script> <!--페이지 변경 js-->
     <script src="../js/isCheckbox.js"></script> <!--체크박스 관련 js-->
     <script src="../js/rcdMg.js"></script><!--녹취관리 js파일-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenPop.css"> <!--청취 pop-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenRqPop.css"> <!--청취 요청 pop-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/rcdFileDlPop.css"> <!--녹취 파일 다운로드 신청서 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../js/pop/rcdListPop.js"></script> <!--청취 팝업 js-->
+    <script src="../js/pop/popDown.js"></script> <!--팝업 닫기-->
 </head>
 
 <body onload="selectLine()">
     <!-- header -->
     <header class="headerBox">
         <div>
-            <span class="nhLogoHeaderImg"></span>
+            <span class="nhLogoBackImg"></span>
             <span class="logoTitleAlramImg"></span>
-            <span class="logoTitleFaceRdImg"></span>
         </div>
         <div>
             <span>관리자 홍길동님</span>
@@ -50,8 +60,8 @@
     <nav class="navBox">
         <a class="currentPage" href="../page/rcdMg.html">녹취관리</a>
         <a href="../page/scriptSel.html">스크립트 조회</a>
-        <a href="">다운로드 이력</a>
-        <a href="">시스템 관리</a>
+        <a href="../page/downloadList.html">다운로드 이력</a>
+        <a href="../page/system/accessAuthList.html">시스템 관리</a>
     </nav>
 
     <section class="searchCdt">
@@ -135,8 +145,8 @@
     <section class="guideText">
         <div>
             <p class="blueText">
-                ※ 본 화면의 녹취 목록은 "최초녹취일" 기준으로 보여지며, 
-                청취파일은 "최종녹취파일"로 재생됩니다. 
+                ※ 본 화면의 녹취 목록은 "최초녹취일" 기준으로 보여지며,
+                청취파일은 "최종녹취파일"로 재생됩니다.
                 [ 상세보기 ] 버튼 클릭시 최초~최종 녹취파일 전체 청취 가능</p>
             <p class="blueText">
                 ※ 청취하고자 하는 대상을 더블클릭하시면, 청취 화면이 열립니다.
@@ -169,10 +179,18 @@
             <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
             <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
             <li>
-                <span class="pageNum currentMovePage" onchange="curentPage()"><p>1</p></span>
-                <span class="pageNum" onchange="curentPage()"><p>2</p></span>
-                <span class="pageNum" onchange="curentPage()"><p>3</p></span>
-                <span class="pageNum" onchange="curentPage()"><p>4</p></span>
+                <span class="pageNum currentMovePage" onchange="curentPage()">
+                    <p>1</p>
+                </span>
+                <span class="pageNum" onchange="curentPage()">
+                    <p>2</p>
+                </span>
+                <span class="pageNum" onchange="curentPage()">
+                    <p>3</p>
+                </span>
+                <span class="pageNum" onchange="curentPage()">
+                    <p>4</p>
+                </span>
             </li>
             <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
             <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
@@ -197,11 +215,51 @@
         </div>
     </footer>
 
-    <!-- 팝업 css -->
-    <link rel="stylesheet" type="text/css" href="../css/body/pop/listenPop.css"> <!--청취 pop-->
-    <!-- 팝업 javascript -->
-    <script src="../js/pop/rcdListPop.js"></script> <!--청취 팝업 js-->
-
+    <!-- 청취 팝업 -->
+    <section class="popBox" id="listenRqPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>청취 요청</p>
+                <div>
+                    <button class="popBasicBtnStyle1" onclick="listenPopup()">
+                        <p>결재 상신</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="listenRqPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <form>
+                    <div class="reasonSelect">
+                        <h1>1. 사유</h1>
+                        <select>
+                            <option value="" selected disabled hidden>내용 확인</option>
+                            <option value="사유1">사유1</option>
+                            <option value="사유2">사유2</option>
+                            <option value="사유3">사유3</option>
+                            <option value="직접입력">==직접입력==</option>
+                        </select>
+                    </div>
+                    <div class="reasonDirect">
+                        <h1>2. 사유(직접입력)</h1>
+                        <textarea></textarea>
+                    </div>
+                    <div>
+                        <h1>3. 신청 직원명</h1>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h1>4. 영업점</h1>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="isInput">
+                        <label for="isInput">청취 요청 사유를 적확히 입력하셨습니까?</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- 청취 팝업 -->
     <section class="popBox" id="listenPop" style="display: none;">
         <div class="overlay"></div>
@@ -209,8 +267,12 @@
             <div class="popHeader">
                 <p>청취</p>
                 <div>
-                    <button class="popBasicBtnStyle1"><p>추가녹취</p></button>
-                    <button class="popBasicBtnStyle1"><p>재녹취</p></button>
+                    <button class="popBasicBtnStyle1">
+                        <p>추가녹취</p>
+                    </button>
+                    <button class="popBasicBtnStyle1">
+                        <p>재녹취</p>
+                    </button>
                     <button><span class="cancelWhiteImg" onclick="listenPopdown()"></span></button>
                 </div>
             </div>
@@ -231,7 +293,9 @@
                                 </div>
                             </td>
                             <td>
-                                <div><p>녹취일에 사용된 스크립트</p></div>
+                                <div>
+                                    <p>녹취일에 사용된 스크립트</p>
+                                </div>
                             </td>
                             <td>
                                 <div>
@@ -254,7 +318,9 @@
                                 </div>
                             </td>
                             <td>
-                                <div><p>녹취일자</p></div>
+                                <div>
+                                    <p>녹취일자</p>
+                                </div>
                             </td>
                             <td>
                                 <div>
@@ -274,7 +340,9 @@
                                 </div>
                             </td>
                             <td>
-                                <div><p>영엄본점</p></div>
+                                <div>
+                                    <p>영엄본점</p>
+                                </div>
                             </td>
                             <td>
                                 <div>
@@ -294,7 +362,9 @@
                                 </div>
                             </td>
                             <td>
-                                <div><p>권유자명</p></div>
+                                <div>
+                                    <p>권유자명</p>
+                                </div>
                             </td>
                             <td>
                                 <div>
@@ -304,10 +374,14 @@
                         </tr>
                         <tr>
                             <td>
-                                <div><p>상품명</p></div>
+                                <div>
+                                    <p>상품명</p>
+                                </div>
                             </td>
                             <td colspan="3">
-                                <div><p>DB지수연계더블플러스증권투자신탁SEK-11회[ELS-파생형]A</p></div>
+                                <div>
+                                    <p>DB지수연계더블플러스증권투자신탁SEK-11회[ELS-파생형]A</p>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -332,6 +406,64 @@
             </div>
         </div>
     </section>
+    <!-- 녹취 파일 다운로드 신청서 팝업 -->
+    <section class="popBox" id="rcdFileDlPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>녹취 파일 다운로드 신청서</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>다운로드</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="rcdFileDlPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <form>
+                    <div class="reasonSelect">
+                        <h1>1. 사유</h1>
+                        <select>
+                            <option value="" selected disabled hidden>내용 확인</option>
+                            <option value="사유1">사유1</option>
+                            <option value="사유2">사유2</option>
+                            <option value="사유3">사유3</option>
+                            <option value="직접입력">==직접입력==</option>
+                        </select>
+                    </div>
+                    <div class="reasonDirect">
+                        <div>
+                            <h1>2. 신청인(고객)</h1>
+                            <p class="blueText">※ 고객 교부시 반드시 '자료열람요구서'를 먼저 징구하신 후 다운로드 하시기 바랍니다.</p>
+                        </div>
+                        <textarea placeholder="(직접입력/최대 200자)"></textarea>
+                    </div>
+                    <div>
+                        <div>
+                            <h1>3. 신청 직원명</h1>
+                            <p class="blueText">※ [자료 열림 요구서]상의 신청인명을 기재하시기 바랍니다.</p>
+                        </div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h1>4. 신청 부점</h1>
+                        <input type="text">
+                    </div>
+                    <div class="setPwd">
+                        <div>
+                            <h1>5. 비밀전호 설정</h1>
+                            <p class="redText">※ 비밀번호가 일치하지 않습니다.</p>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="비밀번호">
+                            <input type="password" placeholder="비밀번호 재확인">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- 청취/다운로드 요청 결재목록 -->
 </body>
 
 </html>

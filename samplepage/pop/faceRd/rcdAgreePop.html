@@ -1,0 +1,82 @@
+<!-- 
+    파일명: rcdAgreePop.html
+    파일내용: 녹취 동의서 팝업 (샘플)
+    작성일: 22.12.19
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분석 결과 팝업(샘플)</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/faceRd/faceRd.css"> <!--대면녹취 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/playSpeed.js"></script> <!--플레이어 배속 js-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/faceRd/faceRdPopStyle1.css"> <!--분석결과 팝업 css-->
+    <!-- 팝업 js -->
+    <script src="../../js/pop/popDown.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+            <span class="logoTitleFaceRdImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+
+    <!-- 녹취 동의서 팝업 -->
+    <section class="popBox" id="rcdAgreePop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>녹취 동의서</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>동의</p>
+                    </button>
+                    <button class="popBasicBtnStyle2">
+                        <p>미동의</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="rcdAgreePopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <p>
+                    본 녹취의 진행을 위해 고객님의 녹취 동의 여부를 확인해주세요.
+                </p>
+                <p style="width: 95%">
+                    <span class="warningImg"></span>
+                    고객 미동의 시 상품 판매 녹취 종료
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

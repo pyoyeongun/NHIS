@@ -1,0 +1,631 @@
+{
+    "head": [
+        {
+            "id": "prCode",
+            "type": "ro",
+            "align": "center",
+            "width": "158 ",
+            "value": "<select name='prCode'><option value='' selected disabled hidden>프로그램 코드</option><option value='P10042'>P10042</option></select>"
+        },
+        {
+            "id": "auth",
+            "type": "ro",
+            "align": "center",
+            "width": "157",
+            "value": "<select name='auth'><option value='' selected disabled hidden>권한</option><option value='상품부서 외 본사123'>상품부서 외 본123</select>"
+        },
+        {
+            "id": "prSource",
+            "type": "ro",
+            "align": "center",
+            "width": "116",
+            "value": "프로그램 소스"
+        },
+        {
+            "id": " prName",
+            "type": "ro",
+            "align": "center",
+            "width": "113",
+            "value": "프로그램 이름"
+        },
+        {
+            "id": " roAuth",
+            "type": "ro",
+            "align": "center",
+            "width": "91",
+            "value": "읽기 권한"
+        },
+        {
+            "id": "wrAuth",
+            "type": "ro",
+            "align": "center",
+            "width": "91",
+            "value": "쓰기 권한"
+        },
+        {
+            "id": "mdAuth",
+            "type": "ro",
+            "align": "center",
+            "width": "91",
+            "value": "수정 권한"
+        },
+        {
+            "id": "delAuth",
+            "type": "ro",
+            "align": "center",
+            "width": "90",
+            "value": "삭제 권한"
+        },
+        {
+            "id": "ltAuth",
+            "type": "ro",
+            "align": "center",
+            "width": "91",
+            "value": "듣기 권한"
+        },
+        {
+            "id": "dlAuth",
+            "type": "ro",
+            "align": "center",
+            "width": "117",
+            "value": "다운로드 권한"
+        },
+        {
+            "id": "exelTrans",
+            "type": "ro",
+            "align": "center",
+            "width": "91",
+            "value": "엑셀 권한"
+        },
+        {
+            "id": "listLocation",
+            "type": "ro",
+            "align": "center",
+            "width": "157",
+            "value": "리스트 위치"
+        },
+        {
+            "id": "path",
+            "type": "ro",
+            "align": "center",
+            "width": "120",
+            "value": "경로"
+        },
+        {
+            "id": "viewLevel",
+            "type": "ro",
+            "align": "center",
+            "width": "91",
+            "value": "표시 레벨"
+        },
+        {
+            "id": "viewOder",
+            "type": "ro",
+            "align": "center",
+            "width": "92",
+            "value": "표시 순서"
+        }
+    ],
+    "rows": [
+        {
+            "id": "401",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "402",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "403",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "404",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "405",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "406",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "407",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "408",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "409",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "410",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "411",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "412",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "413",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "414",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "415",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "416",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "417",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "418",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "419",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "420",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "421",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "422",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "423",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "424",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "425",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        },
+        {
+            "id": "426",
+            "data": [
+                "P10042",
+                "상품부서 외 본시123",
+                "approveList",
+                "청취 및 다운로드",
+                "<input type='checkbox' name='roAuth'>",
+                "<input type='checkbox' name='wrAuth'>",
+                "<input type='checkbox' name='mdAuth'>",
+                "<input type='checkbox' name='delAuth'>",
+                "<input type='checkbox' name='liAuth'>",
+                "<input type='checkbox' name='dlAuth'>",
+                "<input type='checkbox' name='exelAuth'>",
+                "<select name='listLocation'><option value=''>선택하세요.</option></select>",
+                "/approveList",
+                "0",
+                "5"
+            ]
+        }
+    ]
+}

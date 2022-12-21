@@ -1,0 +1,58 @@
+<!-- 
+    파일명: accessAuthList.html
+    파일내용: 접근권한 설정 목록 페이지
+    작성일: 22.12.19
+    작성자: 표영운
+    수정일: acc
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>접속권한리스트</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 시스탬 관리 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/system/accessAuthList.css"> <!--접근권한 리스트 css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../../js/system/accessAuthList.js"></script> <!--접근권한 리스트 js-->
+</head>
+
+<body>
+    <div class="sideBox">
+        <section class="sideMenu">
+            <div class="menuList">
+                <a class="currentMenu" href="../../page/system/accessAuthList.html">접근 권한 리스트</a>
+                <a href="">사용자 관리</a>
+                <a href="">그룹(부서) 관리</a>
+                <a href="">권한 관리</a>
+                <a href="">조회 조건/항목 관리</a>
+                <a href="">상품 정보 관리</a>
+                <a href="">시스템 코드 관리</a>
+            </div>
+            <div class="sideWaveBgImg"></div>
+        </section>
+        
+        <div class="bodyBox">
+            <!-- 접근권한 리스트 -->
+            <secrion class="accAuthListGrid">
+                <div id="accAuthList"></div>
+            </secrion>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+#listenRqPop > .popMain {
+  width: 800px;
+  height: 408px;
+}
+#listenRqPop > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 96%;
+  height: 100%;
+}
+#listenRqPop textarea {
+  width: 764px;
+  height: 80px;
+  color: #0f0f0f;
+}
+#listenRqPop select {
+  width: 773px;
+  height: 30px;
+  color: #0f0f0f;
+}
+#listenRqPop input {
+  width: 764px;
+  height: 26px;
+  color: #0f0f0f;
+}
+#listenRqPop .popBody div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 14px;
+}
+#listenRqPop .popBody div h1 {
+  width: 100%;
+  color: #161616;
+  height: 16px;
+}
+#listenRqPop .popBody div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#listenRqPop .popBody div:last-child input {
+  width: 16px;
+  height: 16px;
+}/*# sourceMappingURL=listenRqPop.css.map */

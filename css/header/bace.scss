@@ -25,7 +25,7 @@
     width: $wd;
     height: $ht;
 }
-
+$hd-pop-bg: #005EB8; 
 * {
     font: normal normal normal 16px/18px "NanumGothicOTF";
 }
@@ -53,6 +53,7 @@ span {
 textarea {
     border: 0px;
     resize: none;
+    padding-top: 5px;
 }
 
 ul {
@@ -74,7 +75,7 @@ h1 {
     margin: 0px 0px 5px 0px;
 }
 input,
-select {
+select, textarea {
     border: 1px solid #B8C0C7;
     border-radius: 4px;
     padding-left: 5px;
@@ -121,11 +122,11 @@ select {
         position: absolute;
         
         .popHeader {
-            @include dp_flex($jt_content: space-between );
+            @include dp_flex(row !important ,$jt_content: space-between !important);
             width: 100%;
             height: 46px;
             border-radius: 4px 4px 0px 0px;
-            background-color: #101846;
+            background-color: $hd-pop-bg;
             color: #ffffff;
 
             > p {
@@ -135,13 +136,24 @@ select {
             div > button {
                 padding: 0px 8px;
                 margin-right: 8px;
-
+                
                 &:last-child {
                     border-left: 1px solid #ffffff;
+                }
+                > p {
+                    font-size: 14px !important;
                 }
             }
         }
         
+        .errPopHeader {
+            @include dp_flex;
+            width: 100%;
+            height: 46px;
+            border-bottom: 1px solid #101846;
+            background-color: #ffffff;
+        }
+
         .popBody {
             @include dp_flex(column);
             width: 100%;
@@ -160,4 +172,8 @@ select {
     @include dp_flex;
     @include customBtnStyle(4px, 80px, 30px, transparent, #30375F);
     color: #ffffff;
+}
+
+.gridbox_material.gridbox table.obj.row20px tr.rowselected td {
+    background-color: #D8D8D8 !important;
 }

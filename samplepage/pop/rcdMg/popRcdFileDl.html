@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>녹취 파일 다운로드 신청서</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/rcdMg/rcdFileDlPop.css"> <!--청취 요청 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+<body>
+
+
+    <!-- 녹취 파일 다운로드 신청서 팝업 -->
+    <section class="popBox" id="rcdFileDlPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>녹취 파일 다운로드 신청서</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>다운로드</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="rcdFileDlPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <form>
+                    <div class="reasonSelect">
+                        <h1>1. 사유</h1>
+                        <select>
+                            <option value="" selected disabled hidden>내용 확인</option>
+                            <option value="사유1">사유1</option>
+                            <option value="사유2">사유2</option>
+                            <option value="사유3">사유3</option>
+                        </select>
+                    </div>
+                    <div class="reasonDirect">
+                        <div>
+                            <h1>2. 신청인(고객)</h1>
+                            <p class="blueText">※ 고객 교부시 반드시 '자료열람요구서'를 먼저 징구하신 후 다운로드 하시기 바랍니다.</p>
+                        </div>
+                        <textarea placeholder="(직접입력/최대 200자)"></textarea>
+                    </div>
+                    <div>
+                        <div>
+                            <h1>3. 신청 직원명</h1>
+                            <p class="blueText">※ [자료 열림 요구서]상의 신청인명을 기재하시기 바랍니다.</p>
+                        </div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h1>4. 신청 부점</h1>
+                        <input type="text">
+                    </div>
+                    <div class="setPwd">
+                        <div>
+                            <h1>5. 비밀전호 설정</h1>
+                            <p class="redText">※ 비밀번호가 일치하지 않습니다.</p>
+                        </div>
+                        <div>
+                            <input type="password" placeholder="비밀번호"> 
+                            <input type="password" placeholder="비밀번호 재확인">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -14,6 +14,7 @@
 }
 .waveBgImg > div:last-child {
   background-color: #ffffff;
+  width: 400px;
 }
 .waveBgImg > div > div {
   display: flex;
@@ -26,27 +27,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 54px;
+  margin-top: 30px;
 }
 .waveBgImg > div > div form div {
   width: 290px;
   height: 40px;
-  margin-bottom: 12px;
+  margin-bottom: 5px;
 }
 .waveBgImg > div > div form div > span {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  margin-top: 10px;
 }
 .waveBgImg > div > div form div > span > label {
-  font-size: 14px;
+  font-size: 16px;
+  color: #919191;
   cursor: pointer;
 }
+.waveBgImg > div > div form div > span > input {
+  width: 16px;
+  height: 16px;
+  margin: 0px 4px 0px 0px;
+}
+.waveBgImg > div > div form div:nth-child(3) {
+  margin-top: 15px;
+}
+.waveBgImg > div > div form div:nth-child(4) {
+  height: 16px;
+  margin: 10px 0px 0px 0px;
+}
 .waveBgImg > div > div form div > input {
-  width: 290px;
-  height: 36px;
+  width: 300px;
+  height: 46px;
 }
 .waveBgImg > div > div > p {
   display: flex;
@@ -54,11 +69,12 @@
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
   font-size: 14px;
 }
 
 .iconInput {
-  padding-left: 36px;
+  padding-left: 46px;
 }
 
 .loginBtn {
@@ -66,4 +82,8 @@
   border-radius: 4px;
   color: #ffffff;
   font-size: 14px;
+}
+
+.personImg, .lockImg {
+  background-size: 44px;
 }/*# sourceMappingURL=login.css.map */

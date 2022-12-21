@@ -5,7 +5,7 @@
   align-items: center;
 }
 .searchCdt p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .searchCdt > div {
   display: flex;
@@ -68,6 +68,10 @@
   width: 16px;
   height: 16px;
 }
+.searchCdt .prdDvs > input {
+  width: 16px;
+  height: 16px;
+}
 .searchCdt .searchEtc {
   border: 0px;
 }
@@ -112,6 +116,7 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  font-size: 14px;
 }
 
 .rcdListGrid {
@@ -144,8 +149,9 @@
   padding: 0px !important;
 }
 .rcdListGrid .gridbox .xhdr table tr:nth-child(2) td {
-  background-color: #C9E9E6 !important;
-  color: #0F0F0F;
+  background-color: #8898A7 !important;
+  border-color: #677989 !important;
+  color: #ffffff;
 }
 .rcdListGrid .gridbox .xhdr table tr:nth-child(2) td div {
   padding: 0px !important;
@@ -173,6 +179,7 @@
   position: relative;
   top: 39px;
   left: 1px;
+  background-color: #EDF7F6;
 }
 .rcdListGrid .gridbox .objbox tbody tr td input {
   margin: 0px;

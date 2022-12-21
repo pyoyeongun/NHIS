@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>청취 요청 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/rcdMg/listenRqPop.css"> <!--청취 요청 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body>
+    <!-- 청취 팝업 -->
+    <section class="popBox" id="listenRqPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>청취 요청</p>
+                <div>
+                    <button class="popBasicBtnStyle1" onclick="listenPopup()">
+                        <p>결재 상신</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="listenRqPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <form>
+                    <div class="reasonSelect">
+                        <h1>1. 사유</h1>
+                        <select>
+                            <option value="" selected disabled hidden>내용 확인</option>
+                            <option value="사유1">사유1</option>
+                            <option value="사유2">사유2</option>
+                            <option value="사유3">사유3</option>
+                            <option value="직접입력">==직접입력==</option>
+                        </select>
+                    </div>
+                    <div class="reasonDirect">
+                        <h1>2. 사유(직접입력)</h1>
+                        <textarea></textarea>
+                    </div>
+                    <div>
+                        <h1>3. 신청 직원명</h1>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <h1>4. 영업점</h1>
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

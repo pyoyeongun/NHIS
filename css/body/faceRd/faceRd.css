@@ -3,7 +3,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: normal;
-  height: 100%;
 }
 .containBox > div {
   display: flex;
@@ -146,6 +145,11 @@
   margin-right: 8px;
   width: 39%;
 }
+.memberInfo span > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 .prdInfo {
   display: flex;
@@ -153,6 +157,7 @@
   justify-content: flex-start !important;
   align-items: normal !important;
   height: 100% !important;
+  width: 940px !important;
 }
 .prdInfo * {
   color: #0f0f0f;

@@ -1,0 +1,90 @@
+<!-- 
+    파일명: downloadList.html
+    파일내용: 다운로드 이력 페이지
+    작성일: 22.12.18
+    작성자: 표영운
+    수정일:
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다운로드 이력</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/management/downloadList.css"> <!--스크립트 조회 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../js/isCheckbox.js"></script> <!--체크박스 관련 js-->
+    <script src="../../js/downloadList.js"></script><!--다운로드 이력 js파일-->
+</head>
+
+<body>
+    <!-- 다운로드 검색기 -->
+    <section class="dlSel">
+        <div>
+            <form>
+                <div>
+                    <p>녹취 일시</p>
+                    <input type="date" name="startDate">
+                    <p>~</p>
+                    <input type="date" name="endDate">
+                </div>
+                <div>
+                    <p>신청 직원명</p>
+                    <input type="text" name="rqStaff" placeholder="입력하시오.">
+                </div>
+                <div>
+                    <p>고객명</p>
+                    <input type="text" name="clientName" placeholder="입력하시오.">
+                </div>
+                <div>
+                    <p>고객번호</p>
+                    <input type="text" name="clientNum" placeholder="입력하시오.">
+                </div>
+                <div>
+                    <p>상품유형</p>
+                    <select>
+                        <option value="" selected disabled hidden>상품을 고르시오</option>
+                        <option value="1번 상품">1번 상품</option>
+                        <option value="2번 상품">2번 상품</option>
+                        <option value="3번 상품">3번 상품</option>
+                    </select>
+                </div>
+                <div>
+                    <p>다운로드 사유</p>
+                    <select>
+                        <option value="" selected disabled hidden>사유를 고르시오</option>
+                        <option value="1번 사유">1번 사유</option>
+                        <option value="2번 사유">2번 사유</option>
+                        <option value="3번 사유">3번 사유</option>
+                    </select>
+                </div>
+                <div>
+                    <button>
+                        <span class="magnifierBlackImg"></span>
+                        <p>조회</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 다운로드 조회 리스트 Grid -->
+    <section class="dlListGrid">
+        <div id="dlList"></div>
+    </section>
+</body>
+
+</html>

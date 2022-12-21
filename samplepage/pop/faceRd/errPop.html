@@ -1,0 +1,106 @@
+<!-- 
+    파일명: rcdAgreePop.html
+    파일내용: 녹취 동의서 팝업 (샘플)
+    작성일: 22.12.19
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>분석 결과 팝업(샘플)</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/faceRd/faceRd.css"> <!--대면녹취 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/playSpeed.js"></script> <!--플레이어 배속 js-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/faceRd/faceRdPopStyle2.css"> <!--분석결과 팝업 css-->
+    <!-- 팝업 js -->
+    <script src="../../js/pop/popDown.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+            <span class="logoTitleFaceRdImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+
+    <!-- 오류 팝업 1 -->
+    <section class="popBox" id="errPop1">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 214px">
+            <div class="errPopHeader">
+                <p>안내</p>
+            </div>
+            <div class="popBody">
+                <p>
+                    녹취가 완료되었습니다. 10초 이상 청취해주세요.
+                </p>
+                <button onclick="errPop1down()">
+                    <p>확인</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- 오류 팝업 2 -->
+    <section class="popBox" id="errPop2">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 214px">
+            <div class="errPopHeader">
+                <p>안내</p>
+            </div>
+            <div class="popBody">
+                <p>
+                    10초 이상 청취해주세요.
+                </p>
+                <button onclick="errPop2down()">
+                    <p>확인</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- 오류 팝업 3 -->
+    <section class="popBox" id="errPop3">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 214px">
+            <div class="errPopHeader">
+                <p>안내</p>
+            </div>
+            <div class="popBody">
+                <p>
+                    녹취가 정상적으로 이루어졌다면 통합업무시스템 '11-2461'에서 [녹취파일 가져오기]를 실행하세요.
+                </p>
+                <button onclick="errPop3down()">
+                    <p>확인</p>
+                </button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

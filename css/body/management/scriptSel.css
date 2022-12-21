@@ -3,6 +3,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 1700px;
 }
 .sptSel > div {
   display: flex;
@@ -10,7 +11,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 14px;
-  width: 96%;
+  width: 100%;
   height: 30px;
   padding: 14px;
   background-color: #ffffff;
@@ -59,8 +60,12 @@
 }
 
 .sptListGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
-  height: 846px;
+  height: 875px;
   width: 100%;
 }
 .sptListGrid table {
@@ -76,14 +81,23 @@
 }
 .sptListGrid table tbody tr td {
   border: 1px solid #B8C0C7 !important;
+  padding: 0px !important;
+}
+.sptListGrid table tbody tr td div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  height: 36px;
 }
 .sptListGrid .gridbox {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 97.3% !important;
-  height: 78% !important;
+  width: 1700px !important;
+  height: 875px !important;
   position: absolute;
 }
 .sptListGrid .gridbox .xhdr {
@@ -95,8 +109,9 @@
   padding: 0px !important;
 }
 .sptListGrid .gridbox .xhdr table tbody tr:nth-child(2) td {
-  background-color: #C9E9E6 !important;
-  color: #0F0F0F;
+  background-color: #8898A7 !important;
+  border-color: #677989 !important;
+  color: #ffffff;
 }
 .sptListGrid .gridbox .objbox {
   width: 100% !important;
@@ -112,6 +127,17 @@
 }
 .sptListGrid .gridbox .objbox::-webkit-scrollbar-track {
   width: 3px !important;
+}
+.sptListGrid .gridbox .objbox table tbody td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sptListGrid .gridbox .objbox .ev_material {
+  background-color: #ffffff !important;
+}
+.sptListGrid .gridbox .objbox .odd_material {
+  background-color: #F8F8F8 !important;
 }
 .sptListGrid button {
   display: flex;

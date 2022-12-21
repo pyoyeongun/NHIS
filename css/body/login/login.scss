@@ -19,6 +19,7 @@
 
         &:last-child {
             background-color: #ffffff;
+            width: 400px;
         }
 
         >div {
@@ -26,44 +27,66 @@
 
             form {
                 @include dp_flex(column);
-                margin-top: 54px;
-                
+                margin-top: 30px;
+
                 div {
                     width: 290px;
                     height: 40px;
-                    margin-bottom: 12px;
+                    margin-bottom: 5px;
 
                     >span {
-                        @include dp_flex($jt_content: flex-start);
-                        width: 50%;
-                        
+                        @include dp_flex($jt_content: flex-end);
+                        width: 100%;
+                        margin-top: 10px;
+
                         >label {
-                            font-size: 14px;
-                        cursor: pointer;
+                            font-size: 16px;
+                            color: #919191;
+                            cursor: pointer;
+                        }
+                        > input {
+                            width: 16px;
+                            height: 16px;
+                            margin: 0px 4px 0px 0px;
+                        }
                     }
+                    &:nth-child(3) {
+                        margin-top: 15px;
                     }
+                    &:nth-child(4) {
+                        height: 16px;
+                        margin: 10px 0px 0px 0px;
+                    }
+
                     >input {
-                        width: 290px;
-                        height: 36px;
+                        width: 300px;
+                        height: 46px;
                     }
                 }
-                
+
             }
-            
+
             >p {
                 @include dp_flex($jt_content: flex-end);
                 width: 100%;
+                margin-top: 20px;
                 font-size: 14px;
             }
         }
     }
 }
+
 .iconInput {
-    padding-left: 36px;
+    padding-left: 46px;
 }
+
 .loginBtn {
     background-color: #002E9D;
     border-radius: 4px;
     color: #ffffff;
     font-size: 14px;
+}
+
+.personImg, .lockImg {
+    background-size: 44px;
 }

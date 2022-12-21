@@ -1,6 +1,6 @@
 <!-- 
     파일명: popListen.html
-    파일내용: 청취 팝업 샘플 페이지
+    파일내용: 청취 팝업 팝업 (샘플)
             해당페이지는 팝업 샘플 페이지 입니다.
     작성일: 22.12.15
     작성자: 표영운
@@ -14,43 +14,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pop workspace</title>
-    <link rel="stylesheet" type="text/css" href="../css/header/bace.css"> <!--베이스 css-->
-    <link rel="stylesheet" type="text/css" href="../img/allImage.css"> <!--모든 이미지 css-->
-    <link rel="stylesheet" type="text/css" href="../css/header/nhHeader.css"> <!--헤더 css-->
-    <link rel="stylesheet" type="text/css" href="../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
-    <link rel="stylesheet" type="text/css" href="../css/footer/mgFooter.css"> <!-- footer css-->
-    <link rel="stylesheet" type="text/css" href="../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
-    <link rel="stylesheet" type="text/css" href="../css/body/pop/listenPop.css"> <!--청취 pop-->
-    <script src="../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
-    <script src="../js/jquery-3.6.1.min.js"></script> <!--jquery-->
-    <script src="../js/pageChange.js"></script> <!--페이지 변경 js-->
-    <script src="../js/pop/rcdListPop.js"></script> <!--청취 팝업 js-->
+    <title>청취 팝업(샘플)</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/rcdMg/listenPop.css"> <!--청취 pop-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 팝업 javascript -->
+    <script src="../../js/pop/rcdListPop.js"></script> <!--청취 팝업-->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+
 </head>
 <body>
-    <!-- header -->
-    <header class="headerBox">
-        <div>
-            <span class="nhLogoHeaderImg"></span>
-            <span class="logoTitleAlramImg"></span>
-            <span class="logoTitleFaceRdImg"></span>
-        </div>
-        <div>
-            <span>관리자 홍길동님</span>
-            <button class="" type="button">
-                <span class="logoutImg"></span>
-                <p>로그아웃</p>
-            </button>
-        </div>
-    </header>
-    <!-- 네비게이션 탭바 -->
-    <nav class="navBox">
-        <a class="currentPage" href="../page/rcdMg.html">녹취관리</a>
-        <a href="../page/scriptSel.html">스크립트 조회</a>
-        <a href="">다운로드 이력</a>
-        <a href="">시스템 관리</a>
-    </nav>
-
+    <!-- 청취 팝업 -->
     <section class="popBox" id="listenPop">
         <div class="overlay"></div>
         <div class="popMain">

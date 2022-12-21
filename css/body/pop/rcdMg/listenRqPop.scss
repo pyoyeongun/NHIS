@@ -1,0 +1,70 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    @include dp_flex;
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+
+
+#listenRqPop {
+    >.popMain {
+        width: 800px;
+        height: 408px;
+    }
+
+    
+    > form {
+        @include dp_flex(column, flex-start, flex-start);
+        width: 96%;
+        height: 100%;
+    }
+
+    textarea {
+        width: 764px;
+        height: 80px;
+        color: #0f0f0f;
+    }
+
+    select {
+        width: 773px;
+        height: 30px;
+        color: #0f0f0f;
+    }
+
+    input {
+        width: 764px;
+        height: 26px;
+        color: #0f0f0f;
+    }
+
+    .popBody {
+        div {
+            @include dp_flex(column, flex-start);
+            margin-top: 14px;
+
+            h1 {
+                width: 100%;
+                color: #161616;
+                height: 16px;
+            }
+            &:last-child {
+                @include dp_flex;
+                width: 100%;
+                input {
+                    width: 16px;
+                    height: 16px;
+                }
+            } 
+        }
+    }
+}

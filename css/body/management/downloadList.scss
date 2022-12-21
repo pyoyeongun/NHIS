@@ -1,0 +1,160 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    @include dp_flex;
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+// 그리드 테두리 변수
+$br-style: 1px solid #B8C0C7;
+// 그리드 해더 색변경
+$hd-grid-bg-color: #8898A7;
+// 그리드 해더 테두리 색 변수
+$hd-grid-br-color: #677989;
+
+.dlSel {
+    @include dp_flex;
+
+    >div {
+        @include dp_flex($jt_content: flex-start, $al_item: flex-start);
+        margin-top: 14px;
+        width: 96%;
+        height: 30px;
+        padding: 14px;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 6px #0000001F;
+
+        >form {
+            border-radius: 4px;
+
+            >div {
+                @include dp_flex($jt_content: flex-start);
+                height: 30px;
+                border-right: $br-style;
+                margin: 0px 0px 12px 12px;
+                float: left;
+
+                >p {
+                    margin-right: 8px;
+                }
+
+                >button {
+                    @include customBtnStyle(100px, auto, 30px);
+                }
+
+                >input {
+                    @include customBtnStyle(4px, 120px, 30px, #b8c0c7);
+                }
+
+                &:last-child {
+                    border: 0px;
+                }
+            }
+
+            input {
+                width: 240px;
+                height: 30px;
+                margin-right: 8px;
+            }
+
+            select {
+                width: 140px;
+                height: 30px;
+                margin-right: 8px;
+            }
+        }
+    }
+
+}
+
+// 녹취리스트 그리드
+.dlListGrid {
+    margin-top: 16px;
+    height: 846px;
+    width: 100%;
+
+    table {
+        overflow: scroll !important;
+        border-collapse: collapse;
+        width: 100% !important;
+        position: absolute !important;
+        top: -1px;
+        left: 1px;
+
+        tbody {
+            tr {
+                height: 36px;
+
+                td {
+                    border: $br-style !important;
+                }
+            }
+        }
+    }
+
+    .gridbox {
+        @include dp_flex(column);
+        width: 1880px !important;
+        height: 844px !important;
+        position: absolute;
+
+        .xhdr {
+            width: 100% !important;
+            height: 36px !important;
+
+            table {
+                margin: 0px !important;
+                padding: 0px !important;
+
+                tbody tr:nth-child(2) td {
+                    background-color: $hd-grid-bg-color !important;
+                    border-color: $hd-grid-br-color !important;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .objbox {
+            width: 100% !important;
+            height: 810px !important;
+
+            &::-webkit-scrollbar {
+                position: absolute;
+                width: 3px !important;
+
+                &-thumb {
+                    width: 3px !important;
+                    background-color: #D9D9D9;
+                }
+
+                &-track {
+                    width: 3px !important;
+                }
+            }
+
+            .ev_material {
+                background-color: #ffffff !important;
+            }
+
+            .odd_material {
+                background-color: #F8F8F8 !important;
+            }
+        }
+    }
+
+    button {
+        @include dp_flex;
+        @include customBtnStyle(4px, 92px, 26px, #353535, #ffffff);
+        padding: 0px;
+    }
+
+}

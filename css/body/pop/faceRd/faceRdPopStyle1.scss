@@ -1,0 +1,27 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+.popMain {
+    width: 800px;
+    height: 254px;
+}
+
+.popBody {
+    @include dp_flex(column, flex-start !important, flex-start);
+    
+        p {
+            @include dp_flex(row, flex-start, flex-start);
+            width:97%;
+            margin-top: 20px;
+            font-size: 14px;
+
+            span {
+                margin: 0px 5px;
+            }
+        }
+
+}

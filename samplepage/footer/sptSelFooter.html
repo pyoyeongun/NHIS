@@ -1,0 +1,53 @@
+<!-- 
+    파일명: sptSelFooter.html
+    파일내용: 스크립트 조회 footer
+    작성일: 22.12.20
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 조회 footer</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/footer/mgFooter.css"> <!-- footer css-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/pageChange.js"></script>
+</head>
+<body>
+    <!-- footer -->
+    <footer class="footerBox">
+        <div>
+            <p>
+                전체건수<span class="blueText">503</span>건
+            </p>
+            <select>
+                <option value="50" selected>50행</option>
+                <option value="100">100행</option>
+                <option value="200">200행</option>
+            </select>
+        </div>
+        <ul>
+            <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
+            <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
+            <li>
+                <span class="pageNum currentMovePage" onchange="curentPage()"><p>1</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>2</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>3</p></span>
+                <span class="pageNum" onchange="curentPage()"><p>4</p></span>
+            </li>
+            <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
+            <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
+        </ul>
+        <div style="width: 20%">
+        </div>
+    </footer>
+</body>
+</html>

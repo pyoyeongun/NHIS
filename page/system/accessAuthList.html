@@ -1,0 +1,116 @@
+<!-- 
+    파일명: accessAuthList.html
+    파일내용: 접근권한 설정 목록 페이지
+    작성일: 22.12.19
+    작성자: 표영운
+    수정일: acc
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>접속권한리스트</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/footer/mgFooter.css"> <!-- footer css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/system/accessAuthList.css"> <!--접근권한 리스트 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../js/system/accessAuthList.js"></script> <!--접근권한 리스트 js-->
+</head>
+
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoBackImg"></span>
+            <span class="logoTitleAlramImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+    <!-- 네비게이션 탭바 -->
+    <nav class="navBox">
+        <a href="../rcdMg.html">녹취관리</a>
+        <a href="../scriptSel.html">스크립트 조회</a>
+        <a href="../downloadList.html">다운로드 이력</a>
+        <a class="currentPage" href="../system/accessAuthList.html">시스템 관리</a>
+    </nav>
+
+    <!-- 시스템관리 본문 -->
+    <div class="sideBox">
+        <!-- 사이트 메뉴 -->
+        <section class="sideMenu">
+            <div class="menuList">
+                <a class="currentMenu" href="../system/accessAuthList.html">접근 권한 리스트</a>
+                <a href="">사용자 관리</a>
+                <a href="">그룹(부서) 관리</a>
+                <a href="">권한 관리</a>
+                <a href="">조회 조건/항목 관리</a>
+                <a href="">상품 정보 관리</a>
+                <a href="">시스템 코드 관리</a>
+            </div>  
+            <div class="sideWaveBgImg"></div>
+        </section>
+        
+        <div class="bodyBox">
+            <!-- 접근권한 리스트 -->
+            <secrion class="accAuthListGrid">
+                <div id="accAuthList"></div>
+            </secrion>
+            <!-- footer -->
+            <footer class="footerBox">
+                <div>
+                    <p>
+                        전체건수<span class="blueText">503</span>건
+                    </p>
+                    <select>
+                        <option value="50" selected>50행</option>
+                        <option value="100">100행</option>
+                        <option value="200">200행</option>
+                    </select>
+                </div>
+                <ul>
+                    <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
+                    <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
+                    <li>
+                        <span class="pageNum currentMovePage" onchange="curentPage()"><p>1</p></span>
+                        <span class="pageNum" onchange="curentPage()"><p>2</p></span>
+                        <span class="pageNum" onchange="curentPage()"><p>3</p></span>
+                        <span class="pageNum" onchange="curentPage()"><p>4</p></span>
+                    </li>
+                    <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
+                    <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
+                </ul>
+                <div>
+                    <button>
+                        <span class="circlePlusBtn"></span>
+                        <p>등록</p>
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

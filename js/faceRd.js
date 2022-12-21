@@ -1,6 +1,11 @@
 // TTS, TTV, 육성 체크 박스 체크되었을때 이미지 변경
 function changeCheckBox(event) {
     let changeSpanClass = document.getElementsByName(event.value);
+    let checkOnClass = document.getElementsByClassName("checkboxCircleOnBtn");
+    for (let i = 0; i < checkOnClass.length; i++) {
+        checkOnClass[i].classList.add("checkboxCircleOffBtn");
+        checkOnClass[i].classList.remove("checkboxCircleOnBtn");
+    }
     console.log(changeSpanClass[0]);
     if (event.checked) {
         changeSpanClass[0].classList.remove("checkboxCircleOffBtn");

@@ -3,9 +3,9 @@
     파일내용: 대면녹취 페이지
     작성일: 22.12.12
     작성자: 표영운
-    수정일: 22.12.14
+    수정일: 22.12.19
     수정자: 표영운
-    수정내용: 운용상품 안내 스크립트 관련 수정 
+    수정내용: TTS, TTV, 육성 checkbox로 되어있는 부분 radio로 변경
  -->
 <!DOCTYPE html>
 <html lang="ko">
@@ -15,21 +15,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>대면 녹취</title>
+    <!-- 기본 css -->
     <link rel="stylesheet" type="text/css" href="./css/header/bace.css"> <!--베이스 css-->
     <link rel="stylesheet" type="text/css" href="./img/allImage.css"> <!--모든 이미지 css-->
     <link rel="stylesheet" type="text/css" href="./css/header/nhHeader.css"> <!--헤더 css-->
-    <link rel="stylesheet" type="text/css" href="./css/body/faceRd/faceRd.css"> <!--대면녹취 css-->
     <link rel="stylesheet" type="text/css" href="./dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="./css/body/faceRd/faceRd.css"> <!--대면녹취 css-->
+    <!-- 기본 javascript -->
     <script src="./dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
     <script src="./js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
     <script src="./js/playSpeed.js"></script> <!--플레이어 배속 js-->
-    <script src="./js/faceRd.js"></script>  <!--대면녹취 js 파일-->
+    <script src="./js/faceRd.js"></script> <!--대면녹취 js 파일-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="./css/body/pop/faceRd/faceRdPopStyle1.css"> <!--분석결과 팝업 css-->
+    <link rel="stylesheet" type="text/css" href="./css/body/pop/faceRd/faceRdPopStyle2.css"> <!--분석결과 팝업 css-->
+    <!-- 팝업 js -->
+    <script src="./js/pop/popDown.js"></script>
 </head>
 
 <body>
     <header class="headerBox">
         <div>
-            <span class="nhLogoHeaderImg"></span>
+            <span class="nhLogoBackImg"></span>
             <span class="logoTitleAlramImg"></span>
             <span class="logoTitleFaceRdImg"></span>
         </div>
@@ -52,21 +61,21 @@
                     <li>
                         <label>
                             <span class="checkboxCircleOffBtn" name="TTS"></span>
-                            <input type="checkbox" readonly value="TTS" onchange="changeCheckBox(this)">
+                            <input type="radio" name="readType" readonly value="TTS" onchange="changeCheckBox(this)">
                             <p>TTS</p>
                         </label>
                     </li>
                     <li>
                         <label>
                             <span class="checkboxCircleOffBtn" name="TTV"></span>
-                            <input type="checkbox" readonly value="TTV" onchange="changeCheckBox(this)">
+                            <input type="radio" name="readType" readonly value="TTV" onchange="changeCheckBox(this)">
                             <p>TTV</p>
                         </label>
                     </li>
                     <li>
                         <label>
                             <span class="checkboxCircleOffBtn" name="육성"></span>
-                            <input type="checkbox" readonly value="육성" onchange="changeCheckBox(this)">
+                            <input type="radio" name="readType" readonly value="육성" onchange="changeCheckBox(this)">
                             <p>육성</p>
                         </label>
                     </li>
@@ -163,6 +172,111 @@
         </div>
     </section>
 
+
+    <!-- 분석 결과 팝업 -->
+    <section class="popBox" id="analyzePop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>분석 결과</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>구간 확인</p>
+                    </button>
+                    <button class="popBasicBtnStyle1">
+                        <p>계속 진행</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="analyzeRtPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <p>
+                    AI 분석결과 녹취내용 중 확인이 필요한 구간이 있습니다.<br>
+                    아래 절차 확인 후 진행
+                </p>
+                <p style="width: 95%">
+                    구간 확인 <span class="rightArrGreenImg"></span>
+                    해당 구간으로 이동 <span class="rightArrGreenImg"></span>
+                    계속진행 or 재녹취 결정 계속진행 <span class="rightArrGreenImg"></span>
+                    이어서 녹취 진행
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- 녹취 동의서 팝업 -->
+    <section class="popBox" id="rcdAgreePop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>녹취 동의서</p>
+                <div>
+                    <button class="popBasicBtnStyle1"><p>동의</p></button>
+                    <button class="popBasicBtnStyle2"><p>미동의</p></button>
+                    <button><span class="cancelWhiteImg" onclick="rcdAgreePopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                    <p>
+                        본 녹취의 진행을 위해 고객님의 녹취 동의 여부를 확인해주세요.
+                    </p>
+                    <p style="width: 95%"> 
+                        <span class="warningImg"></span>
+                        고객 미동의 시 상품 판매 녹취 종료
+                    </p>
+            </div>
+        </div>
+    </section>
+    <!-- 오류 팝업 1 -->
+    <section class="popBox" id="errPop1" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 214px">
+            <div class="errPopHeader">
+                <p>안내</p>
+            </div>
+            <div class="errPopBody">
+                <p>
+                    녹취가 완료되었습니다. 10초 이상 청취해주세요.
+                </p>
+                <button onclick="errPop1down()">
+                    <p>확인</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- 오류 팝업 2 -->
+    <section class="popBox" id="errPop2" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 214px">
+            <div class="errPopHeader">
+                <p>안내</p>
+            </div>
+            <div class="errPopBody">
+                <p>
+                    10초 이상 청취해주세요.
+                </p>
+                <button onclick="errPop2down()">
+                    <p>확인</p>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- 오류 팝업 3 -->
+    <section class="popBox" id="errPop3" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 214px">
+            <div class="errPopHeader">
+                <p>안내</p>
+            </div>
+            <div class="errPopBody">
+                <p>
+                    녹취가 정상적으로 이루어졌다면 통합업무시스템 '11-2461'에서 [녹취파일 가져오기]를 실행하세요.
+                </p>
+                <button onclick="errPop3down()">
+                    <p>확인</p>
+                </button>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

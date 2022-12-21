@@ -1,0 +1,115 @@
+{
+    "head": [
+        {
+            "id": "number",
+            "type": "ro",
+            "align": "center",
+            "width": "60",
+            "value": "No"
+        },
+        {
+            "id": "dvs",
+            "type": "ro",
+            "align": "center",
+            "width": "294",
+            "value": "구간"
+        },
+        {
+            "id": "isReRcd",
+            "type": "ro",
+            "align": "center",
+            "width": "80",
+            "value": "재녹취 여부"
+        },
+        {
+            "id": "rcdDate",
+            "type": "ro",
+            "align": "center",
+            "width": "86",
+            "value": "녹취일자 "
+        },
+        {
+            "id": "rcdTime",
+            "type": "ro",
+            "align": "center",
+            "width": "68",
+            "value": "녹취시각"
+        },
+        {
+            "id": "reRcdRs",
+            "type": "ro",
+            "align": "left",
+            "width": "511",
+            "value": "재녹취 사유"
+        },
+        {
+            "id": "assayRes",
+            "type": "ro",
+            "align": "center",
+            "width": "67",
+            "value": "분석결과"
+        }
+    ],
+    "rows": [
+        {
+            "id": "200_1",
+            "data": [
+                "1",
+                "DB지수연계더블플러스증권투자...",
+                "N",
+                "2022-11-11",
+                "18:40:21",
+                "-",
+                "<span class='warningImg'></span>"
+            ]
+        },
+        {
+            "id": "200_2",
+            "data": [
+                "2",
+                "DB지수연계더블플러스증권투자...",
+                "N",
+                "2022-11-11",
+                "18:40:21",
+                "-",
+                "<span class='completeBlueImg'></span>"
+            ]
+        },
+        {
+            "id": "200_3",
+            "data": [
+                "3",
+                "DB지수연계더블플러스증권투자...",
+                "N",
+                "2022-11-11",
+                "18:40:21",
+                "-",
+                "<span class='completeBlueImg'></span>"
+            ]
+        },
+        {
+            "id": "200_4",
+            "data": [
+                "4",
+                "DB지수연계더블플러스증권투자...",
+                "N",
+                "2022-11-11",
+                "18:40:21",
+                "-",
+                "<span class='completeBlueImg'></span>"
+            ]
+        },
+        {
+            "id": "200_5",
+            "data": [
+                "5",
+                "DB지수연계더블플러스증권투자...",
+                "N",
+                "2022-11-11",
+                "18:40:21",
+                "-",
+                "<span class='completeBlueImg'></span>"
+            ]
+        }
+    ]
+}

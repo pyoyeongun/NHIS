@@ -1,0 +1,137 @@
+<!-- 
+    파일명: rcdMg.html
+    파일내용: 녹취관리 페이지
+    작성일: 22.12.14
+    작성자: 표영운
+    수정일: 22.12.15
+    수정자: 표영운
+    수정내용: 주석 추가 및 page 링크 추가
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>녹취관리</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/management/rcdMg.css"> <!--녹취관리 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/playSpeed.js"></script> <!--플레이어 배속 js-->
+    <script src="../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../js/isCheckbox.js"></script> <!--체크박스 관련 js-->
+    <script src="../../js/rcdMg.js"></script><!--녹취관리 js파일-->
+</head>
+
+<body onload="selectLine()">
+    <section class="searchCdt">
+        <div>
+            <form>
+                <div class="rcdDate">
+                    <p>녹취 일시</p>
+                    <input type="date">
+                    <input type="date">
+                </div>
+                <div class="rcdStf">
+                    <p>녹취 직원</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="홍길동">홍길동</option>
+                        <option value="임꺽정">임꺽정</option>
+                        <option value="장범준">장범준</option>
+                        <option value="다나카">다나카</option>
+                    </select>
+                </div>
+                <div class="accLink">
+                    <p>계좌번호 연결내용</p>
+                    <input type="checkbox" id="linkOn">
+                    <label for="linkOk">계좌연결</label>
+                    <input type="checkbox" id="linkOff">
+                    <label for="linkOff">미연결</label>
+                </div>
+                <div class="rcdDvs">
+                    <p>녹취구분</p>
+                    <input type="checkbox" id="rcdRegular">
+                    <label for="rcdRegular">일반</label>
+                    <input type="checkbox" id="rcdDivision">
+                    <label for="rcdDivision">분할</label>
+                    <input type="checkbox" id="rcdAdd">
+                    <label for="rcdAdd">추가</label>
+                </div>
+                <div class="prdDvs">
+                    <p>상품구분</p>
+                    <input type="checkbox" id="prdSaleRcd">
+                    <label for="prdSaleRcd">상품판매 녹취</label>
+                    <input type="checkbox" id="ivtTdc">
+                    <label for="ivtTdc">투자성향 분석 녹취</label>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요</option>
+                        <option value="급진">급진</option>
+                        <option value="보수">보수</option>
+                        <option value="일반">일반</option>
+                    </select>
+                </div>
+                <div class="searchEtc">
+                    <p>기타 검색</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요</option>
+                        <option value="7433412">7433412</option>
+                        <option value="312634">312634</option>
+                        <option value="99865">99865</option>
+                    </select>
+                </div>
+                <div class="selectCdt">
+                    <p>검색 조건</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요</option>
+                        <option value="고객명">고객명</option>
+                        <option value="상품명">상품명</option>
+                        <option value="코드번호">코드번호</option>
+                    </select>
+                    <input type="text" placeholder="입력하세요.">
+
+                    <button type="button">
+                        <span class="magnifierBlackImg"></span>
+                        <p>조회</p>
+                    </button>
+                    <button type="reset">
+                        <span class="resetImg"></span>
+                        <p>조회 조건 초기화</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="guideText">
+        <div>
+            <p class="blueText">
+                ※ 본 화면의 녹취 목록은 "최초녹취일" 기준으로 보여지며,
+                청취파일은 "최종녹취파일"로 재생됩니다.
+                [ 상세보기 ] 버튼 클릭시 최초~최종 녹취파일 전체 청취 가능</p>
+            <p class="blueText">
+                ※ 청취하고자 하는 대상을 더블클릭하시면, 청취 화면이 열립니다.
+            </p>
+        </div>
+    </section>
+    <!-- 녹취리스트 그리드 -->
+    <section class="rcdListGrid">
+        <div id="rcdSel"></div>
+    </section>
+    <!-- 녹취 플레이어 -->
+    <section class="rcdPlayer">
+        <div>
+            <p>/*플레이어 들어가는 구간*/</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

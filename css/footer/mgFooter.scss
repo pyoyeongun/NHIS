@@ -8,6 +8,7 @@
 .footerBox {
     @include dp_flex($jt_content: space-between);
     height: 40px;
+    width: 100%;
     background-color: #ffffff;
 
     p {

@@ -1,0 +1,104 @@
+<!-- 
+    파일명: scriptSel.html
+    파일내용: 스크립트 조회 페이지
+    작성일: 22.12.15
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 조회</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/management/scriptSel.css"> <!--스크립트 조회 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../js/scriptSel.js"></script><!--스크립트 조회 js파일-->
+
+</head>
+<body>
+    <div class="sideBox">
+        <section class="sideMenu">
+            <div class="menuList">
+                <a class="currentMenu" href="../page/scriptSel.html">스크립트 조회</a>
+                <a href="">공용스크립트 조회</a>
+                <a href="">결재 목록</a>
+                <a href="">결재 이력</a>
+            </div>
+            <div class="sideWaveBgImg"></div>
+        </section>
+
+        <div class="bodyBox">
+
+            <!-- 스크립트 검색기 -->
+            <section class="sptSel">
+                <div>
+                    <form>
+                        <div>
+                            <p>상품 유형</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="상품유형1">상품유형1</option>
+                                <option value="상품유형2">상품유형2</option>
+                                <option value="상품유형3">상품유형3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>검색 유형</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="검색유형1">검색유형1</option>
+                                <option value="검색유형2">검색유형2</option>
+                                <option value="검색유형3">검색유형3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>판매 상태</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="판매상태1">판매상태1</option>
+                                <option value="판매상태2">판매상태2</option>
+                                <option value="판매상태3">판매상태3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>스크립트 유무</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="스크립트 유무1">스크립트 유무1</option>
+                                <option value="스크립트 유무2">스크립트 유무2</option>
+                                <option value="스크립트 유무3">스크립트 유무3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="입력하세요.">
+                            <button>
+                                <span class="magnifierBlackImg"></span>
+                                <p>조회</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        
+            <!-- 스크립트 조회 리스트 Grid -->
+            <section class="sptListGrid">
+                <div id="sptList"></div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
