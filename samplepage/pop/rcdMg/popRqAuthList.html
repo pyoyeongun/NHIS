@@ -9,44 +9,20 @@
     <!-- 기본 css -->
     <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
     <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
-    <link rel="stylesheet" type="text/css" href="../../../css/header/nhHeader.css"> <!--헤더 css-->
-    <link rel="stylesheet" type="text/css" href="../../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
     <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
     <!-- 기본 javascript -->
     <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
     <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../../js/isCheckbox.js"></script> <!--체크박스 관련 js-->
     <!-- 팝업 css -->
-    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/rcdMg/rqAuthListPop.css"> <!--청취 요청 pop-->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/rcdMg/rqAuthListPop.css"> <!--청취/다운로드 요청 결재 목록 팝업 css-->
     <!-- 팝업 javascript -->
-
-    <script src="../../js/pop/rqAuthListPop.js"></script> <!--청취/다운로드 요청 결재 목록 팝업-->
-    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+    <script src="../../js/pop/rqAuthListPop.js"></script> <!--청취/다운로드 요청 결재 목록 팝업 js-->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기 js-->
 </head>
 
 <body>
-    <!-- header -->
-    <header class="headerBox">
-        <div>
-            <span class="nhLogoBackImg"></span>
-            <span class="logoTitleAlramImg"></span>
-        </div>
-        <div>
-            <span>관리자 홍길동님</span>
-            <button class="" type="button">
-                <span class="logoutImg"></span>
-                <p>로그아웃</p>
-            </button>
-        </div>
-    </header>
-
-    <!-- 네비게이션 탭바 -->
-    <nav class="navBox">
-        <a class="currentPage" href="../../../page/rcdMg.html">녹취관리</a>
-        <a href="../../../page/scriptSel.html">스크립트 조회</a>
-        <a href="../../../page/downloadList.html">다운로드 이력</a>
-        <a href="../../../page/system/accessAuthList.html">시스템 관리</a>
-    </nav>
-
     <!-- 청취/다운로드 요청 결재 목록 팝업 -->
     <section class="popBox" id="rqAuthListPop">
         <div class="overlay"></div>

@@ -10,9 +10,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: space-between;
+  align-items: center;
   width: 180px;
-  height: 1004px;
+  height: 995px;
   background-color: #005EB8;
   padding-top: 10px;
   overflow: hidden;
@@ -22,7 +22,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding-left: 20px;
+  padding-left: 19px;
   height: 100%;
   width: 158px;
 }
@@ -37,6 +37,38 @@
   height: 36px;
   padding-left: 12px;
   font-size: 14px;
+  cursor: pointer;
+}
+.sideBox .sideMenu .menuList div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+.sideBox .sideMenu .menuList div p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  height: 36px;
+  padding-left: 12px;
+  font-size: 14px;
+}
+.sideBox .sideMenu .menuList div span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.sideBox .sideMenu .menuList div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .sideBox .bodyBox {
   display: flex;
@@ -50,4 +82,7 @@
   background-color: #101846;
   color: #FFB81C !important;
   border-radius: 6px 0px 0px 6px;
+}
+.currentMenu p {
+  color: #FFB81C !important;
 }/*# sourceMappingURL=sideMenu.css.map */

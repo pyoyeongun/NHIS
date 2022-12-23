@@ -1,0 +1,74 @@
+.changeListBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 1668px;
+  height: 950px;
+  margin-top: 14px;
+}
+.changeListBox section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  height: auto;
+  padding: 7px 14px 7px 14px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1215686275);
+}
+.changeListBox section * {
+  font-size: 14px;
+}
+.changeListBox section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.changeListBox section > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 98%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 14px 15px;
+}
+.changeListBox section > div > div > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.changeListBox section > div > div > p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.tipGuide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EAEAEA;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: auto !important;
+  height: 26px;
+  margin-top: 8px;
+  padding: 0px 10px;
+}/*# sourceMappingURL=changeList.css.map */

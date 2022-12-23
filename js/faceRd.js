@@ -70,3 +70,18 @@ function onClickScriptTxtSzUp() {
         scriptClientText[i].style.fontSize = scriptTextSize + "px";
     }
 };
+
+
+// 녹취 플레이 재생시 버튼 이미지 변경
+function rcdStart() {
+    let play = document.querySelector(".playBtn");
+    let wave = document.querySelector(".waveImg");
+    if (play != null) {
+        play.className = "stopSquareBtn";
+        wave.className = "waveGifImg";
+    }
+    else {
+        document.querySelector(".stopSquareBtn").className = "playBtn";
+        document.querySelector(".waveGifImg").className = "waveImg";
+    }
+}

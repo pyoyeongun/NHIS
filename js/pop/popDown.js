@@ -42,3 +42,7 @@ function rcdFileDlPopdown() {
 function rqAuthListPopdown() {
     document.getElementById("rqAuthListPop").style.display = "none";
 }
+// 재녹취여부
+function isRRcdPopdown() {
+    document.getElementById("isRRcdPop").style.display = "none";
+}

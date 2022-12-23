@@ -16,8 +16,8 @@
     justify-content: $jt_content;
     align-items: $al_item;
 }
+
 @mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
-    @include dp_flex;
     background-color: $bg-color ;
     border: 1px solid;
     border-color: $br-color;
@@ -25,7 +25,9 @@
     width: $wd;
     height: $ht;
 }
-$hd-pop-bg: #005EB8; 
+
+$hd-pop-bg: #005EB8;
+
 * {
     font: normal normal normal 16px/18px "NanumGothicOTF";
 }
@@ -71,11 +73,14 @@ button {
         margin-right: 2px;
     }
 }
+
 h1 {
     margin: 0px 0px 5px 0px;
 }
+
 input,
-select, textarea {
+select,
+textarea {
     border: 1px solid #B8C0C7;
     border-radius: 4px;
     padding-left: 5px;
@@ -120,32 +125,33 @@ select {
         border-radius: 4px;
         z-index: 1002;
         position: absolute;
-        
+
         .popHeader {
-            @include dp_flex(row !important ,$jt_content: space-between !important);
+            @include dp_flex(row !important, $jt_content: space-between !important);
             width: 100%;
             height: 46px;
             border-radius: 4px 4px 0px 0px;
             background-color: $hd-pop-bg;
             color: #ffffff;
 
-            > p {
+            >p {
                 margin-left: 14px;
             }
 
-            div > button {
+            div>button {
                 padding: 0px 8px;
                 margin-right: 8px;
-                
+
                 &:last-child {
                     border-left: 1px solid #ffffff;
                 }
-                > p {
+
+                >p {
                     font-size: 14px !important;
                 }
             }
         }
-        
+
         .errPopHeader {
             @include dp_flex;
             width: 100%;
@@ -163,11 +169,13 @@ select {
         }
     }
 }
+
 .popBasicBtnStyle1 {
     @include dp_flex;
     @include customBtnStyle(4px, 80px, 30px, #ffffff, transparent);
     color: #ffffff;
 }
+
 .popBasicBtnStyle2 {
     @include dp_flex;
     @include customBtnStyle(4px, 80px, 30px, transparent, #30375F);
@@ -176,4 +184,18 @@ select {
 
 .gridbox_material.gridbox table.obj.row20px tr.rowselected td {
     background-color: #D8D8D8 !important;
+}
+
+//일반
+.regDvs {
+    @include dp_flex;
+    @include customBtnStyle(4px, 50px, 26px, #FFB81C, #FFEFCD);
+    color: #0f0f0f;
+}
+//추가
+.addDvs {
+    @include dp_flex;
+    @include customBtnStyle(4px, 50px, 26px, #B240FF, #F7EBFF);
+    font-weight: bold;
+    color: #0f0f0f;
 }

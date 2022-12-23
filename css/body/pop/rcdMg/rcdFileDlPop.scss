@@ -6,7 +6,6 @@
 }
 
 @mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
-    @include dp_flex;
     background-color: $bg-color ;
     border: 1px solid;
     border-color: $br-color;
@@ -17,6 +16,8 @@
 
 
 #rcdFileDlPop {
+    z-index: 1003;
+    
     >.popMain {
         width: 800px;
         height: 441px;

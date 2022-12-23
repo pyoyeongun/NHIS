@@ -36,9 +36,13 @@
     <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenPop.css"> <!--청취 pop-->
     <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenRqPop.css"> <!--청취 요청 pop-->
     <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/rcdFileDlPop.css"> <!--녹취 파일 다운로드 신청서 pop-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/rqAuthListPop.css">
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/isRRcdPop.css"> <!--재녹취 여부 팝업 css-->
     <!-- 팝업 javascript -->
     <script src="../js/pop/rcdListPop.js"></script> <!--청취 팝업 js-->
+    <script src="../js/pop/rqAuthListPop.js"></script> <!--청취/다운로드 요청 결재 목록 팝업 js-->
     <script src="../js/pop/popDown.js"></script> <!--팝업 닫기-->
+    <script src="../js/pop/isRRcdPop.js"></script> <!-- 재녹취 여부 팝업 js-->
 </head>
 
 <body onload="selectLine()">
@@ -59,11 +63,12 @@
     <!-- 네비게이션 탭바 -->
     <nav class="navBox">
         <a class="currentPage" href="../page/rcdMg.html">녹취관리</a>
-        <a href="../page/scriptSel.html">스크립트 조회</a>
+        <a href="../page/scriptSel/scriptSel.html">스크립트 조회</a>
         <a href="../page/downloadList.html">다운로드 이력</a>
         <a href="../page/system/accessAuthList.html">시스템 관리</a>
     </nav>
 
+    <!-- 검색 -->
     <section class="searchCdt">
         <div>
             <form>
@@ -142,6 +147,7 @@
             </form>
         </div>
     </section>
+    <!-- 가이드 텍스트 -->
     <section class="guideText">
         <div>
             <p class="blueText">
@@ -200,7 +206,7 @@
                 <span class="downloadImg"></span>
                 <p>엑셀</p>
             </button>
-            <button>
+            <button onclick="isRRcdPopup()">
                 <span class="downloadImg"></span>
                 <p>현장 재녹취 이력</p>
             </button>
@@ -463,7 +469,40 @@
             </div>
         </div>
     </section>
-    <!-- 청취/다운로드 요청 결재목록 -->
+    <!-- 청취/다운로드 요청 결재 목록 팝업 -->
+    <section class="popBox" id="rqAuthListPop" style="display: none">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>청취/다운로드 요청 결재 목록</p>
+                <div>
+                    <button><span class="cancelWhiteImg" onclick="rqAuthListPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <div class="rqAuthListBox">
+                    <div id="rqAuthListGrid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 재녹취여부 팝업 -->
+    <section class="popBox" id="isRRcdPop" style="display: none">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>재녹취여부</p>
+                <div>
+                    <button><span class="cancelWhiteImg" onclick="isRRcdPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <div class="isRRcdBox">
+                    <div id="isRRcdGrid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

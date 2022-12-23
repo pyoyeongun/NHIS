@@ -132,6 +132,19 @@
 .rcdListGrid table tr td {
   border: 1px solid #B8C0C7 !important;
 }
+.rcdListGrid table tr td button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 4px;
+  width: 92px;
+  height: 26px;
+  padding: 0px;
+}
 .rcdListGrid .gridbox {
   display: flex;
   flex-direction: column;
@@ -197,60 +210,6 @@
 }
 .rcdListGrid .gridbox .objbox .odd_material:nth-child(3) td {
   color: #FF2E69 !important;
-}
-.rcdListGrid button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-  border: 1px solid;
-  border-color: #353535;
-  border-radius: 4px;
-  width: 92px;
-  height: 26px;
-  padding: 0px;
-}
-
-.regDvs {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFEFCD;
-  border: 1px solid;
-  border-color: #FFB81C;
-  border-radius: 4px;
-  width: 50px;
-  height: 26px;
-  color: #0f0f0f;
-}
-
-.addDvs {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #F7EBFF;
-  border: 1px solid;
-  border-color: #B240FF;
-  border-radius: 4px;
-  width: 50px;
-  height: 26px;
-  font-weight: bold;
-  color: #0f0f0f;
 }
 
 .rcdPlayer {

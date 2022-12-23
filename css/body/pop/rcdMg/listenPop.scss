@@ -5,7 +5,6 @@
     align-items: $al_item;
 }
 @mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
-    @include dp_flex;
     background-color: $bg-color ;
     border: 1px solid;
     border-color: $br-color;
@@ -21,6 +20,7 @@ $hd-grid-bg-color: #8898A7;
 $hd-grid-br-color: #677989;
 
 #listenPop {
+    z-index: 1005;
     .popMain {
         width: 1200px;
         height: 642px;
@@ -74,7 +74,8 @@ $hd-grid-br-color: #677989;
                     padding-left: 10px;
 
                     button {
-                        @include customBtnStyle(4px, auto, 26px);
+                    @include dp_flex;
+                    @include customBtnStyle(4px, auto, 26px);
                     }
                 }
             }

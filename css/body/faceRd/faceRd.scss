@@ -6,7 +6,6 @@
 }
 
 @mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
-    @include dp_flex;
     background-color: $bg-color ;
     border: 1px solid;
     border-color: $br-color;
@@ -14,13 +13,18 @@
     width: $wd;
     height: $ht;
 }
+
 // 그리드 테두리 변수
 $br-style: 1px solid #D9D9D9;
+// 그리드 해더 색변경
+$hd-grid-bg-color: #8898A7;
+// 그리드 해더 테두리 색 변수
+$hd-grid-br-color: #677989;
 
 .containBox {
     @include dp_flex(row, center, normal);
 
-    > div {
+    >div {
         @include dp_flex(column);
         width: 50%;
         height: 100%;
@@ -29,12 +33,12 @@ $br-style: 1px solid #D9D9D9;
         box-shadow: 0px 1px 6px #0000001F;
         margin: 7px;
 
-        > div {
+        >div {
             @include dp_flex($jt_content: flex-start);
             width: 100%;
             padding: 12px 0px 12px;
 
-            > p {
+            >p {
                 padding-left: 10px;
             }
 
@@ -84,7 +88,7 @@ $br-style: 1px solid #D9D9D9;
             >label {
                 @include dp_flex;
                 cursor: pointer;
-                
+
                 >input {
                     display: none;
                 }
@@ -134,6 +138,7 @@ $br-style: 1px solid #D9D9D9;
 }
 
 .checkedPlaySpeed {
+    @include dp_flex;
     @include customBtnStyle(100px, $br-color: #00B140, $bg-color: #ffffff);
 }
 
@@ -150,7 +155,8 @@ $br-style: 1px solid #D9D9D9;
             margin-right: 8px;
             width: 39%;
         }
-        > p {
+
+        >p {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -164,7 +170,7 @@ $br-style: 1px solid #D9D9D9;
     height: 100% !important;
     width: 940px !important;
 
-    *{
+    * {
         color: #0f0f0f;
     }
 
@@ -172,10 +178,10 @@ $br-style: 1px solid #D9D9D9;
         width: 98%;
         border-collapse: collapse;
 
-        
+
         tr {
             height: 36px;
-            border: $br-style!important;
+            border: $br-style !important;
 
             td {
                 border: $br-style !important;
@@ -189,11 +195,16 @@ $br-style: 1px solid #D9D9D9;
     }
 
     // dhmlx css
-    .xhdr .hdr{
+    .xhdr .hdr {
         margin-right: 0px !important;
 
-        tr:nth-child(2) td  {
-            background-color: #C9E9E6 !important ;
+        tr:nth-child(2) td {
+            background-color: $hd-grid-bg-color !important;
+            border-color: $hd-grid-br-color !important;
+
+            div {
+                color: #ffffff;
+            }
         }
     }
 
@@ -251,11 +262,13 @@ $br-style: 1px solid #D9D9D9;
             margin-left: 8px;
             float: left;
 
-            &:nth-child(1) > button {
-                    @include customBtnStyle($wd: auto);
+            &:nth-child(1)>button {
+                @include dp_flex;
+                @include customBtnStyle($wd: auto);
             }
 
-            &:nth-child(2) > button {
+            &:nth-child(2)>button {
+                @include dp_flex;
                 @include customBtnStyle;
             }
         }
@@ -276,4 +289,11 @@ $br-style: 1px solid #D9D9D9;
             width: 100%;
         }
     }
+}
+
+// 전체녹취 완료
+.allRcdComplete {
+    @include dp_flex;
+    @include customBtnStyle(4px, 120px, 30px, transparent !important, #002E9D !important);
+    color: #ffffff;
 }

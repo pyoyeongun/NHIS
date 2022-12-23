@@ -1,10 +1,10 @@
 //dhtmlx 청취/다운로드 요청 결재 목록 그리드 스크립트
-let popGrid;
+let rqAuthListGrid;
 dhtmlxEvent(window, "load", () => {
-    popGrid = new dhtmlXGridObject("rqAuthListGrid");
-    popGrid.enableColumnAutoSize(true);
-    popGrid.enableAutoWidth(true);
-    popGrid.setImagePath("../dHtmlxSuite/codebase/imgs/");
-    popGrid.init();
-    popGrid.load("../../dataset/pop/rqAuthList.json", "json");
+    rqAuthListGrid = new dhtmlXGridObject("rqAuthListGrid");
+    rqAuthListGrid.enableColumnAutoSize(true);
+    rqAuthListGrid.enableAutoWidth(true);
+    rqAuthListGrid.setImagePath("../dHtmlxSuite/codebase/imgs/");
+    rqAuthListGrid.init();
+    rqAuthListGrid.load("../../dataset/pop/rqAuthList.json", "json");
 });

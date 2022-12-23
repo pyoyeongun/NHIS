@@ -314,6 +314,27 @@
   background-size: 20px;
 }
 
+.backArrowImg {
+  background: transparent url(../img/pngImg/icon_back_arrow.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.plusImg {
+  background: transparent url(../img/pngImg/icon_plus.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.minusImg {
+  background: transparent url(../img/pngImg/icon_minus.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
 /*
     버튼 이미지
 */
@@ -373,6 +394,13 @@
   background-size: 20px;
 }
 
+.stopSquareBtn {
+  background: transparent url(../img/pngImg/icon_stop_btn.png) 0% 0% no-repeat padding-box;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+}
+
 /*
     택스트 색
 */
@@ -382,6 +410,10 @@
 
 .blueText {
   color: #0a74dc;
+}
+
+.orangeText {
+  color: #FFB81C;
 }
 
 /*

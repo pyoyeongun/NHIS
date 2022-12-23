@@ -1,3 +1,6 @@
+#rcdFileDlPop {
+  z-index: 1003;
+}
 #rcdFileDlPop > .popMain {
   width: 800px;
   height: 441px;

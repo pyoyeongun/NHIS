@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재녹취여부</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/rcdMg/isRRcdPop.css"> <!--재녹취 여부 팝업 css-->
+    <!-- 팝업 javascript -->
+    <script src="../../js/pop/isRRcdPop.js"></script> <!-- 재녹취 여부 팝업 js-->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기 js-->
+</head>
+
+<body>
+    <!-- 재녹취여부 팝업 -->
+    <section class="popBox" id="isRRcdPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>재녹취여부</p>
+                <div>
+                    <button><span class="cancelWhiteImg" onclick="isRRcdPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <div class="isRRcdBox">
+                    <div id="isRRcdGrid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

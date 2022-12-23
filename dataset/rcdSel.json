@@ -300,7 +300,7 @@
                 "TTS",
                 "1620639683",
                 "수관입니다.",
-                "<button><span class='documentImg'></span><p>결재요청</p></button>"
+                "<button type='button' onclick='rqAuthListPopup()'><span class='documentImg'></span><p>결재요청</p></button>"
             ]
         },
         {
@@ -447,7 +447,7 @@
                 "TTS",
                 "1620639683",
                 "수관입니다.",
-                "<button><span class='documentImg'></span><p>결재요청</p></button>"
+                "<button type='button' onclick='rqAuthListPopup()'><span class='documentImg'></span><p>결재요청</p></button>"
             ]
         },
         {
@@ -468,7 +468,7 @@
                 "TTS",
                 "1620639683",
                 "수관입니다.",
-                "<button><span class='documentImg'></span><p>결재요청</p></button>"
+                "<button type='button' onclick='rqAuthListPopup()'><span class='documentImg'></span><p>결재요청</p></button>"
             ]
         },
         {

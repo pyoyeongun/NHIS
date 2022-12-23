@@ -1,0 +1,64 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+
+.changeListBox {
+    @include dp_flex(column, flex-start, flex-start);
+    width: 1668px;
+    height: 950px;
+    margin-top: 14px;
+
+    section {
+        @include dp_flex(column, $al_item: flex-start);
+        width: auto;
+        height: auto;
+        padding: 7px 14px 7px 14px;
+        background-color: #ffffff;
+        margin-bottom: 15px;
+        box-shadow: 0px 1px 6px #0000001F;
+
+        * {
+            font-size: 14px;
+        }
+
+        >div {
+            @include dp_flex(column);
+            
+            >div {
+                @include dp_flex(column);
+                @include customBtnStyle(4px, 98%, auto, transparent, #F8F8F8);
+                margin-bottom: 10px;
+                padding: 14px 15px;
+
+                > span {
+                    @include dp_flex($jt_content: flex-start);
+                    width: 100%;
+                }
+                > p {
+                    @include dp_flex($jt_content: flex-start);
+                    width: 100%;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}
+
+.tipGuide {
+    @include dp_flex;
+    @include customBtnStyle(4px, auto !important, 26px, transparent, #EAEAEA);
+    margin-top: 8px;
+    padding: 0px 10px;
+}

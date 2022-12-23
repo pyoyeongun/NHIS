@@ -19,8 +19,15 @@ function listenPopup() {
 
     listenRqPopdown();
 }
-
 // 녹취 파일 다운로드 신청서 팝업 스크립트
 function rcdFileDlPopup() {
     document.getElementById("rcdFileDlPop").style.display = "";
+}
+// 청취/다운로드 요청 결재 목록 팝업 스크립트
+function rqAuthListPopup() {
+    document.getElementById("rqAuthListPop").style.display = "";
+}
+// 재녹취여부
+function isRRcdPopup() {
+    document.getElementById("isRRcdPop").style.display = "";
 }

@@ -3,9 +3,11 @@
     파일내용: 대면녹취 페이지
     작성일: 22.12.12
     작성자: 표영운
-    수정일: 22.12.19
+    수정일: 22.12.22
     수정자: 표영운
-    수정내용: TTS, TTV, 육성 checkbox로 되어있는 부분 radio로 변경
+    수정내용: 
+        -22.12.22 전체녹취완료 버튼 추가
+        -재생버튼 클릭시 이미지 변경
  -->
 <!DOCTYPE html>
 <html lang="ko">
@@ -51,11 +53,11 @@
             </div>
             <div class="rcdPlayer">
                 <ul>
-                    <li><span class="waveGifImg"></span></li>
+                    <li><span class="waveImg"></span></li>
                     <li>
                         <p>00:00:00</p>
                     </li>
-                    <li><button type="button" class="playBtn"></button></li>
+                    <li><button type="button" class="playBtn" onclick="rcdStart()"></button></li>
                 </ul>
                 <ul>
                     <li>
@@ -144,6 +146,12 @@
                     <li>
                         <button type="button">
                             <p>다음</p>
+                        </button>
+                    </li>
+                    <!-- 22.12.22 전체녹취완료 버튼 추가 -->
+                    <li>
+                        <button class="allRcdComplete" type="button" style="display:none">
+                            <p>전체녹취완료</p>
                         </button>
                     </li>
                     <li class="textSizeImg"></li>

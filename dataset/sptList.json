@@ -123,7 +123,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -143,7 +143,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -163,7 +163,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -183,7 +183,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -203,7 +203,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -223,7 +223,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -243,7 +243,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -263,7 +263,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -283,7 +283,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -303,7 +303,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -323,7 +323,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -343,7 +343,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -363,7 +363,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -383,7 +383,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -403,7 +403,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -423,7 +423,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -443,7 +443,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -463,7 +463,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -483,7 +483,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -503,7 +503,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -523,7 +523,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -543,7 +543,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -563,7 +563,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -583,7 +583,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         },
@@ -603,7 +603,7 @@
                 "2022-09-20",
                 "Admin",
                 "Admin",
-                "<button type='button'><span class='magnifierBlackImg'></span></button>",
+                "<button type='button' onclick='showChangeList()'><span class='magnifierBlackImg'></span></button>",
                 "<button type='button'><span class='transformImg'></span></button>"
             ]
         }

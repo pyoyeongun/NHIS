@@ -1,3 +1,6 @@
+#rqAuthListPop {
+  z-index: 1003;
+}
 #rqAuthListPop .popMain {
   width: 1200px;
   height: 642px;
@@ -71,12 +74,14 @@
 .rqAuthListBox .objbox::-webkit-scrollbar-track {
   width: 3px;
 }
+.rqAuthListBox .objbox .ev_material {
+  background-color: #ffffff !important;
+}
+.rqAuthListBox .objbox .odd_material {
+  background-color: #F8F8F8 !important;
+}
 
 .approval {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -92,10 +97,6 @@
 }
 
 .return {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;

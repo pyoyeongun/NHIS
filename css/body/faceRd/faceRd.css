@@ -184,7 +184,11 @@
   margin-right: 0px !important;
 }
 .prdInfo .xhdr .hdr tr:nth-child(2) td {
-  background-color: #C9E9E6 !important;
+  background-color: #8898A7 !important;
+  border-color: #677989 !important;
+}
+.prdInfo .xhdr .hdr tr:nth-child(2) td div {
+  color: #ffffff;
 }
 .prdInfo .objbox {
   display: flex;
@@ -284,4 +288,18 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+}
+
+.allRcdComplete {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #002E9D !important;
+  border: 1px solid;
+  border-color: transparent !important;
+  border-radius: 4px;
+  width: 120px;
+  height: 30px;
+  color: #ffffff;
 }/*# sourceMappingURL=faceRd.css.map */
