@@ -127,6 +127,12 @@
 .rcdListBox .objbox::-webkit-scrollbar-track {
   width: 3px;
 }
+.rcdListBox .objbox .ev_material {
+  background-color: #ffffff !important;
+}
+.rcdListBox .objbox .odd_material {
+  background-color: #F8F8F8 !important;
+}
 
 .playerSection {
   display: flex;

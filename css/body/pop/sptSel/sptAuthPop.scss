@@ -1,0 +1,51 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+// 스크립트 복사 팝업
+#sptAuthPop {
+    z-index: 1004;
+    .popMain {
+        width: 600px;
+        height: 144px;
+    }
+
+    .popBody {
+        @include dp_flex(column, $al_item: flex-start);
+        h1 {
+            width: 100%;
+            margin-left: 14px;
+        }
+    } 
+}
+.sptAuthDate {
+    @include dp_flex($jt_content: flex-start, $al_item: flex-start);
+    width: 94%; 
+    margin-top: 10px;
+    height: 30px;
+    padding-left: 14px;
+
+    div {
+        @include dp_flex($jt_content:flex-start);
+        width: 50%;
+        height: 100%;
+
+        p {
+            margin-right: 8px;
+        }
+        input {
+            margin-right: 4px;
+        }
+    }
+}

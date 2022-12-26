@@ -148,10 +148,12 @@ $hd-grid-br-color: #677989;
 
 // 녹취리스트 그리드
 .rcdListGrid {
+  @include dp_flex(column);
   margin-top: 16px;
-  height: 695px;
+  height: 665px;
 
   table {
+    overflow: scroll !important;
     border-collapse: collapse;
 
     tr {
@@ -172,7 +174,7 @@ $hd-grid-br-color: #677989;
   .gridbox {
     @include dp_flex(column);
     width: 97.3% !important;
-    height: 100% !important;
+    height: 667px !important;
 
     .xhdr {
       width: 100% !important;
@@ -201,10 +203,12 @@ $hd-grid-br-color: #677989;
     }
 
     .objbox {
+      @include dp_flex($al_item: flex-start);
+      width: 100% !important;
       height: 659px !important;
-      overflow: scroll !important;
 
       &::-webkit-scrollbar {
+        position: absolute;
         width: 3px !important;
 
         &-thumb {
@@ -217,13 +221,12 @@ $hd-grid-br-color: #677989;
         }
       }
 
-      tbody {
-        position: relative;
-        top: 39px;
-        left: 1px;
-        background-color: #EDF7F6;
+      table tbody td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
 
-        tr td input {
+        input {
           margin: 0px;
           width: 16px;
           height: 16px;
@@ -232,22 +235,10 @@ $hd-grid-br-color: #677989;
 
       .ev_material {
         background-color: #ffffff !important;
-
-        &:nth-child(2) {
-          td {
-            color: #FF2E69 !important;
-          }
-        }
       }
 
       .odd_material {
         background-color: #F8F8F8 !important;
-
-        &:nth-child(3) {
-          td {
-            color: #FF2E69 !important;
-          }
-        }
       }
     }
   }

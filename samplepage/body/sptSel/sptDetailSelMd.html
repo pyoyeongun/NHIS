@@ -1,0 +1,230 @@
+<!-- 
+    파일명: sptDetailSelMd.html
+    파일내용: 스크립트 상세조회 페이지 > 수정하기 클릭시 페이지
+    작성일: 22.12.23
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용: 
+ -->
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 상세조회</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/footer/mgFooter.css"> <!-- footer css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/management/sptSel/sptDetailSel.css"> <!--변경 이력 css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <script src="../../../js/sideMenu.js"></script> <!--side Menu js-->
+    <!-- 해당 페이지관련 js -->
+    <script src="../../../js/sptSel/sptDetailSel.js"></script>
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/sptSel/sptAuthPop.css"> <!--스크립트 가져오기 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body>
+
+    <!-- 사이트 메뉴 -->
+    <div class="sideBox">
+        <section class="sideMenu">
+            <div class="menuList">
+                <div name="menu" class="currentMenu" onclick="treeMenuOpen(this)">
+                    <div>
+                        <p>녹취고지 및 본인확인1</p>
+                    </div>
+                </div>
+                <div name="menu" onclick="treeMenuOpen(this)">
+                    <div>
+                        <p>상품확인(위험등급 등)</p>
+                    </div>
+                </div>
+                <div name="menu" onclick="treeMenuOpen(this)" data-value="tree1">
+                    <div name="treeMenu">
+                        <p name="tree1_1">상품설명1</p>
+                        <span name="tree1_1" class="plusImg"></span>
+                    </div>
+                </div>
+                <div name="tree1" style="display: none;">
+                    <div>
+                        <p name="tree1_2" onclick="treeSubMenuClick(this)" data-value="tree1_2_1">- 투자자산에 대한 설명</p>
+                        <button class="wastebasketImg" name="tree1_2_1" style="display: none;"></button>
+                    </div>
+                    <div>
+                        <p name="tree1_2" onclick="treeSubMenuClick(this)" data-value="tree1_2_2">- 투자위험에 대한 설명</p>
+                        <button class="wastebasketImg" name="tree1_2_2" style="display: none;"></button>
+                    </div>
+                </div>
+                <div name="menu" onclick="treeMenuOpen(this)" data-value="tree2">
+                    <div name="treeMenu">
+                        <p name="tree2_1">상품설명2</p>
+                        <span name="tree2_1" class="plusImg"></span>
+                    </div>
+                </div>
+                <div name="tree2" style="display: none;">
+                    <div>
+                        <p name="tree2_2" onclick="treeSubMenuClick(this)" data-value="tree2_2_1">- 투자자산에 대한 설명</p>
+                        <button class="wastebasketImg" name="tree2_2_1" style="display: none;"></button>
+                    </div>
+                    <div>
+                        <p name="tree2_2" onclick="treeSubMenuClick(this)" data-value="tree2_2_2">- 투자위험에 대한 설명</p>
+                        <button class="wastebasketImg" name="tree2_2_2" style="display: none;"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="sideWaveBgImg"></div>
+        </section>
+
+        <div class="bodyBox">
+            <section class="prdInfo">
+                <div>
+                    <span class="blueText">상품명</span>
+                    <p>농협실버 특별자산투자신탁123123123123123</p>
+                </div>
+                <div>
+                    <span class="blueText">상품유형</span>
+                    <p>펀드</p>
+                </div>
+                <div>
+                    <span class="blueText">그룹코드</span>
+                    <p>1234567890</p>
+                </div>
+                <div>
+                    <span class="blueText">상품코드</span>
+                    <p>1111111111</p>
+                </div>
+                <div>
+                    <span class="blueText">예상 소요 시간</span>
+                    <p>08분 38초</p>
+                </div>
+            </section>
+            <section class="sptCps">
+                <div class="sptCpsHeader">
+                    <h1>녹취고지 및 분석확인1 > 스크립트구성</h1>
+                    <div>
+                        <ul>
+                            <li><button class="suit">
+                                    <p>적합성보고서</p>
+                                </button></li>
+                            <li><button class="client">
+                                    <p>고객답변</p>
+                                </button></li>
+                            <li><button class="staff">
+                                    <p>스크립트 수정</p>
+                                </button></li>
+                            <li><button class="tts">
+                                    <p>TTS 리딩</p>
+                                </button></li>
+                            <li><button class="common">
+                                    <p>공통문구</p>
+                                </button></li>
+                        </ul>
+                        <ul>
+                            <li><button class="cancelBtn" type="button" onclick="sptDetailSelBack()">
+                                    <p>취소</p>
+                                </button></li>
+                            <li><button type="button" onclick="sptAuthPopup()">
+                                    <p>결재 의뢰</p>
+                                </button></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sptCpsBody">
+                    <div class="cpsLineStyle">
+                        <div>
+                            <span class="cpsTTS">자동리딩</span>
+                            <ul>
+                                <li><button type="button" onclick="aheadListen()">
+                                        <p>미리듣기</p>
+                                    </button></li>
+                                <li>
+                                    <select>
+                                        <option value="" selected>조건없음</option>
+                                        <option value="조건1">조건1</option>
+                                        <option value="조건2">조건2</option>
+                                        <option value="조건3">조건3</option>
+                                    </select>
+                                </li>
+                                <li><input type="text" placeholder="입력하세요"></li>
+                            </ul>
+                        </div>
+                        <p>고객님께서는 선택하신 금융투자 상품은 관련 법령에 의해 판매과정을 녹화하도록 되어 있습니다. 고객님께서 녹취를 거부하시는 경우 판매가 제한될 수 있습니다. 그럼
+                            지금부터 녹취를 시작하겠습니다.고객 명 외 주민등록번호 등 개인정보가 녹음되지 않도록 유의해주시가 바랍니다.</p>
+                    </div>
+                    <div class="cpsLineStyle">
+                        <div>
+                            <span class="cpsClient">고객답변</span>
+                            <ul>
+                                <li><button type="button" onclick="aheadListen()">
+                                        <p>미리듣기</p>
+                                    </button></li>
+                                <li>
+                                    <select>
+                                        <option value="" selected>조건없음</option>
+                                        <option value="조건1">조건1</option>
+                                        <option value="조건2">조건2</option>
+                                        <option value="조건3">조건3</option>
+                                    </select>
+                                </li>
+                                <li><input type="text" placeholder="입력하세요"></li>
+                            </ul>
+                        </div>
+                        <p>거부 → 상품판매 중단</p>
+                    </div>
+                    <div class="cpsLineStyle">
+                        <div>
+                            <span class="cpsStaff">지원직접리딩</span>
+                            <ul>
+                                <li><button type="button" onclick="aheadListen()">
+                                        <p>미리듣기</p>
+                                    </button></li>
+                                <li>
+                                    <select>
+                                        <option value="" selected>조건없음</option>
+                                        <option value="조건1">조건1</option>
+                                        <option value="조건2">조건2</option>
+                                        <option value="조건3">조건3</option>
+                                    </select>
+                                </li>
+                                <li><input type="text" placeholder="입력하세요"></li>
+                            </ul>
+                        </div>
+                        <p>고객님께서는 선택하신 금융투자 상품은 관련 법령에 의해 판매과정을 녹화하도록 되어 있습니다. 고객님께서 녹취를 거부하시는 경우 판매가 제한될 수 있습니다. 그럼
+                            지금부터 녹취를 시작하겠습니다.고객 명 외 주민등록번호 등 개인정보가 녹음되지 않도록 유의해주시가 바랍니다.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 미리듣기 플레이어 -->
+            <section class="sptPlayer" style="display: none;">
+                <div>
+                    <p>/*플레이어 들어가는 구간*/</p>
+                </div>
+            </section>
+
+            <!--footer-->
+        </div>
+    </div>
+
+
+    <!-- 결재의뢰 팝업 -->
+    
+</body>
+
+</html> 

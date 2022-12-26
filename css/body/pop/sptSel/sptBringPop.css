@@ -1,0 +1,124 @@
+#sptBringPop {
+  z-index: 1003;
+}
+#sptBringPop .popMain {
+  width: 1200px;
+  height: 698px;
+}
+#sptBringPop .popBody h1 {
+  width: 100%;
+}
+
+#sptCopyPop {
+  z-index: 1003;
+}
+#sptCopyPop .popMain {
+  width: 1200px;
+  height: 698px;
+}
+#sptCopyPop .popBody h1 {
+  width: 100%;
+}
+
+.sptBtingSel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 98%;
+  margin-top: 14px;
+}
+.sptBtingSel input {
+  width: 298px;
+  height: 26px;
+  margin-right: 8px;
+}
+.sptBtingSel button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 100px;
+  width: auto;
+  height: 30px;
+}
+.sptBtingSel button p {
+  height: 100%;
+}
+
+.sptBringGridBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 98%;
+  height: 526px;
+  margin-top: 11px;
+}
+.sptBringGridBox table {
+  border-collapse: collapse;
+}
+.sptBringGridBox table tr {
+  height: 36px;
+}
+.sptBringGridBox table tr td {
+  border: 1px solid #B8C0C7 !important;
+}
+.sptBringGridBox .gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1168px !important;
+  height: 566px !important;
+}
+.sptBringGridBox .gridbox .xhdr {
+  width: 100% !important;
+  height: 36px !important;
+  justify-content: flex-start;
+}
+.sptBringGridBox .gridbox .xhdr table {
+  margin: 0px !important;
+  padding: 0px !important;
+  height: 100%;
+}
+.sptBringGridBox .gridbox .xhdr table tr:nth-child(2) td {
+  background-color: #8898A7 !important;
+  border-color: #677989 !important;
+  color: #ffffff;
+}
+.sptBringGridBox .gridbox .xhdr table tr:nth-child(2) td div {
+  padding: 0px;
+}
+.sptBringGridBox .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 499px !important;
+  overflow: scroll !important;
+}
+.sptBringGridBox .objbox::-webkit-scrollbar {
+  position: absolute;
+  width: 3px;
+}
+.sptBringGridBox .objbox::-webkit-scrollbar-thumb {
+  width: 3px;
+  background-color: #D9D9D9;
+}
+.sptBringGridBox .objbox::-webkit-scrollbar-track {
+  width: 3px;
+}
+.sptBringGridBox .objbox .ev_material {
+  background-color: #ffffff !important;
+}
+.sptBringGridBox .objbox .odd_material {
+  background-color: #F8F8F8 !important;
+}
+
+.footerBox {
+  border-top: 1px solid #B8C0C7;
+}/*# sourceMappingURL=sptBringPop.css.map */

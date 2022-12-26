@@ -65,16 +65,13 @@
   justify-content: center;
   align-items: center;
   margin-top: 16px;
-  height: 875px;
+  height: 845px;
   width: 100%;
 }
 .sptListGrid table {
   overflow: scroll !important;
   border-collapse: collapse;
   width: 100% !important;
-  position: absolute !important;
-  top: -1px;
-  left: 1px;
 }
 .sptListGrid table tbody tr {
   height: 36px;
@@ -98,7 +95,6 @@
   align-items: center;
   width: 1700px !important;
   height: 875px !important;
-  position: absolute;
 }
 .sptListGrid .gridbox .xhdr {
   width: 100% !important;
@@ -114,8 +110,12 @@
   color: #ffffff;
 }
 .sptListGrid .gridbox .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   width: 100% !important;
-  height: 810px !important;
+  height: 806px !important;
 }
 .sptListGrid .gridbox .objbox::-webkit-scrollbar {
   position: absolute;

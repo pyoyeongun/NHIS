@@ -73,21 +73,17 @@ $hd-grid-br-color: #677989;
     }
 }
 
-
 // 녹취리스트 그리드
 .sptListGrid {
     @include dp_flex;
     margin-top: 16px;
-    height: 875px;
+    height: 845px;
     width: 100%;
 
     table {
         overflow: scroll !important;
         border-collapse: collapse;
         width: 100% !important;
-        position: absolute !important;
-        top: -1px;
-        left: 1px;
 
         tbody {
             tr {
@@ -111,7 +107,6 @@ $hd-grid-br-color: #677989;
         @include dp_flex(column);
         width: 1700px !important;
         height: 875px !important;
-        position: absolute;
 
         .xhdr {
             width: 100% !important;
@@ -130,8 +125,9 @@ $hd-grid-br-color: #677989;
         }
 
         .objbox {
-            width: 100% !important;
-            height: 810px !important;
+      @include dp_flex($al_item: flex-start);
+      width: 100% !important;
+            height: 806px !important;
 
             &::-webkit-scrollbar {
                 position: absolute;
@@ -168,3 +164,4 @@ $hd-grid-br-color: #677989;
         padding: 0px;
     }
 }
+

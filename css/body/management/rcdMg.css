@@ -120,10 +120,15 @@
 }
 
 .rcdListGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
-  height: 695px;
+  height: 665px;
 }
 .rcdListGrid table {
+  overflow: scroll !important;
   border-collapse: collapse;
 }
 .rcdListGrid table tr {
@@ -151,7 +156,7 @@
   justify-content: center;
   align-items: center;
   width: 97.3% !important;
-  height: 100% !important;
+  height: 667px !important;
 }
 .rcdListGrid .gridbox .xhdr {
   width: 100% !important;
@@ -175,10 +180,15 @@
   height: 16px;
 }
 .rcdListGrid .gridbox .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100% !important;
   height: 659px !important;
-  overflow: scroll !important;
 }
 .rcdListGrid .gridbox .objbox::-webkit-scrollbar {
+  position: absolute;
   width: 3px !important;
 }
 .rcdListGrid .gridbox .objbox::-webkit-scrollbar-thumb {
@@ -188,13 +198,12 @@
 .rcdListGrid .gridbox .objbox::-webkit-scrollbar-track {
   width: 3px !important;
 }
-.rcdListGrid .gridbox .objbox tbody {
-  position: relative;
-  top: 39px;
-  left: 1px;
-  background-color: #EDF7F6;
+.rcdListGrid .gridbox .objbox table tbody td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.rcdListGrid .gridbox .objbox tbody tr td input {
+.rcdListGrid .gridbox .objbox table tbody td input {
   margin: 0px;
   width: 16px;
   height: 16px;
@@ -202,14 +211,8 @@
 .rcdListGrid .gridbox .objbox .ev_material {
   background-color: #ffffff !important;
 }
-.rcdListGrid .gridbox .objbox .ev_material:nth-child(2) td {
-  color: #FF2E69 !important;
-}
 .rcdListGrid .gridbox .objbox .odd_material {
   background-color: #F8F8F8 !important;
-}
-.rcdListGrid .gridbox .objbox .odd_material:nth-child(3) td {
-  color: #FF2E69 !important;
 }
 
 .rcdPlayer {

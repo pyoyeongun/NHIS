@@ -290,6 +290,11 @@
   background: transparent url(../img/pngImg/icon_minus.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
+// 쓰레기통 이미지 {
+.wastebasketImg {
+  background: transparent url(../img/pngImg/icon_wastebasket.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
 /*
     버튼 이미지
 */
@@ -356,7 +361,7 @@
   color: #0a74dc;
 }
 .orangeText {
-  color: #FFB81C;
+  color: #FFB81C !important;
 }
 /*
     Gif 이미지

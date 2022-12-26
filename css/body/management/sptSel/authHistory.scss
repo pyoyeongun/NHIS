@@ -1,0 +1,172 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+
+// 그리드 테두리 변수
+$br-style: 1px solid #B8C0C7;
+// 그리드 해더 색변경
+$hd-grid-bg-color: #8898A7;
+// 그리드 해더 테두리 색 변수
+$hd-grid-br-color: #677989;
+
+.authHistorySel {
+    @include dp_flex;
+    width: 1700px;
+
+    >div {
+        @include dp_flex($jt_content: flex-start, $al_item: flex-start);
+        margin-top: 14px;
+        width: 100%;
+        height: 30px;
+        padding: 14px;
+        background-color: #ffffff;
+        box-shadow: 0px 1px 6px #0000001F;
+
+        >form {
+            border-radius: 4px;
+
+            >div {
+                @include dp_flex($jt_content: flex-start);
+                height: 30px;
+                border-right: $br-style;
+                margin: 0px 0px 12px 12px;
+                float: left;
+
+                >p {
+                    margin-right: 8px;
+                }
+
+                >button {
+                    @include dp_flex;
+                    @include customBtnStyle(100px, auto, 30px);
+                }
+
+                &:last-child {
+                    border: 0px;
+                }
+            }
+            input[type='date'] {
+                width: 130px;
+                height: 30px;
+                margin-right: 8px;
+            }
+
+            input {
+                width: 240px;
+                height: 30px;
+                margin-right: 8px;
+            }
+
+            select {
+                width: 120px;
+                height: 30px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+// 녹취리스트 그리드
+.authHistoryGrid {
+    @include dp_flex;
+    margin-top: 16px;
+    height: 845px;
+    width: 100%;
+
+    table {
+        overflow: scroll !important;
+        border-collapse: collapse;
+        width: 100% !important;
+
+        tbody {
+            tr {
+                height: 36px;
+
+                td {
+                    border: $br-style !important;
+                    padding: 0px !important;
+
+                    div {
+                        @include dp_flex;
+                        padding: 0px !important;
+                        height: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    .gridbox {
+        @include dp_flex(column);
+        width: 1700px !important;
+        height: 875px !important;
+
+        .xhdr {
+            width: 100% !important;
+            height: 36px !important;
+
+            table {
+                margin: 0px !important;
+                padding: 0px !important;
+
+                tbody tr:nth-child(2) td {
+                    background-color: $hd-grid-bg-color !important;
+                    border-color: $hd-grid-br-color !important;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .objbox {
+      @include dp_flex($al_item: flex-start);
+      width: 100% !important;
+            height: 806px !important;
+
+            &::-webkit-scrollbar {
+                position: absolute;
+                width: 3px !important;
+
+                &-thumb {
+                    width: 3px !important;
+                    background-color: #D9D9D9;
+                }
+
+                &-track {
+                    width: 3px !important;
+                }
+            }
+
+            table tbody td {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .ev_material {
+                background-color: #ffffff !important;
+            }
+
+            .odd_material {
+                background-color: #F8F8F8 !important;
+            }
+        }
+    }
+
+    button {
+        @include dp_flex;
+        padding: 0px;
+    }
+}
+

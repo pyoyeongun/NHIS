@@ -7,6 +7,11 @@ dhtmlxEvent(window, "load", () => {
     grid.setImagePath("../dHtmlxSuite/codebase/imgs/");
     grid.init();
     grid.load("../../dataset/sptList.json", "json");
+    //스크립트 상세조회
+    grid.attachEvent("onRowSelect", () => {
+        let link = "../../page/scriptSel/sptDetailSel.html";
+        location.href = link;
+    });
 });
 
 
@@ -16,7 +21,3 @@ function showChangeList() {
     location.href = link;
 }
 
-//스크립트 상세조회
-function showSptDetailSel() {
-    let link = "../../page/scriptSel/sptDetailSel.html";
-}

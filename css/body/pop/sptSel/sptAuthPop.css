@@ -1,0 +1,42 @@
+#sptAuthPop {
+  z-index: 1004;
+}
+#sptAuthPop .popMain {
+  width: 600px;
+  height: 144px;
+}
+#sptAuthPop .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#sptAuthPop .popBody h1 {
+  width: 100%;
+  margin-left: 14px;
+}
+
+.sptAuthDate {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 94%;
+  margin-top: 10px;
+  height: 30px;
+  padding-left: 14px;
+}
+.sptAuthDate div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.sptAuthDate div p {
+  margin-right: 8px;
+}
+.sptAuthDate div input {
+  margin-right: 4px;
+}/*# sourceMappingURL=sptAuthPop.css.map */

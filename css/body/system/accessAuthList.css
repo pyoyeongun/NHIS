@@ -1,19 +1,16 @@
 .accAuthListGrid {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 16px;
-  height: 957px;
+  height: 918px;
   width: 100%;
 }
 .accAuthListGrid table {
   overflow: scroll !important;
   border-collapse: collapse;
   width: 100% !important;
-  position: absolute !important;
-  top: -1px;
-  left: 1px;
 }
 .accAuthListGrid table tbody tr {
   height: 36px;
@@ -37,7 +34,6 @@
   align-items: center;
   width: 1689px !important;
   height: 961px !important;
-  position: absolute;
 }
 .accAuthListGrid .gridbox .xhdr {
   width: 100% !important;
@@ -53,6 +49,10 @@
   color: #ffffff;
 }
 .accAuthListGrid .gridbox .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
   width: 100% !important;
   height: 100% !important;
 }

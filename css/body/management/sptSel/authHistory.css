@@ -1,0 +1,153 @@
+.authHistorySel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1700px;
+}
+.authHistorySel > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 14px;
+  width: 100%;
+  height: 30px;
+  padding: 14px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1215686275);
+}
+.authHistorySel > div > form {
+  border-radius: 4px;
+}
+.authHistorySel > div > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  border-right: 1px solid #B8C0C7;
+  margin: 0px 0px 12px 12px;
+  float: left;
+}
+.authHistorySel > div > form > div > p {
+  margin-right: 8px;
+}
+.authHistorySel > div > form > div > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 100px;
+  width: auto;
+  height: 30px;
+}
+.authHistorySel > div > form > div:last-child {
+  border: 0px;
+}
+.authHistorySel > div > form input[type=date] {
+  width: 130px;
+  height: 30px;
+  margin-right: 8px;
+}
+.authHistorySel > div > form input {
+  width: 240px;
+  height: 30px;
+  margin-right: 8px;
+}
+.authHistorySel > div > form select {
+  width: 120px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.authHistoryGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  height: 845px;
+  width: 100%;
+}
+.authHistoryGrid table {
+  overflow: scroll !important;
+  border-collapse: collapse;
+  width: 100% !important;
+}
+.authHistoryGrid table tbody tr {
+  height: 36px;
+}
+.authHistoryGrid table tbody tr td {
+  border: 1px solid #B8C0C7 !important;
+  padding: 0px !important;
+}
+.authHistoryGrid table tbody tr td div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  height: 36px;
+}
+.authHistoryGrid .gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1700px !important;
+  height: 875px !important;
+}
+.authHistoryGrid .gridbox .xhdr {
+  width: 100% !important;
+  height: 36px !important;
+}
+.authHistoryGrid .gridbox .xhdr table {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.authHistoryGrid .gridbox .xhdr table tbody tr:nth-child(2) td {
+  background-color: #8898A7 !important;
+  border-color: #677989 !important;
+  color: #ffffff;
+}
+.authHistoryGrid .gridbox .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100% !important;
+  height: 806px !important;
+}
+.authHistoryGrid .gridbox .objbox::-webkit-scrollbar {
+  position: absolute;
+  width: 3px !important;
+}
+.authHistoryGrid .gridbox .objbox::-webkit-scrollbar-thumb {
+  width: 3px !important;
+  background-color: #D9D9D9;
+}
+.authHistoryGrid .gridbox .objbox::-webkit-scrollbar-track {
+  width: 3px !important;
+}
+.authHistoryGrid .gridbox .objbox table tbody td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.authHistoryGrid .gridbox .objbox .ev_material {
+  background-color: #ffffff !important;
+}
+.authHistoryGrid .gridbox .objbox .odd_material {
+  background-color: #F8F8F8 !important;
+}
+.authHistoryGrid button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}/*# sourceMappingURL=authHistory.css.map */

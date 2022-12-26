@@ -335,6 +335,13 @@
   background-size: 20px;
 }
 
+.wastebasketImg {
+  background: transparent url(../img/pngImg/icon_wastebasket.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
 /*
     버튼 이미지
 */
@@ -413,7 +420,7 @@
 }
 
 .orangeText {
-  color: #FFB81C;
+  color: #FFB81C !important;
 }
 
 /*

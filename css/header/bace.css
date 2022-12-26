@@ -115,7 +115,7 @@ select::-ms-expand {
   justify-content: space-between !important;
   align-items: center;
   width: 100%;
-  height: 46px;
+  height: 64px;
   border-radius: 4px 4px 0px 0px;
   background-color: #005EB8;
   color: #ffffff;

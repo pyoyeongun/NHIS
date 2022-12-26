@@ -46,3 +46,19 @@ function rqAuthListPopdown() {
 function isRRcdPopdown() {
     document.getElementById("isRRcdPop").style.display = "none";
 }
+
+/*
+    스크립트 조회 팝업
+*/
+// 스크립트 가져오기 팝업
+function sptBringPopdown() {
+    document.getElementById("sptBringPop").style.display = "none";
+}
+// 스크립트 복사 팝업
+function sptCopyPopdown() {
+    document.getElementById("sptCopyPop").style.display = "none";
+}
+// 결제 의뢰 팝업 
+function sptAuthPopdown() {
+    document.getElementById("sptAuthPop").style.display = "none";
+}

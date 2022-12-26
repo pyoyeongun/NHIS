@@ -1,0 +1,100 @@
+<!-- 
+    파일명: authList.html
+    파일내용: 결제 목록 페이지
+    작성일: 22.12.26
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용: 
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결재 목록</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/footer/mgFooter.css"> <!-- footer css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/management/sptSel/authList.css"> <!--스크립트 가져오기 pop-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../js/sptSel/authList.js"></script> <!--결재 목록 js-->
+
+
+    <!-- 팝업 javascript -->
+</head>
+
+<body>
+    <div class="sideBox">
+        <!-- 사이트 메뉴 -->
+        <section class="sideMenu">
+            <div class="menuList">
+                <a href="./scriptSel.html">스크립트 조회</a>
+                <a href="">공용스크립트 조회</a>
+                <a class="currentMenu" href="./authList.html">결재 목록</a>
+                <a href="./authHistory.html">결재 이력</a>
+            </div>
+            <div class="sideWaveBgImg"></div>
+        </section>
+        <div class="bodyBox">
+            <!-- 결재 목록 검색기 -->
+            <section class="authListSel">
+                <div>
+                    <form>
+                        <div>
+                            <p>스크립트 종류</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="스크립트 종류1">스크립트 종류1</option>
+                                <option value="스크립트 종류2">스크립트 종류2</option>
+                                <option value="스크립트 종류3">스크립트 종류3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>결재상태</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="결재의뢰">결재의뢰</option>
+                                <option value="결재상태1">결재상태1</option>
+                                <option value="결재상태2">결재상태2</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>결재의뢰일</p>
+                            <input type="date">
+                            <input type="date">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="입력하세요.">
+                            <button>
+                                <span class="magnifierBlackImg"></span>
+                                <p>조회</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            
+            <!-- 결재 목록 -->
+            <section class="authListGrid">
+                <div id="authList"></div>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
