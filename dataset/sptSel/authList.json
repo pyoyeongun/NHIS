@@ -47,14 +47,14 @@
             "type": "ro",
             "align": "center",
             "width": "119",
-            "value": "스크립트종류"
+            "value": "결재의뢰자"
         },
         {
             "id": "applyDate",
             "type": "ro",
             "align": "center",
             "width": "102",
-            "value": "스크립트종류"
+            "value": "적용예정일"
         }
     ],
     "rows": [

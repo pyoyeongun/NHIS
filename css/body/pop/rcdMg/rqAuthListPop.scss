@@ -47,6 +47,10 @@ $hd-grid-br-color: #677989;
         tr {
             td {
                 border: $br-style !important;
+
+                &:first-child {
+                    background-color: #EAEAEA;
+                }
             }
         }
     }

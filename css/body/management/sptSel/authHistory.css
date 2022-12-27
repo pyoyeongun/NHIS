@@ -85,6 +85,9 @@
   border: 1px solid #B8C0C7 !important;
   padding: 0px !important;
 }
+.authHistoryGrid table tbody tr td:first-child {
+  background-color: #EAEAEA;
+}
 .authHistoryGrid table tbody tr td div {
   display: flex;
   flex-direction: row;

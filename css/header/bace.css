@@ -115,7 +115,7 @@ select::-ms-expand {
   justify-content: space-between !important;
   align-items: center;
   width: 100%;
-  height: 64px;
+  height: 52px;
   border-radius: 4px 4px 0px 0px;
   background-color: #005EB8;
   color: #ffffff;
@@ -213,4 +213,44 @@ select::-ms-expand {
   height: 26px;
   font-weight: bold;
   color: #0f0f0f;
+}
+
+.newAddBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #002E9D;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: auto;
+  height: 30px;
+  color: #ffffff;
+}
+
+.baceBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 4px;
+  width: auto;
+  height: 30px;
+}
+
+.delBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #F8F8F8;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: auto;
+  height: 30px;
 }/*# sourceMappingURL=bace.css.map */

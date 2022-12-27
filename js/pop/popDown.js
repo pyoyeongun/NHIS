@@ -10,17 +10,21 @@ function rcdAgreePopdown() {
     document.getElementById("rcdAgreePop").style.display = "none";
 }
 
-//오류 팝업 1
+// 오류 팝업 1
 function errPop1down() {
     document.getElementById("errPop1").style.display = "none";
 }
-//오류 팝업 2
+// 오류 팝업 2
 function errPop2down() {
     document.getElementById("errPop2").style.display = "none";
 }
-//오류 팝업 3
+// 오류 팝업 3
 function errPop3down() {
     document.getElementById("errPop3").style.display = "none";
+}
+// 마이크 설정 팝업
+function mikeSettingPopdown() {
+    document.getElementById("mikeSettingPop").style.display = "none";
 }
 /*
     녹취 관리 팝업

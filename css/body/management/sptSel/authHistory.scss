@@ -98,6 +98,10 @@ $hd-grid-br-color: #677989;
                     border: $br-style !important;
                     padding: 0px !important;
 
+                    &:first-child {
+                        background-color: #EAEAEA;
+                    }
+
                     div {
                         @include dp_flex;
                         padding: 0px !important;

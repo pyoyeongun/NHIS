@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제이력 상세조회</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/management/sptSel/authHistoryDt.css">
+    <!--스크립트 결제이력 상세조회 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 해당 페이지관련 js -->
+    <script src="../../js/sptSel/sptAuth.js"></script> <!--스크립트 결제이력 상세조회 js-->
+</head>
+
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+
+    <!-- 네비게이션 백바 -->
+    <nav class="navBackBox">
+        <p class="blueText">결제이력 상세 조회</p>
+        <a href="./authHistory.html"><span class="backArrowImg"></span></a>
+    </nav>
+
+    <!-- 스크립트 관련 상품 정보 -->
+    <section class="prdInfo">
+        <div>
+            <div>
+                <span class="blueText">상품명</span>
+                <p>농협실버 특별자산투자신탁123123123123123</p>
+            </div>
+            <div>
+                <span class="blueText">상품유형</span>
+                <p>펀드</p>
+            </div>
+            <div>
+                <span class="blueText">그룹코드</span>
+                <p>1234567890</p>
+            </div>
+            <div>
+                <span class="blueText">상품코드</span>
+                <p>111111111111</p>
+            </div>
+            <div>
+                <span class="blueText">예상 소요 시간</span>
+                <p>08분 38초</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 변경전 스크립트 변경후 -->
+    <div class="sptCgBfAfBox">
+        <!-- 변경전 -->
+        <section class="beforeSection">
+            <div>
+                <span>변경전</span>
+            </div>
+            <div>
+                <h1>1. 녹취 자동응답 시스템 연결멘트</h1>
+                <div>
+                    <p class="blueText">자동리딩</p>
+                    <p>고객님께서는 선택하신 금융투자 상품은 관련 법령에 의해 판매과정을 녹화하도록 되어 있습니다. 고객님께서 녹취를 거부하시는 경우 판매가 제한될 수 있습니다. 그럼 지금부터
+                        녹취를 시작하겠습니다.고객 명 외 주민등록번호 등 개인정보가 녹음되지 않도록 유의해주시가 바랍니다.</p>
+                </div>
+                <div>
+                    <p class="blueText">고객답변</p>
+                    <p>거부 → 상품판매 중단</p>
+                </div>
+                <div>
+                    <p class="blueText">고객답변</p>
+                    <p>거부 → 상품판매 중단</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 변경후 -->
+        <section class="afterSection">
+            <div>
+                <span>변경후</span>
+                <ul>
+                    <li><button class="delBtn">
+                            <p>결재의뢰 취소</p>
+                        </button></li>
+                    <li><button class="baceBtn" onclick="goAuthHistory()">
+                            <p>결재이력 보기</p>
+                        </button></li>
+                </ul>
+            </div>
+            <div>
+                <h1>1. 녹취 자동응답 시스템 연결멘트</h1>
+                <div>
+                    <p class="blueText">자동리딩</p>
+                    <p>고객님께서는 선택하신 금융투자 상품은 관련 법령에 의해 판매과정을 녹화하도록 되어 있습니다. 고객님께서 녹취를 거부하시는 경우 판매가 제한될 수 있습니다. 그럼 지금부터
+                        녹취를 시작하겠습니다.고객 명 외 주민등록번호 등 개인정보가 녹음되지 않도록 유의해주시가 바랍니다.</p>
+                </div>
+                <div>
+                    <p class="blueText">고객답변</p>
+                    <p>거부 → 상품판매 중단</p>
+                </div>
+                <div>
+                    <p class="blueText">고객답변</p>
+                    <p>거부 → 상품판매 중단</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

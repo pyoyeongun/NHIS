@@ -93,6 +93,10 @@ $hd-grid-br-color: #677989;
                     border: $br-style !important;
                     padding: 0px !important;
 
+                    &:first-child {
+                        background-color: #EAEAEA;
+                    }
+                    
                     div {
                         @include dp_flex;
                         padding: 0px !important;
@@ -125,8 +129,8 @@ $hd-grid-br-color: #677989;
         }
 
         .objbox {
-      @include dp_flex($al_item: flex-start);
-      width: 100% !important;
+            @include dp_flex($al_item: flex-start);
+            width: 100% !important;
             height: 806px !important;
 
             &::-webkit-scrollbar {
@@ -164,4 +168,3 @@ $hd-grid-br-color: #677989;
         padding: 0px;
     }
 }
-

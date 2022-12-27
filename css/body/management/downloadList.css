@@ -89,6 +89,9 @@
 .dlListGrid table tbody tr td {
   border: 1px solid #B8C0C7 !important;
 }
+.dlListGrid table tbody tr td:first-child {
+  background-color: #EAEAEA;
+}
 .dlListGrid .gridbox {
   display: flex;
   flex-direction: column;

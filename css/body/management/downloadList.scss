@@ -98,6 +98,10 @@ $hd-grid-br-color: #677989;
 
                 td {
                     border: $br-style !important;
+
+                    &:first-child {
+                        background-color: #EAEAEA;
+                    }
                 }
             }
         }

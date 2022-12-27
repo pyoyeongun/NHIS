@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 결제</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/management/sptSel/sptAuth.css"> <!--스크립트 결제 css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 해당 페이지관련 js -->
+    <script src="../../../js/sptSel/sptAuth.js"></script> <!--스크립트 결제 js-->
+</head>
+
+<body>
+    <div class="sptCgBfAfBox">
+        <!-- 변경전 -->
+        <section class="beforeSection">
+            <div>
+                <span>변경전</span>
+            </div>
+            <div>
+                <div>
+                    <p class="blueText">공용문구 이름 :</p>
+                    <p>펀드 공통문구</p>
+                </div>
+                <div>
+                    <p class="blueText">공용문구 설명 :</p>
+                    <p>환매보수에 대한 설명P2(총보수)</p>
+                </div>
+                <div>
+                    <p class="blueText">실시간 사용여부 :</p>
+                    <p>N</p>
+                </div>
+                <div>
+                    <p class="blueText">자동리딩</p>
+                    <p>고객님께서는 선택하신 금융투자 상품은 관련 법령에 의해 판매과정을 녹화하도록 되어 있습니다. 고객님께서 녹취를 거부하시는 경우 판매가 제한될 수 있습니다. 그럼 지금부터 녹취를
+                        시작하겠습니다.고객 명 외 주민등록번호 등 개인정보가 녹음되지 않도록 유의해주시가 바랍니다.</p>
+                </div>
+            </div>
+        </section>
+        <!-- 변경후 -->
+        <section class="afterSection">
+            <div>
+                <span>변경후</span>
+                <ul>
+                    <li><button class="delBtn"><p>반려</p></button></li>
+                    <li><button class="baceBtn"><p>승인</p></button></li>
+                    <li><button class="baceBtn" onclick="goAuthList()"><p>결제목록 보기</p></button></li>
+                </ul>
+            </div>
+            <div>
+                <div>
+                    <p class="blueText">공용문구 이름 :</p>
+                    <p>펀드 공통문구</p>
+                </div>
+                <div>
+                    <p class="blueText">공용문구 설명 :</p>
+                    <p>환매보수에 대한 설명P2(총보수)</p>
+                </div>
+                <div>
+                    <p class="blueText">실시간 사용여부 :</p>
+                    <p>N</p>
+                </div>
+                <div>
+                    <p class="blueText">자동리딩</p>
+                    <p>고객님께서는 선택하신 금융투자 상품은 관련 법령에 의해 판매과정을 녹화하도록 되어 있습니다. 고객님께서 녹취를 거부하시는 경우 판매가 제한될 수 있습니다. 그럼 지금부터 녹취를
+                        시작하겠습니다.고객 명 외 주민등록번호 등 개인정보가 녹음되지 않도록 유의해주시가 바랍니다. abcd</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

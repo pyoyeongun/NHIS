@@ -6,6 +6,7 @@
   height: 70px;
   width: 100%;
   background-color: #ffffff;
+  border-top: 1px solid #B8C0C7;
 }
 .footerBox p {
   font-size: 14px;

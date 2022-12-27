@@ -1,0 +1,85 @@
+<!-- 
+    파일명: mikeSettingPop.html
+    파일내용: 마이크 셋팅 팝업 (샘플)
+    작성일: 22.12.26
+    작성자: 표영운
+    수정일: 
+    수정자: 
+    수정내용:
+ -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이크 세팅 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/playSpeed.js"></script> <!--플레이어 배속 js-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/faceRd/faceRdPopStyle1.css"> <!-- 팝업 css-->
+    <!-- 팝업 js -->
+    <script src="../../../js/pop/popDown.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+            <span class="logoTitleFaceRdImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+
+    <!-- 마이크 설정 팝업 -->
+    <section class="popBox" id="mikeSettingPop">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 184px;">
+            <div class="popHeader">
+                <p>마이크 설정</p>
+                <div>
+                    <button><span class="cancelWhiteImg" onclick="mikeSettingPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <div>
+                    <p>담당자 마이크</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="1번 포트">1번 포트</option>
+                        <option value="2번 포트">2번 포트</option>
+                        <option value="3번 포트">3번 포트</option>
+                    </select>
+                </div>
+                <div>
+                    <p>고객사 마이크</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="1번 포트">1번 포트</option>
+                        <option value="2번 포트">2번 포트</option>
+                        <option value="3번 포트">3번 포트</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

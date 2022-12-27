@@ -24,6 +24,9 @@
 .isRRcdBox table tr td {
   border: 1px solid #B8C0C7 !important;
 }
+.isRRcdBox table tr td:first-child {
+  background-color: #EAEAEA;
+}
 .isRRcdBox table tr td button {
   display: flex;
   flex-direction: row;

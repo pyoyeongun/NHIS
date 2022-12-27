@@ -7,4 +7,9 @@ dhtmlxEvent(window, "load", () => {
     authList.setImagePath("../../dHtmlxSuite/codebase/imgs/");
     authList.init();
     authList.load("../../dataset/sptSel/authList.json", "json");
+    //스크립트 결제 페이지 이동
+    authList.attachEvent("onRowSelect", () => {
+        let link = "./sptAuth.html";
+        location.href = link;
+    });
 });

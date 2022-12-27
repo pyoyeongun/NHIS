@@ -1,0 +1,89 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+
+
+.sptCgBfAfBox {
+    @include dp_flex($jt_content: space-around);
+    margin-top: 14px;
+
+    section {
+        @include dp_flex(column, $al_item: flex-start);
+        @include customBtnStyle(4px, 49%, auto, transparent);
+
+        >div {
+            &:first-child {
+                @include dp_flex($jt_content: space-between);
+                width: 100%;
+                height: 46px;
+                border-bottom: 1px solid #B8C0C7;
+            }
+
+            &:last-child {
+                @include dp_flex(column, flex-start, flex-start);
+                padding: 14px 14px;
+
+                >div {
+                    margin-bottom: 6px;
+
+                    > p {
+                        margin-right: 5px;
+                    }
+                    
+                    &:last-child {
+                        @include dp_flex(column, flex-start);
+                        @include customBtnStyle(4px, 97%, auto, transparent, #F8F8F8);
+                        padding: 14px 15px;
+
+                        >p {
+                            width: 100%;
+                            font-size: 14px;
+                            
+                            &:last-child {
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+    .beforeSection {
+        span {
+            @include customBtnStyle(0px 16px 16px 0px, 120px, 30px, transparent, #002e9d);
+            color: #ffffff;
+        }
+    }
+
+    .afterSection {
+        span {
+            @include customBtnStyle(0px 16px 16px 0px, 120px, 30px, transparent, #0A74DC);
+            color: #ffffff;
+        }
+
+        ul {
+            @include dp_flex;
+            margin-right: 14px;
+
+            li {
+                margin-left: 8px;
+            }
+        }
+    }
+}

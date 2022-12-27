@@ -24,4 +24,22 @@
             }
         }
 
+        div {
+            @include dp_flex($jt_content: flex-start);
+            width: 92%;
+            margin-top: 14px;
+
+            > p {
+                @include dp_flex;
+                width:auto;
+                margin: 0px 10px 0px 0px;
+            }
+            
+            select {
+                @include dp_flex;
+                width:120px;
+                height: 30px;
+            }
+        }
+
 }

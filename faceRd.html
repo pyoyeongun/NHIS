@@ -40,7 +40,7 @@
 <body>
     <header class="headerBox">
         <div>
-            <span class="nhLogoBackImg"></span>
+            <span class="nhLogoHeaderImg"></span>
             <span class="logoTitleAlramImg"></span>
             <span class="logoTitleFaceRdImg"></span>
         </div>
@@ -282,6 +282,39 @@
                 <button onclick="errPop3down()">
                     <p>확인</p>
                 </button>
+            </div>
+        </div>
+    </section>
+    <!-- 마이크 설정 팝업 -->
+    <section class="popBox" id="mikeSettingPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain" style="width: 600px; height: 184px;">
+            <div class="popHeader">
+                <p>마이크 설정</p>
+                <div>
+                    <button><span class="cancelWhiteImg" onclick="mikeSettingPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <div>
+                    <p>담당자 마이크</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="1번 포트">1번 포트</option>
+                        <option value="2번 포트">2번 포트</option>
+                        <option value="3번 포트">3번 포트</option>
+                    </select>
+                </div>
+                <div>
+                    <p>고객사 마이크</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="1번 포트">1번 포트</option>
+                        <option value="2번 포트">2번 포트</option>
+                        <option value="3번 포트">3번 포트</option>
+                    </select>
+                </div>
+
             </div>
         </div>
     </section>

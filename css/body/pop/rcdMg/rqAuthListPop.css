@@ -24,6 +24,9 @@
 .rqAuthListBox table tr td {
   border: 1px solid #B8C0C7 !important;
 }
+.rqAuthListBox table tr td:first-child {
+  background-color: #EAEAEA;
+}
 .rqAuthListBox > div {
   display: flex;
   flex-direction: row;

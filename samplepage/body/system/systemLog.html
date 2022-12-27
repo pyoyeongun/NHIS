@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시스템 로그 페이지</title>
+     <!-- 기본 css -->
+     <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+     <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+     <!-- 해당 페이지관련 css -->
+     <link rel="stylesheet" type="text/css" href="../../../css/body/system/systemLog.css"> <!--시스템로그 css-->
+     <!-- 기본 javascript -->
+     <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+     <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+     <!-- 해당 페이지관련 js -->
+     <script src="../../../js/system/systemLog.js"></script> <!--시스템 로그 js-->
+     <script src="../../../js/pageChange.js"></script> <!--페이지 변경 js-->
+     <script src="../../../js/isCheckbox.js"></script> <!--모든 체크박스 선택 js-->
+    </head>
+<body>
+    <!-- 검색 -->
+    <section class="searchCdt">
+        <div>
+            <form>
+                <div>
+                    <p>조회기간 조회</p>
+                    <select name="selPeriod">
+                        <option value="" selected hidden disabled>선택하세요.</option>
+                        <option value="조회기간1">조회기간1</option>
+                        <option value="조회기간2">조회기간2</option>
+                        <option value="조회기간3">조회기간3</option>
+                    </select>
+                    <input type="date" name="dateStart">
+                    <input type="date" name="dateEnd">
+                    <input type="time" name="timeStart">
+                    <input type="time" name="timeStart">
+                </div>
+                <div>
+                    <p>로그IP</p>
+                    <input type="text" name="logIp" placeholder="입력하세요.">
+                </div>
+                <div>
+                    <p>서버IP</p>
+                    <input type="text" name="serverIp" placeholder="입력하세요.">
+                </div>
+                <div>
+                    <p>사용자ID</p>
+                    <input type="text" name="userID" placeholder="입력하세요.">
+                </div>
+                <div>
+                    <p>검색조건1</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="검색조건1">검색조건1</option>
+                        <option value="검색조건2">검색조건2</option>
+                        <option value="검색조건3">검색조건3</option>
+                    </select>
+                </div>
+                <div>
+                    <p>검색조건2</p>
+                    <select>
+                        <option value="" selected disabled hidden>선택하세요.</option>
+                        <option value="검색조건1">검색조건1</option>
+                        <option value="검색조건2">검색조건2</option>
+                        <option value="검색조건3">검색조건3</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" placeholder="입력하세요.">
+                    <button type="button">
+                        <span class="magnifierBlackImg"></span>
+                        <p>조회</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- 시스템 로그 그리드 -->
+    <section class="systemLogGrid">
+        <div id="systemLog"></div>
+    </section>
+
+</body>
+</html>

@@ -67,6 +67,9 @@
 .sptBringGridBox table tr td {
   border: 1px solid #B8C0C7 !important;
 }
+.sptBringGridBox table tr td:first-child {
+  background-color: #EAEAEA;
+}
 .sptBringGridBox .gridbox {
   display: flex;
   flex-direction: column;

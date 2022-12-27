@@ -79,6 +79,9 @@
 .rcdListBox table tr td {
   border: 1px solid #B8C0C7 !important;
 }
+.rcdListBox table tr td:first-child {
+  background-color: #EAEAEA;
+}
 .rcdListBox > div {
   display: flex;
   flex-direction: row;

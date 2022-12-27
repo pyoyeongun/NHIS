@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공용 스크립트</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/footer/mgFooter.css"> <!-- footer css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/management/sptSel/commonSpt.css"> <!--공용스크립트 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../js/sptSel/commonSpt.js"></script><!--공용스크립트 조회 js-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/sptSel/sptAuthPop.css"> <!--결재 의뢰 pop-->
+    <!-- 팝업 js-->
+    <script src="../../js/pop/popDown.js"></script><!--팝업 닫기 js-->
+</head>
+
+<body>
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+    <!-- 네비게이션 탭바 -->
+    <nav class="navBox">
+        <a href="../../page/rcdMg.html">녹취관리</a>
+        <a class="currentPage" href="../../page/scriptSel/scriptSel.html">스크립트 조회</a>
+        <a href="../../page/downloadList.html">다운로드 이력</a>
+        <a href="../../page/system/accessAuthList.html">시스템 관리</a>
+    </nav>
+
+    <div class="sideBox">
+        <!-- 사이트 메뉴 -->
+        <section class="sideMenu">
+            <div class="menuList">
+                <a href="./scriptSel.html">스크립트 조회</a>
+                <a class="currentMenu" href="./commonSpt.html">공용스크립트 조회</a>
+                <a href="./authList.html">결재 목록</a>
+                <a href="./authHistory.html">결재 이력</a>
+            </div>
+            <div class="sideWaveBgImg"></div>
+        </section>
+        <div class="bodyBox">
+            <!-- 스크립트 검색 -->
+            <section class="commonSptSel">
+                <div>
+                    <form>
+                        <div>
+                            <p>스크립트 유형</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="스크립트유형1">스크립트유형1</option>
+                                <option value="스크립트유형2">스크립트유형2</option>
+                                <option value="스크립트유형3">스크립트유형3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>검색 유형</p>
+                            <select>
+                                <option value="" selected disabled hidden>선택하세요.</option>
+                                <option value="검색유형1">검색유형1</option>
+                                <option value="검색유형2">검색유형2</option>
+                                <option value="검색유형3">검색유형3</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="입력하세요.">
+                            <button>
+                                <span class="magnifierBlackImg"></span>
+                                <p>조회</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+            <!-- 공용스크립트 조회 리스트 Grid -->
+            <section class="commonSptGrid">
+                <div id="commonSpt"></div>
+            </section>
+
+            <!-- footer -->
+            <footer class="footerBox">
+                <div>
+                    <p>
+                        전체건수<span class="blueText">503</span>건
+                    </p>
+                    <select>
+                        <option value="50" selected>50행</option>
+                        <option value="100">100행</option>
+                        <option value="200">200행</option>
+                    </select>
+                </div>
+                <ul>
+                    <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
+                    <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
+                    <li>
+                        <span class="pageNum currentMovePage" onchange="curentPage()">
+                            <p>1</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>2</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>3</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>4</p>
+                        </span>
+                    </li>
+                    <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
+                    <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
+                </ul>
+                <div style="width: 20%;"></div>
+
+            </footer>
+
+            <!-- 공용스크립트 추가/삭제/수정 -->
+            <section class="commonSptInput">
+                    <div>
+                        <h1>이름</h1>
+                        <input type="text" placeholder="입력하세요.">
+                    </div>
+                    <div>
+                        <h1>설명</h1>
+                        <input type="text" placeholder="입력하세요.">
+                    </div>
+                    <div>
+                        <h1>유형</h1>
+                        <div>
+                            <input type="radio" name="commonSptType" value="자동리딩"><p>자동리딩</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="commonSptType" value="고객답변"><p>고객답변</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="commonSptType" value="직원직접리딩"><p>직원직접리딩</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="commonSptType" value="적합성보고서"><p>적합성보고서</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>실시간</h1>
+                        <div>
+                            <input type="radio" name="isRealTime" value="실시간"><p>실시간</p>
+                        </div>
+                        <div>
+                            <input type="radio" name="isRealTime" value="비실시간"><p>비실시간</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1>내용</h1>
+                        <textarea placeholder="입력하세요."></textarea>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><button class="delBtn"><p>삭제</p></button></li>
+                            <li><button class="baceBtn" onclick="authRqPopup()"><p>수정</p></button></li>
+                            <li><button class="newAddBtn"><p>신규</p></button></li>
+                        </ul>
+                    </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- 결재의뢰 팝업 -->
+    <section class="popBox" id="sptAuthPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>결재 의뢰</p>
+                <div>
+                    <button class="popBasicBtnStyle2">
+                        <p>취소</p>
+                    </button>
+                    <button class="popBasicBtnStyle1">
+                        <p>저장</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="sptAuthPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 1. 검색 조건  -->
+                <h1 class="blueText">※ 공통문구는 즉시적용 불가합니다.(예약만 가능)</h1>
+                <div class="sptAuthDate">
+                    <div>
+                        <p>녹취 일자</p>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <input type="checkbox" id="rightApply">
+                        <label for="rightApply">즉시 적용</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

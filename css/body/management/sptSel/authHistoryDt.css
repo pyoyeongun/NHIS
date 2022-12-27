@@ -1,0 +1,117 @@
+.prdInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 14px;
+}
+.prdInfo > div {
+  width: 99%;
+  height: 44px;
+  background-color: #ffffff;
+}
+.prdInfo > div > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 14px;
+  width: 20%;
+}
+.prdInfo > div > div span {
+  width: 30%;
+  margin-right: 8px;
+}
+.prdInfo > div > div p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.sptCgBfAfBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 14px;
+}
+.sptCgBfAfBox section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 49%;
+  height: auto;
+}
+.sptCgBfAfBox section > div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  border-bottom: 1px solid #B8C0C7;
+}
+.sptCgBfAfBox section > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 855px;
+  padding: 14px 14px;
+}
+.sptCgBfAfBox section > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F8F8F8;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 97%;
+  height: auto;
+  padding: 14px 15px;
+  margin-bottom: 6px;
+}
+.sptCgBfAfBox section > div:last-child > div > p {
+  width: 100%;
+  font-size: 14px;
+}
+.sptCgBfAfBox section > div:last-child > div > p:last-child {
+  margin-top: 4px;
+}
+.sptCgBfAfBox .beforeSection span {
+  background-color: #002e9d;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 0px 16px 16px 0px;
+  width: 120px;
+  height: 30px;
+  color: #ffffff;
+}
+.sptCgBfAfBox .afterSection span {
+  background-color: #0A74DC;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 0px 16px 16px 0px;
+  width: 120px;
+  height: 30px;
+  color: #ffffff;
+}
+.sptCgBfAfBox .afterSection ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+.sptCgBfAfBox .afterSection ul li {
+  margin-left: 8px;
+}/*# sourceMappingURL=authHistoryDt.css.map */

@@ -1,0 +1,89 @@
+.sptCgBfAfBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 14px;
+}
+.sptCgBfAfBox section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 49%;
+  height: auto;
+}
+.sptCgBfAfBox section > div:first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 46px;
+  border-bottom: 1px solid #B8C0C7;
+}
+.sptCgBfAfBox section > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 14px 14px;
+}
+.sptCgBfAfBox section > div:last-child > div {
+  margin-bottom: 6px;
+}
+.sptCgBfAfBox section > div:last-child > div > p {
+  margin-right: 5px;
+}
+.sptCgBfAfBox section > div:last-child > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #F8F8F8;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 4px;
+  width: 97%;
+  height: auto;
+  padding: 14px 15px;
+}
+.sptCgBfAfBox section > div:last-child > div:last-child > p {
+  width: 100%;
+  font-size: 14px;
+}
+.sptCgBfAfBox section > div:last-child > div:last-child > p:last-child {
+  margin-top: 4px;
+}
+.sptCgBfAfBox .beforeSection span {
+  background-color: #002e9d;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 0px 16px 16px 0px;
+  width: 120px;
+  height: 30px;
+  color: #ffffff;
+}
+.sptCgBfAfBox .afterSection span {
+  background-color: #0A74DC;
+  border: 1px solid;
+  border-color: transparent;
+  border-radius: 0px 16px 16px 0px;
+  width: 120px;
+  height: 30px;
+  color: #ffffff;
+}
+.sptCgBfAfBox .afterSection ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+.sptCgBfAfBox .afterSection ul li {
+  margin-left: 8px;
+}/*# sourceMappingURL=sptAuth.css.map */
