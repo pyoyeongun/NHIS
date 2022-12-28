@@ -13,6 +13,13 @@
     무조건 background url()보다는 나중에 사용할 것
     이미지 가로, 세로, 크기를 정하는 믹스인
  */
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+  display: flex;
+  flex-direction: $flex_dr;
+  justify-content: $jt_content;
+  align-items: $al_item;
+}
+
 @mixin screenImgSize($width: 24px, $height: 24px, $bg_size: 24px) {
   width: $width;
   height: $height;
@@ -174,6 +181,10 @@
   background: transparent url(../img/pngImg/icon_reset.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
+.reset2Img {
+  background: transparent url(../img/pngImg/icon_reset2.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(24px, 24px, 24px);
+}
 
 // 시작 페이지로 화살표 이미지
 .startArrGrayImg {
@@ -285,6 +296,10 @@
   background: transparent url(../img/pngImg/icon_plus.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
+.plusBlackImg {
+  background: transparent url(../img/pngImg/icon_plus_black.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
 // - 이미지
 .minusImg {
   background: transparent url(../img/pngImg/icon_minus.png) 0% 0% no-repeat padding-box;
@@ -295,9 +310,28 @@
   background: transparent url(../img/pngImg/icon_wastebasket.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
+.wastebasketBlackImg {
+  background: transparent url(../img/pngImg/icon_wastebasket_black.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
 // 파일 추가 이미지 {
 .addFileImg {
-  background: transparent url(../img/pngImg/icon_wastebasket.png) 0% 0% no-repeat padding-box;
+  background: transparent url(../img/pngImg/icon_add_file.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
+// 수정 이미지 {
+.editImg {
+  background: transparent url(../img/pngImg/icon_edit.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
+// 열쇠 이미지 {
+.keyImg {
+  background: transparent url(../img/pngImg/icon_key.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
+// 사용자 추가 {
+.addPerson {
+  background: transparent url(../img/pngImg/icon_add_person.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
 /*
@@ -320,7 +354,6 @@
   background: transparent url(../img/pngImg/icon_minus_btn.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(30px, 30px, 30px);
 }
-
 // 재생 or 녹화 플레이 버튼
 .playBtn {
   background: transparent url(../img/pngImg/icon_play_btn.png) 0% 0% no-repeat padding-box;
@@ -368,6 +401,9 @@
 .orangeText {
   color: #FFB81C !important;
 }
+.greenText {
+  color: #00B140 !important;
+}
 /*
     Gif 이미지
 */
@@ -386,4 +422,22 @@ input[type='date' i]::-webkit-calendar-picker-indicator {
 input[type='time' i]::-webkit-calendar-picker-indicator {
   background: transparent url(../img/pngImg/icon_timer.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(24px, 24px, 24px);
+}
+
+// treeview 이미지 변경
+.dhxtreeview_material div.dhxtreeview_cont div.dhxtreeview_area div.dhxtreeview_item div.dhxtreeview_item_text div.dhxtreeview_item_icon i.dhxtreeview_icon.dhxtreeview_icon_minus {
+  background: transparent url(../img/pngImg/icon_minus_s_btn.png) 0% 0% no-repeat padding-box !important;
+  @include screenImgSize(20px, 20px, 20px !important);
+  margin-top: 5px;
+}
+.dhxtreeview_material div.dhxtreeview_cont div.dhxtreeview_area div.dhxtreeview_item div.dhxtreeview_item_text div.dhxtreeview_item_icon i.dhxtreeview_icon.dhxtreeview_icon_plus{
+  background: transparent url(../img/pngImg/icon_plus_s_btn.png) 0% 0% no-repeat padding-box !important;
+  @include screenImgSize(20px, 20px, 20px !important);
+  margin-top: 5px;
+}
+.dhxtreeview_material div.dhxtreeview_cont div.dhxtreeview_area div.dhxtreeview_item div.dhxtreeview_item_text div.dhxtreeview_item_icon i.dhxtreeview_icon.dhxtreeview_icon_folder_closed,
+.dhxtreeview_material div.dhxtreeview_cont div.dhxtreeview_area div.dhxtreeview_item div.dhxtreeview_item_text div.dhxtreeview_item_icon i.dhxtreeview_icon.dhxtreeview_icon_folder_opened{
+  background: transparent url(../img/pngImg/icon_folder.png) 0% 0% no-repeat padding-box !important;
+  @include screenImgSize(20px, 20px, 20px !important);
+  margin-top: 5px;
 }

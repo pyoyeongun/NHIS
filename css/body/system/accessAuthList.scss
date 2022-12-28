@@ -54,10 +54,13 @@ $hd-grid-br-color: #677989;
         @include dp_flex(column);
         width: 1689px !important;
         height: 961px !important;
+        border-color: transparent !important;
 
         .xhdr {
             width: 100% !important;
             height: 36px !important;
+            background-color: transparent !important;
+            border-color: transparent !important;
 
             table {
                 margin: 0px !important;
@@ -75,6 +78,7 @@ $hd-grid-br-color: #677989;
             @include dp_flex($al_item: flex-start);
             width: 100% !important;
             height: 100% !important;
+            background-color: transparent !important;
 
             &::-webkit-scrollbar {
                 position: absolute;

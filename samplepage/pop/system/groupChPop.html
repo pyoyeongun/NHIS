@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹 변경 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/system/groupChPop.css"> <!--그룹 변경 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body>
+    <!-- 그룹 변경 팝업 -->
+    <section class="popBox" id="groupChPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>그룹 변경</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="groupChPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 대분류  -->
+                <div>
+                    <p>대분류</p>
+                    <span class="greenText">*</span>
+                    <select name="high" onchange="gpAddPopOnload()">
+                        <option value="" selected>내용확인</option>
+                        <option value="대분류1">대분류1</option>
+                        <option value="대분류2">대분류2</option>
+                        <option value="대분류3">대분류3</option>
+                    </select>
+                </div>
+                <!-- 중분류  -->
+                <div>
+                    <p>중분류</p>
+                    <span ></span>
+                    <select name="middle">
+                        <option value="" selected>내용확인</option>
+                        <option value="중분류1">중분류1</option>
+                        <option value="중분류2">중분류2</option>
+                        <option value="중분류3">중분류3</option>
+                    </select>
+                </div>
+                <!-- 소분류  -->
+                <div>
+                    <p>그룹 단위</p>
+                    <span></span>
+                    <select name="small" onchange="gpAddPopOnload()">
+                        <option value="" selected>내용확인</option>
+                        <option value="소분류1">소분류1</option>
+                        <option value="소분류2">소분류2</option>
+                        <option value="소분류3">소분류3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비밀번호 정책 설정 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/system/pwdPrySetPop.css"> <!--비밀번호 정채 설정 css-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/system/groupAddPop.js"></script> <!--팝업 닫기-->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body onload="init()">
+    <!-- 비밀번호 정책 설정 팝업 -->
+    <section class="popBox" id="pwdPrySetPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>비밀번호 정책 설정 팝업</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="pwdPrySetPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- PW 정책  -->
+                <div>
+                    <p>PW 정책</p>
+                    <select name="pwPry" onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용">미사용</option>
+                        <option value="사용" selected>사용</option>
+                    </select>
+                </div>
+                <!-- PW 변경 주기  -->
+                <div>
+                    <p>PW 변경 주기</p>
+                    <select name="pwChCycle"  onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용" selected>미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+                <!-- 변경 주기 설정  -->
+                <div class="cycleSet">
+                    <p>변경 주기 설정</p>
+                    <input type="text" name="chCycleSet" value="1">
+                    <select name="chCycleSet">
+                        <option value="" selected>내용확인</option>
+                        <option value="일">일마다 변경</option>
+                        <option value="달">달마다 변경</option>
+                        <option value="년">년마다 변경</option>
+                    </select>
+                </div>
+                <!-- 이전 PW 사용  -->
+                <div>
+                    <p>이전 PW 사용</p>
+                    <select name="prevPwdSet" onchange="pwdPrtySetPopOnload()">
+                        <option value="허용">허용</option>
+                        <option value="차단" selected>차단</option>
+                    </select>
+                </div>
+                <!-- PW 허용 횟수  -->
+                <div>
+                    <p>PW 허용 횟수</p>
+                    <select name="pwAgreeCnt">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10" selected>10</option>
+                    </select>
+                </div>
+                <!-- 시도 제한  -->
+                <div>
+                    <p>시도 제한</p>
+                    <select name="tryLimit" onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용" selected>미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+                <!-- 시도 제한 횟수 -->
+                <div>
+                    <p>시도 제한 횟수</p>
+                    <select name="tryLimitCnt">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <!-- 계정 잠금 -->
+                <div>
+                    <p>계정 잠금</p>
+                    <select name="accLock" onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용" selected>미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+                <!-- 잠금 주기 설정 -->
+                <div class="lockCycleSet">
+                    <p>잠금 주기 설정</p>
+                    <input type="text" name="lockCycleSet" value="1">
+                    <select name="lockCycleSet"z>
+                        <option value="" selected>일동안 미사용 시</option>
+                        <option value="미사용">미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+#groupAddPop {
+  z-index: 1003;
+}
+#groupAddPop .popMain {
+  width: 600px;
+  height: 226px;
+}
+#groupAddPop .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#groupAddPop .popBody p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70px;
+}
+#groupAddPop .popBody span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+}
+#groupAddPop .popBody select {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 497px !important;
+  height: 30px;
+  background-position: 100% 50%;
+}
+#groupAddPop .popBody input {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 488px !important;
+  height: 26px;
+}/*# sourceMappingURL=groupAddPop.css.map */

@@ -1,0 +1,58 @@
+#userMgPop div:first-child > input {
+  background-color: #EAEAEA;
+}
+
+#userAddPop,
+#userMgPop {
+  z-index: 1003;
+}
+#userAddPop .popMain,
+#userMgPop .popMain {
+  width: 650px;
+  height: 506px;
+}
+#userAddPop .popBody,
+#userMgPop .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#userAddPop .popBody p,
+#userMgPop .popBody p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+  margin-right: 8px;
+  width: 93px;
+}
+#userAddPop .popBody span,
+#userMgPop .popBody span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+#userAddPop .popBody select,
+#userMgPop .popBody select {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 497px !important;
+  height: 30px;
+  background-position: 100% 50%;
+}
+#userAddPop .popBody input,
+#userMgPop .popBody input {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 488px !important;
+  height: 26px;
+}/*# sourceMappingURL=userAddPop.css.map */

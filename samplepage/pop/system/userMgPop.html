@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 수정</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/system/userAddPop.css"> <!--사용자 추가(수정)  css-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body>
+    <!-- 사용자 수정 팝업 -->
+    <section class="popBox" id="userMgPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>사용자 수정</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="userMgPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">   
+                <!-- 사번  -->
+                <div>
+                    <p>사번</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="bussnessNum" placeholder="사번" disabled>
+                </div>
+                <!-- 사용자 이름  -->
+                <div>
+                    <p>사용자 이름</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userName" placeholder="사용자 이름">
+                </div>
+                <!-- 비밀번호  -->
+                <div>
+                    <p>비밀번호</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userPwd" placeholder="비밀번호">
+                </div>
+                <!-- 비밀번호 확인  -->
+                <div>
+                    <p>비밀번호 확인</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userPwdCheck" placeholder="비밀번호 확인">
+                </div>
+                <!-- 연락처  -->
+                <div>
+                    <p>연락처</p>
+                    <span></span>
+                    <input type="text" name="userPwdCheck" placeholder="010-0000-0000">
+                </div>
+                <!-- 성별  -->
+                <div>
+                    <p>성별</p>
+                    <span></span>
+                    <select name="gender">
+                        <option value="남자" selected>남자</option>
+                        <option value="여자">여자</option>
+                    </select>
+                </div>
+                <!-- 권한등급 -->
+                <div>
+                    <p>권한등급</p>
+                    <span class="greenText">*</span>
+                    <select name="authLevel">
+                        <option value="" selected>권한없음</option>
+                        <option value="1등급">1등급</option>
+                        <option value="2등급">2등급</option>
+                        <option value="3등급">3등급</option>
+                        <option value="4등급">4등급</option>
+                    </select>
+                </div>
+                <!-- 대분류 -->
+                <div>
+                    <p>대분류</p>
+                    <span></span>
+                    <select name="highGp">
+                        <option value="" selected>해당분류없음</option>
+                        <option value="1그룹">1그룹</option>
+                        <option value="2그룹">2그룹</option>
+                        <option value="3그룹">3그룹</option>
+                    </select>
+                </div>
+                <!-- 중분류 -->
+                <div>
+                    <p>중분류</p>
+                    <span></span>
+                    <select name="middleGp">
+                        <option value="" selected>해당분류없음</option>
+                        <option value="중분류1">중분류1</option>
+                        <option value="중분류2">중분류2</option>
+                        <option value="중분류3">중분류3</option>
+                    </select>
+                </div>
+                <!-- 소분류 -->
+                <div>
+                    <p>소분류</p>
+                    <span></span>
+                    <select name="smallGp">
+                        <option value="" selected>해당분류없음</option>
+                        <option value="소분류1">소분류1</option>
+                        <option value="소분류2">소분류2</option>
+                        <option value="소분류3">소분류3</option>
+                    </select>
+                </div>
+                <!-- 이메일 -->
+                <div>
+                    <p>이메일</p>
+                    <span></span>
+                    <input type="text" placeholder="이메일주소">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

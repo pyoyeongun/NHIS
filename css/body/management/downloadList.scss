@@ -52,20 +52,18 @@ $hd-grid-br-color: #677989;
                     @include customBtnStyle(100px, auto, 30px);
                 }
 
-                >input {
+                > input {
                     @include dp_flex;
-                    @include customBtnStyle(4px, 120px, 30px, #b8c0c7);
+                    @include customBtnStyle(4px, 120px, 26px, #b8c0c7);
+                    margin-right: 8px;
+                }
+                > input[type='date'] {
+                    height: 28px !important;
                 }
 
                 &:last-child {
                     border: 0px;
                 }
-            }
-
-            input {
-                width: 240px;
-                height: 30px;
-                margin-right: 8px;
             }
 
             select {

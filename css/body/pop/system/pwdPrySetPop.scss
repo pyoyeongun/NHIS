@@ -1,0 +1,55 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+
+// 비밀번호 정책 설정 팝업
+#pwdPrySetPop {
+    z-index: 1003;
+    .popMain {
+        width: 650px;
+        height: 426px;
+    }
+
+
+    
+    .popBody {
+        @include dp_flex(column, space-around);
+        width: 100%;
+        p {
+            @include dp_flex($jt_content: flex-end);
+            text-align: right;
+            margin-right: 8px;
+            width: 93px;
+        }
+        select {
+            @include customBtnStyle(4px, 497px !important, 30px, #B8C0C7);
+            background-position: 100% 50%;
+        }
+        input {
+            @include customBtnStyle(4px, 488px !important, 26px, #B8C0C7);
+        }
+
+        .cycleSet, .lockCycleSet {
+            select {
+                @include customBtnStyle(4px, 243px !important, 30px, #B8C0C7);
+            }
+            input {
+                @include customBtnStyle(4px, 236px !important, 26px, #B8C0C7);
+                margin-right: 10px;
+            }
+        }
+        
+    }
+}

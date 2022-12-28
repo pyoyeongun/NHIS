@@ -50,7 +50,7 @@
 }
 .commonSptSel > div > form input {
   width: 240px;
-  height: 30px;
+  height: 26px;
   margin-right: 8px;
 }
 .commonSptSel > div > form select {
@@ -175,7 +175,7 @@
 }
 .commonSptInput > div input[type=text] {
   width: 240px;
-  height: 30px;
+  height: 26px;
 }
 .commonSptInput > div input[type=radio] {
   width: 16px;

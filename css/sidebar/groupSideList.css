@@ -1,0 +1,68 @@
+.groupList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #ffffff;
+  border-right: 1px solid #bbc0c7;
+  width: 272px;
+  height: 1004px;
+}
+.groupList > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.groupList > div:first-child {
+  height: 30px;
+}
+.groupList > div:first-child button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 0px;
+  width: auto;
+  height: 100%;
+  padding: 0px;
+}
+.groupList > div:first-child button:nth-child(1) {
+  width: 119px;
+}
+.groupList > div:first-child button:nth-child(2) {
+  width: 119px;
+}
+.groupList > div:first-child button:nth-child(3) {
+  width: 32px;
+}
+.groupList .sideTreeView {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  color: #0f0f0f;
+}
+.groupList .sideTreeView .dhxtreeview_material,
+.groupList .sideTreeView .dhxtreeview_area,
+.groupList .sideTreeView .dhxtreeview_cont {
+  width: 99% !important;
+  height: 100% !important;
+}
+.groupList .sideTreeView .dhxtreeview_item,
+.groupList .sideTreeView .dhxtreeview_item_text,
+.groupList .sideTreeView .dhxtreeview_kids_cont {
+  width: 100% !important;
+}
+.groupList .sideTreeView div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}/*# sourceMappingURL=groupSideList.css.map */

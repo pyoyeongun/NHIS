@@ -50,12 +50,12 @@
 }
 .authListSel > div > form input[type=date] {
   width: 130px;
-  height: 30px;
+  height: 28px;
   margin-right: 8px;
 }
 .authListSel > div > form input {
   width: 240px;
-  height: 30px;
+  height: 26px;
   margin-right: 8px;
 }
 .authListSel > div > form select {

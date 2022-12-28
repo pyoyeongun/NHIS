@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹(부서) 관리</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/footer/mgFooter.css"> <!-- footer css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/groupSideList.css"> <!--그룹 리스트 사이드바 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/system/gpMg.css"> <!--그룹(부서) 관리 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/pageChange.js"></script> <!--페이지 변경 js-->
+    <script src="../../js/isCheckbox.js"></script> <!--모든 체크박스 체크 js-->
+    <script src="../../js/system/gpMg.js"></script> <!--그룹(부서) 관리 js-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/system/groupAddPop.css"> <!--그룹 추가 pop-->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/system/groupMdPop.css"> <!--그룹 수정 pop-->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/system/groupChPop.css"> <!--그룹 변경 pop-->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/system/pwdPrySetPop.css"> <!--비밀번호 정책 설정 pop -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/system/userAddPop.css"> <!--사용자 추가  css-->
+    <!-- 팝업 javascript -->
+    <script src="../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+    <script src="../../js/pop/system/groupAddPop.js"></script> <!--그룹 추가, 비밀번호 정책 팝업 js-->
+</head>
+
+<body onload="init()">
+    <!-- header -->
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+    <!-- 네비게이션 탭바 -->
+    <nav class="navBox">
+        <a href="../../page/rcdMg.html">녹취관리</a>
+        <a href="../../page/scriptSel/scriptSel.html">스크립트 조회</a>
+        <a href="../../page/downloadList.html">다운로드 이력</a>
+        <a class="currentPage" href="../../page/system/accessAuthList.html">시스템 관리</a>
+    </nav>
+
+
+    <!-- 시스템관리 본문 -->
+    <div class="sideBox">
+        <!-- 사이트 메뉴 -->
+        <section class="sideMenu">
+            <div class="menuList">
+                <a href="./accessAuthList.html">접근 권한 리스트</a>
+                <a href="./userMg.html">사용자 관리</a>
+                <a class="currentMenu" href="./gpMg.html">그룹(부서) 관리</a>
+                <a href="">권한 관리</a>
+                <a href="">조회 조건/항목 관리</a>
+                <a href="./prdInfoMg.html">상품 정보 관리</a>
+                <a href="">시스템 코드 관리</a>
+            </div>
+            <div class="sideWaveBgImg"></div>
+        </section>
+        <!-- 그룹 리스트 -->
+        <section class="groupList">
+            <div>
+                <button type="button" onclick="groupAddPopup()">
+                    <span class="addFileImg"></span>
+                    <p>그룹 추가</p>
+                </button>
+                <button type="button" onclick="groupMdPopup()">
+                    <span class="editImg"></span>
+                    <p>그룹 수정</p>
+                </button>
+                <button type="button">
+                    <span class="wastebasketBlackImg"></span>
+                </button>
+            </div>
+            <!-- treeView -->
+            <section class="sideTreeView">
+                <div id="groupTreeView"></div>
+            </section>
+        </section>
+        <!-- 본문 -->
+        <div class="bodyBox">
+            <!-- 검색 -->
+            <section class="searchCdt">
+                <form>
+                    <div>
+                        <p>사용자 ID</p>
+                        <input type="text" placeholder="입력하세요.">
+                    </div>
+                    <div>
+                        <p>이름</p>
+                        <input type="text" placeholder="입력하세요.">
+                    </div>
+                    <div>
+                        <p>권한등급</p>
+                        <select>
+                            <option value="" selected>선택하시오.</option>
+                            <option value="1등급">1등급</option>
+                            <option value="2등급">2등급</option>
+                            <option value="3등급">3등급</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>제직자</p>
+                        <select>
+                            <option value="" selected>선택하시오.</option>
+                            <option value="홍길동">홍길동</option>
+                            <option value="손오공">손오공</option>
+                            <option value="고길동">고길동</option>
+                        </select>
+                    </div>
+                    <div>
+                        <p>신규 녹취 사용</p>
+                        <select>
+                            <option value="" selected>선택하시오.</option>
+                            <option value="미사용">미사용</option>
+                            <option value="사용">사용</option>
+                        </select>
+                        <button>
+                            <span class="magnifierBlackImg"></span>
+                            <p>조회</p>
+                        </button>
+                    </div>
+                </form>
+                <ul>
+                    <li>
+                        <button type="button" onclick="pwdPrySetPopup()">
+                            <span class="keyImg"></span>
+                            <p>비밀번호 정책 설정</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="userAddPopup()">
+                            <span class="addPerson"></span>
+                            <p>사용자 추가</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" onclick="groupChPopup()">
+                            <span class="editImg"></span>
+                            <p>그룹변경</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="delBtn">
+                            <span class="wastebasketBlackImg"></span>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+            <!-- 그룹(부서) 관리 리스트 -->
+            <secrion class="gpMgListGrid">
+                <div id="gpMgList"></div>
+            </secrion>
+            <!-- footer -->
+            <footer class="footerBox">
+                <div>
+                    <p>
+                        전체건수<span class="blueText">503</span>건
+                    </p>
+                    <select>
+                        <option value="50" selected>50행</option>
+                        <option value="100">100행</option>
+                        <option value="200">200행</option>
+                    </select>
+                </div>
+                <ul>
+                    <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
+                    <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
+                    <li>
+                        <span class="pageNum currentMovePage" onchange="curentPage()">
+                            <p>1</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>2</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>3</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>4</p>
+                        </span>
+                    </li>
+                    <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
+                    <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
+                </ul>
+                <div style="width: 20%">
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- 그룹 추가 팝업 -->
+    <section class="popBox" id="groupAddPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>그룹 추가</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="groupAddPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 그룹단위  -->
+                <div>
+                    <p>그룹 단위</p>
+                    <span class="greenText">*</span>
+                    <select name="unit" onchange="gpAddPopOnload()">
+                        <option value="" selected>내용확인</option>
+                        <option value="그룹단위1">그룹단위1</option>
+                        <option value="그룹단위2">그룹단위2</option>
+                        <option value="그룹단위3">그룹단위3</option>
+                    </select>
+                </div>
+                <!-- 대분류  -->
+                <div>
+                    <p>대분류</p>
+                    <span class="greenText">*</span>
+                    <select name="high" onchange="gpAddPopOnload()">
+                        <option value="" selected>내용확인</option>
+                        <option value="대분류1">대분류1</option>
+                        <option value="대분류2">대분류2</option>
+                        <option value="대분류3">대분류3</option>
+                    </select>
+                </div>
+                <!-- 중분류  -->
+                <div>
+                    <p>중분류</p>
+                    <span class="greenText">*</span>
+                    <select name="middle">
+                        <option value="" selected>내용확인</option>
+                        <option value="중분류1">중분류1</option>
+                        <option value="중분류2">중분류2</option>
+                        <option value="중분류3">중분류3</option>
+                    </select>
+                </div>
+                <!-- 그룹명 -->
+                <div>
+                    <p>그룹명</p>
+                    <span class="greenText">*</span>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 그룹 수정 팝업 -->
+    <section class="popBox" id="groupMdPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>그룹 수정</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="groupMdPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 그룹단위  -->
+                <div>
+                    <p>그룹 단위</p>
+                    <span class="greenText">*</span>
+                    <select name="unit" disabled>
+                        <option value="" selected>내용확인</option>
+                        <option value="그룹단위1">그룹단위1</option>
+                        <option value="그룹단위2">그룹단위2</option>
+                        <option value="그룹단위3">그룹단위3</option>
+                    </select>
+                </div>
+                <!-- 대분류  -->
+                <div>
+                    <p>대분류</p>
+                    <span class="greenText">*</span>
+                    <select name="high" disabled>
+                        <option value="" selected>내용확인</option>
+                        <option value="대분류1">대분류1</option>
+                        <option value="대분류2">대분류2</option>
+                        <option value="대분류3">대분류3</option>
+                    </select>
+                </div>
+                <!-- 중분류  -->
+                <div>
+                    <p>중분류</p>
+                    <span class="greenText">*</span>
+                    <select name="middle" disabled>
+                        <option value="" selected>내용확인</option>
+                        <option value="중분류1">중분류1</option>
+                        <option value="중분류2">중분류2</option>
+                        <option value="중분류3">중분류3</option>
+                    </select>
+                </div>
+                <!-- 그룹명 -->
+                <div>
+                    <p>그룹명</p>
+                    <span class="greenText">*</span>
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 그룹 변경 팝업 -->
+    <section class="popBox" id="groupChPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>그룹 변경</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="groupChPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 대분류  -->
+                <div>
+                    <p>대분류</p>
+                    <span class="greenText">*</span>
+                    <select name="high" onchange="gpAddPopOnload()">
+                        <option value="" selected>내용확인</option>
+                        <option value="대분류1">대분류1</option>
+                        <option value="대분류2">대분류2</option>
+                        <option value="대분류3">대분류3</option>
+                    </select>
+                </div>
+                <!-- 중분류  -->
+                <div>
+                    <p>중분류</p>
+                    <span ></span>
+                    <select name="middle">
+                        <option value="" selected>내용확인</option>
+                        <option value="중분류1">중분류1</option>
+                        <option value="중분류2">중분류2</option>
+                        <option value="중분류3">중분류3</option>
+                    </select>
+                </div>
+                <!-- 소분류  -->
+                <div>
+                    <p>그룹 단위</p>
+                    <span></span>
+                    <select name="small" onchange="gpAddPopOnload()">
+                        <option value="" selected>내용확인</option>
+                        <option value="소분류1">소분류1</option>
+                        <option value="소분류2">소분류2</option>
+                        <option value="소분류3">소분류3</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 비밀번호 정책 설정 팝업 -->
+    <section class="popBox" id="pwdPrySetPop" style="display: none">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>비밀번호 정책 설정 팝업</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="pwdPrySetPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- PW 정책  -->
+                <div>
+                    <p>PW 정책</p>
+                    <select name="pwPry" onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용">미사용</option>
+                        <option value="사용" selected>사용</option>
+                    </select>
+                </div>
+                <!-- PW 변경 주기  -->
+                <div>
+                    <p>PW 변경 주기</p>
+                    <select name="pwChCycle" onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용" selected>미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+                <!-- 변경 주기 설정  -->
+                <div class="cycleSet">
+                    <p>변경 주기 설정</p>
+                    <input type="text" name="chCycleSet" value="1">
+                    <select name="chCycleSet">
+                        <option value="" selected>내용확인</option>
+                        <option value="일">일마다 변경</option>
+                        <option value="달">달마다 변경</option>
+                        <option value="년">년마다 변경</option>
+                    </select>
+                </div>
+                <!-- 이전 PW 사용  -->
+                <div>
+                    <p>이전 PW 사용</p>
+                    <select name="prevPwdSet" onchange="pwdPrtySetPopOnload()">
+                        <option value="허용">허용</option>
+                        <option value="차단" selected>차단</option>
+                    </select>
+                </div>
+                <!-- PW 허용 횟수  -->
+                <div>
+                    <p>PW 허용 횟수</p>
+                    <select name="pwAgreeCnt">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10" selected>10</option>
+                    </select>
+                </div>
+                <!-- 시도 제한  -->
+                <div>
+                    <p>시도 제한</p>
+                    <select name="tryLimit" onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용" selected>미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+                <!-- 시도 제한 횟수 -->
+                <div>
+                    <p>시도 제한 횟수</p>
+                    <select name="tryLimitCnt">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <!-- 계정 잠금 -->
+                <div>
+                    <p>계정 잠금</p>
+                    <select name="accLock" onchange="pwdPrtySetPopOnload()">
+                        <option value="미사용" selected>미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+                <!-- 잠금 주기 설정 -->
+                <div class="lockCycleSet">
+                    <p>잠금 주기 설정</p>
+                    <input type="text" name="lockCycleSet" value="1">
+                    <select name="lockCycleSet" z>
+                        <option value="" selected>일동안 미사용 시</option>
+                        <option value="미사용">미사용</option>
+                        <option value="사용">사용</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 사용자 추가 팝업 -->
+    <section class="popBox" id="userAddPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>사용자 추가</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="userAddPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 사번  -->
+                <div>
+                    <p>사번</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="bussnessNum" placeholder="사번">
+                </div>
+                <!-- 사용자 이름  -->
+                <div>
+                    <p>사용자 이름</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userName" placeholder="사용자 이름">
+                </div>
+                <!-- 비밀번호  -->
+                <div>
+                    <p>비밀번호</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userPwd" placeholder="비밀번호">
+                </div>
+                <!-- 비밀번호 확인  -->
+                <div>
+                    <p>비밀번호 확인</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userPwdCheck" placeholder="비밀번호 확인">
+                </div>
+                <!-- 연락처  -->
+                <div>
+                    <p>연락처</p>
+                    <span></span>
+                    <input type="text" name="userPwdCheck" placeholder="010-0000-0000">
+                </div>
+                <!-- 성별  -->
+                <div>
+                    <p>성별</p>
+                    <span></span>
+                    <select name="gender">
+                        <option value="남자" selected>남자</option>
+                        <option value="여자">여자</option>
+                    </select>
+                </div>
+                <!-- 권한등급 -->
+                <div>
+                    <p>권한등급</p>
+                    <span class="redText">*</span>
+                    <select name="authLevel">
+                        <option value="" selected>권한없음</option>
+                        <option value="1등급">1등급</option>
+                        <option value="2등급">2등급</option>
+                        <option value="3등급">3등급</option>
+                        <option value="4등급">4등급</option>
+                    </select>
+                </div>
+                <!-- 대분류 -->
+                <div>
+                    <p>대분류</p>
+                    <span></span>
+                    <select name="highGp">
+                        <option value="" selected>해당분류없음</option>
+                        <option value="1그룹">1그룹</option>
+                        <option value="2그룹">2그룹</option>
+                        <option value="3그룹">3그룹</option>
+                    </select>
+                </div>
+                <!-- 중분류 -->
+                <div>
+                    <p>중분류</p>
+                    <span></span>
+                    <select name="middleGp">
+                        <option value="" selected>대분류1그룹</option>
+                        <option value="중분류1">중분류1</option>
+                        <option value="중분류2">중분류2</option>
+                        <option value="중분류3">중분류3</option>
+                    </select>
+                </div>
+                <!-- 소분류 -->
+                <div>
+                    <p>소분류</p>
+                    <span></span>
+                    <select name="smallGp">
+                        <option value="" selected>중분류1그룹</option>
+                        <option value="소분류1">소분류1</option>
+                        <option value="소분류2">소분류2</option>
+                        <option value="소분류3">소분류3</option>
+                    </select>
+                </div>
+                <!-- 이메일 -->
+                <div>
+                    <p>이메일</p>
+                    <span></span>
+                    <input type="text" placeholder="이메일주소">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 사용자 수정 팝업 -->
+    <section class="popBox" id="userMgPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>사용자 수정</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="userMgPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 사번  -->
+                <div>
+                    <p>사번</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="bussnessNum" placeholder="사번" disabled>
+                </div>
+                <!-- 사용자 이름  -->
+                <div>
+                    <p>사용자 이름</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userName" placeholder="사용자 이름">
+                </div>
+                <!-- 비밀번호  -->
+                <div>
+                    <p>비밀번호</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userPwd" placeholder="비밀번호">
+                </div>
+                <!-- 비밀번호 확인  -->
+                <div>
+                    <p>비밀번호 확인</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="userPwdCheck" placeholder="비밀번호 확인">
+                </div>
+                <!-- 연락처  -->
+                <div>
+                    <p>연락처</p>
+                    <span></span>
+                    <input type="text" name="userPwdCheck" placeholder="010-0000-0000">
+                </div>
+                <!-- 성별  -->
+                <div>
+                    <p>성별</p>
+                    <span></span>
+                    <select name="gender">
+                        <option value="남자" selected>남자</option>
+                        <option value="여자">여자</option>
+                    </select>
+                </div>
+                <!-- 권한등급 -->
+                <div>
+                    <p>권한등급</p>
+                    <span class="greenText">*</span>
+                    <select name="authLevel">
+                        <option value="" selected>권한없음</option>
+                        <option value="1등급">1등급</option>
+                        <option value="2등급">2등급</option>
+                        <option value="3등급">3등급</option>
+                        <option value="4등급">4등급</option>
+                    </select>
+                </div>
+                <!-- 대분류 -->
+                <div>
+                    <p>대분류</p>
+                    <span></span>
+                    <select name="highGp">
+                        <option value="" selected>해당분류없음</option>
+                        <option value="1그룹">1그룹</option>
+                        <option value="2그룹">2그룹</option>
+                        <option value="3그룹">3그룹</option>
+                    </select>
+                </div>
+                <!-- 중분류 -->
+                <div>
+                    <p>중분류</p>
+                    <span></span>
+                    <select name="middleGp">
+                        <option value="" selected>해당분류없음</option>
+                        <option value="중분류1">중분류1</option>
+                        <option value="중분류2">중분류2</option>
+                        <option value="중분류3">중분류3</option>
+                    </select>
+                </div>
+                <!-- 소분류 -->
+                <div>
+                    <p>소분류</p>
+                    <span></span>
+                    <select name="smallGp">
+                        <option value="" selected>해당분류없음</option>
+                        <option value="소분류1">소분류1</option>
+                        <option value="소분류2">소분류2</option>
+                        <option value="소분류3">소분류3</option>
+                    </select>
+                </div>
+                <!-- 이메일 -->
+                <div>
+                    <p>이메일</p>
+                    <span></span>
+                    <input type="text" placeholder="이메일주소">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -34,10 +34,13 @@
   align-items: center;
   width: 1689px !important;
   height: 961px !important;
+  border-color: transparent !important;
 }
 .accAuthListGrid .gridbox .xhdr {
   width: 100% !important;
   height: 36px !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
 }
 .accAuthListGrid .gridbox .xhdr table {
   margin: 0px !important;
@@ -55,6 +58,7 @@
   align-items: flex-start;
   width: 100% !important;
   height: 100% !important;
+  background-color: transparent !important;
 }
 .accAuthListGrid .gridbox .objbox::-webkit-scrollbar {
   position: absolute;

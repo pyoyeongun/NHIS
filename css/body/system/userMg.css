@@ -1,0 +1,180 @@
+.bodyBox {
+  width: 1465px !important;
+}
+
+.searchCdt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  height: 58px;
+  background-color: #ffffff;
+  margin-top: 14px;
+}
+.searchCdt ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+.searchCdt ul li {
+  margin-left: 10px;
+}
+.searchCdt button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 100px;
+  width: auto;
+  height: 30px;
+}
+.searchCdt .delBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+}
+.searchCdt > form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.searchCdt > form > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  border-right: 1px solid #B8C0C7;
+  margin-left: 14px;
+  float: left;
+}
+.searchCdt > form > div > p {
+  margin-right: 8px;
+}
+.searchCdt > form > div > input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 120px;
+  height: 30px;
+}
+.searchCdt > form > div:last-child {
+  border: 0px;
+}
+.searchCdt > form input {
+  width: 130px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.userMgListGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  height: 845px;
+  width: 100%;
+}
+.userMgListGrid table {
+  overflow: scroll !important;
+  border-collapse: collapse;
+}
+.userMgListGrid table tr {
+  height: 36px;
+}
+.userMgListGrid table tr td {
+  border: 1px solid #B8C0C7 !important;
+}
+.userMgListGrid table tr td:first-child {
+  background-color: #EAEAEA;
+}
+.userMgListGrid .gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 97.3% !important;
+  height: 100% !important;
+  border-color: transparent !important;
+}
+.userMgListGrid .gridbox .xhdr {
+  width: 100% !important;
+  height: 36px !important;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.userMgListGrid .gridbox .xhdr table {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.userMgListGrid .gridbox .xhdr table tr:nth-child(2) td {
+  background-color: #8898A7 !important;
+  border-color: #677989 !important;
+  color: #ffffff;
+}
+.userMgListGrid .gridbox .xhdr table tr:nth-child(2) td div {
+  padding: 0px !important;
+}
+.userMgListGrid .gridbox .xhdr table tr:nth-child(2) td div input {
+  margin: 0px;
+  width: 16px;
+  height: 16px;
+}
+.userMgListGrid .gridbox .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100% !important;
+  height: 805px !important;
+  background-color: transparent !important;
+}
+.userMgListGrid .gridbox .objbox::-webkit-scrollbar {
+  position: absolute;
+  width: 3px !important;
+}
+.userMgListGrid .gridbox .objbox::-webkit-scrollbar-thumb {
+  width: 3px !important;
+  background-color: #D9D9D9;
+}
+.userMgListGrid .gridbox .objbox::-webkit-scrollbar-track {
+  width: 3px !important;
+}
+.userMgListGrid .gridbox .objbox table tbody td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.userMgListGrid .gridbox .objbox table tbody td input {
+  margin: 0px;
+  width: 16px;
+  height: 16px;
+}
+.userMgListGrid .gridbox .objbox .ev_material {
+  background-color: #ffffff !important;
+}
+.userMgListGrid .gridbox .objbox .odd_material {
+  background-color: #F8F8F8 !important;
+}/*# sourceMappingURL=userMg.css.map */

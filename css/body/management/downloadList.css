@@ -54,15 +54,14 @@
   border-color: #b8c0c7;
   border-radius: 4px;
   width: 120px;
-  height: 30px;
+  height: 26px;
+  margin-right: 8px;
+}
+.dlSel > div > form > div > input[type=date] {
+  height: 28px !important;
 }
 .dlSel > div > form > div:last-child {
   border: 0px;
-}
-.dlSel > div > form input {
-  width: 240px;
-  height: 30px;
-  margin-right: 8px;
 }
 .dlSel > div > form select {
   width: 140px;

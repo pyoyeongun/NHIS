@@ -66,3 +66,41 @@ function sptCopyPopdown() {
 function sptAuthPopdown() {
     document.getElementById("sptAuthPop").style.display = "none";
 }
+
+
+/*
+    시스템 관리 팝업
+*/
+//그룹 추가 팝업
+function groupAddPopdown() {
+    document.getElementById("groupAddPop").style.display = "none";
+}
+// 그룹 수정 팝업
+function groupMdPopdown() {
+    document.getElementById("groupMdPop").style.display = "none";
+}
+// 그룹 변경 팝업
+function groupChPopdown() {
+    document.getElementById("groupChPop").style.display = "none";
+}
+// 비밀번호 정책 설정
+function pwdPrySetPopdown() {
+    document.getElementById("pwdPrySetPop").style.display = "none";
+}
+// 사용자 추가 팝업
+function userAddPopdown() {
+    document.getElementById("userAddPop").style.display = "none";
+}
+// 사용자 수정 팝업
+function userMgPopdown() {
+    document.getElementById("userMgPop").style.display = "none";
+}
+
+/*
+    상품 정보 관리 팝업
+*/
+
+// 설정값 추가 팝업
+function setValueAddPopdown() {
+    document.getElementById("setValueAddPop").style.display = "none";
+}

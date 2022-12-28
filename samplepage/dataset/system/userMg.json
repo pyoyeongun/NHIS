@@ -1,0 +1,362 @@
+{
+    "head": [
+        {
+            "id": "number",
+            "type": "ro",
+            "align": "center",
+            "width": "60",
+            "value": "No"
+        },
+        {
+            "id": "isCheck",
+            "type": "ro",
+            "align": "center",
+            "width": "44",
+            "value": "<input type='checkbox' onchange='selectAll(this)'>"
+        },
+        {
+            "id": "userName",
+            "type": "ro",
+            "align": "center",
+            "width": "140",
+            "value": "사용자 이름"
+        },
+        {
+            "id": "userId",
+            "type": "ro",
+            "align": "center",
+            "width": "110",
+            "value": "아이디"
+        },
+        {
+            "id": "phoneNum",
+            "type": "ro",
+            "align": "center",
+            "width": "155",
+            "value": "연락처 "
+        },
+        {
+            "id": "gender",
+            "type": "ro",
+            "align": "center",
+            "width": "78",
+            "value": "성별"
+        },
+        {
+            "id": "authLevel",
+            "type": "ro",
+            "align": "center",
+            "width": "239",
+            "value": "권한등급"
+        },
+        {
+            "id": "bigCategory",
+            "type": "ro",
+            "align": "center",
+            "width": "136",
+            "value": "대분류"
+        },
+        {
+            "id": "middleCategory",
+            "type": "ro",
+            "align": "center",
+            "width": "135",
+            "value": "중분류"
+        },
+        {
+            "id": "smailCategory",
+            "type": "ro",
+            "align": "center",
+            "width": "136",
+            "value": "소분류"
+        },
+        {
+            "id": "modify",
+            "type": "ro",
+            "align": "center",
+            "width": "66",
+            "value": "수정"
+        },
+        {
+            "id": "number",
+            "type": "ro",
+            "align": "center",
+            "width": "154",
+            "value": "로그인 정보 초기화"
+        }
+    ],
+    "rows": [
+        {
+            "id": "901",
+            "data": [
+                "1",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "902",
+            "data": [
+                "2",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "903",
+            "data": [
+                "3",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "904",
+            "data": [
+                "4",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "905",
+            "data": [
+                "5",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "906",
+            "data": [
+                "6",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "907",
+            "data": [
+                "7",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "908",
+            "data": [
+                "8",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "909",
+            "data": [
+                "9",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "910",
+            "data": [
+                "10",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "911",
+            "data": [
+                "11",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "912",
+            "data": [
+                "12",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "913",
+            "data": [
+                "13",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "914",
+            "data": [
+                "14",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "915",
+            "data": [
+                "15",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        },
+        {
+            "id": "916",
+            "data": [
+                "16",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "영업점테스트2",
+                "test1002",
+                "010-4354-3025",
+                "남자",
+                "상품부서과장이상(퇴직금)",
+                "1234567890",
+                "1234567890",
+                "1234567890",
+                "<button type='button'><span class='editImg'></span></button>",
+                "<button type='button'><span class='reset2Img'></span></button>"
+            ]
+        }
+    ]
+}
