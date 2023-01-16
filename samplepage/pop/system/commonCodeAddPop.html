@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공통코드 추가 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/system/commonCodeAddPop.css"> <!--그룹 수정 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body>
+    <!-- 공통코드 추가 팝업 -->
+    <section class="popBox" id="commonCodeAddPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>공통코드 추가</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="commonCodeAddPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 그룹코드 -->
+                <div>
+                    <p>그룹코드</p>
+                    <span class="greenText">*</span>
+                    <input type="text" placeholder="입력하시오.">
+                </div>
+                <!-- 코드값 -->
+                <div>
+                    <p>코드값</p>
+                    <span class="greenText">*</span>
+                    <input type="text" placeholder="입력하시오.">
+                </div>
+                <!-- 코드이름 -->
+                <div>
+                    <p>코드이름</p>
+                    <span class="greenText">*</span>
+                    <input type="text" placeholder="입력하시오.">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

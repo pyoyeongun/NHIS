@@ -1,0 +1,44 @@
+#approveRqPop {
+  z-index: 1006;
+}
+#approveRqPop .popMain {
+  width: 600px;
+  height: 144px;
+}
+#approveRqPop .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+#approveRqPop .popBody > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 14px;
+  width: 100%;
+}
+#approveRqPop .popBody > div p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70px;
+}
+#approveRqPop .popBody > div span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+#approveRqPop .popBody > div input {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 200px !important;
+  height: 26px;
+}/*# sourceMappingURL=approveRqPop.css.map */

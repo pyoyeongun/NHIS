@@ -13,7 +13,23 @@
     width: $wd;
     height: $ht;
 }
-
+// 권한그룹 추가 팝업
+#authAddPop {
+    z-index: 1003;
+    .popMain {
+        width: 600px;
+        height: 184px;
+    }
+    .popBody {
+        @include dp_flex(column, flex-start);
+        >div {
+            margin-top: 14px;
+            input {
+                width: 572px !important;
+            }
+        }
+    }
+}
 // 그룹 추가 팝업
 #groupAddPop {
     z-index: 1003;
@@ -21,26 +37,25 @@
         width: 600px;
         height: 226px;
     }
-
-
-    
     .popBody {
         @include dp_flex(column, space-around);
-        width: 100%;
-        p {
-            @include dp_flex($jt_content: flex-end);
-            width: 70px;
-        }
-        span {
-            @include dp_flex;
-            width: 5%;
-        }
-        select {
-            @include customBtnStyle(4px, 497px !important, 30px, #B8C0C7);
-            background-position: 100% 50%;
-        }
-        input {
-            @include customBtnStyle(4px, 488px !important, 26px, #B8C0C7);
-        }
+    }
+}
+.popBody {
+    width: 100%;
+    p {
+        @include dp_flex($jt_content: flex-end);
+        width: 70px;
+    }
+    span {
+        @include dp_flex;
+        width: 30px;
+    }
+    select {
+        @include customBtnStyle(4px, 497px !important, 30px, #B8C0C7);
+        background-position: 100% 50%;
+    }
+    input {
+        @include customBtnStyle(4px, 488px !important, 26px, #B8C0C7);
     }
 }

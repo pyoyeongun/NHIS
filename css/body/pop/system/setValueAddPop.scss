@@ -1,0 +1,49 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+
+// 설정 값 추가 팝업
+#setValueAddPop {
+    z-index: 1003;
+
+    .popMain {
+        width: 600px;
+        height: 400px;
+    }
+
+    .popBody {
+        @include dp_flex(column, space-around);
+        width: 100%;
+
+        p {
+            @include dp_flex($jt_content: flex-end);
+            width: 190px;
+        }
+
+        span {
+            @include dp_flex;
+            width: 30px;
+        }
+
+        input {
+            @include customBtnStyle(4px, 355px !important, 26px, #B8C0C7);
+        }
+
+        select {
+            @include customBtnStyle(4px, 364px !important, 30px, #B8C0C7);
+            background-position: 100% 50%;
+        }
+    }
+}

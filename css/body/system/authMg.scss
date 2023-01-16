@@ -1,0 +1,139 @@
+@mixin dp_flex($flex_dr: row, $jt_content: center, $al_item: center) {
+    display: flex;
+    flex-direction: $flex_dr;
+    justify-content: $jt_content;
+    align-items: $al_item;
+}
+
+@mixin customBtnStyle($br-radius: 4px, $wd: 90px, $ht: 28px, $br-color: #353535, $bg-color: #ffffff) {
+    background-color: $bg-color ;
+    border: 1px solid;
+    border-color: $br-color;
+    border-radius: $br-radius;
+    width: $wd;
+    height: $ht;
+}
+
+// 그리드 테두리 변수
+$br-style: 1px solid #B8C0C7;
+// 그리드 해더 색 변수
+$hd-grid-bg-color: #8898A7;
+// 그리드 해더 테두리 색 변수
+$hd-grid-br-color: #677989;
+
+.bodyBox {
+    width: 1465px !important;
+}
+
+// 권한 관리 그리드
+.autgListGrid {
+    @include dp_flex(column);
+    margin-top: 16px;
+    height: 807px;
+    width: 100%;
+
+    table {
+        overflow: scroll !important;
+        border-collapse: collapse;
+
+        tr {
+            height: 36px;
+
+            td {
+                border: $br-style !important;
+            }
+        }
+    }
+
+    .gridbox {
+        @include dp_flex(column);
+        width: 97.3% !important;
+        height: 100% !important;
+        border-color: transparent !important;
+
+        .xhdr {
+            width: 100% !important;
+            border-color: transparent !important;
+            background-color: transparent !important;
+
+            table {
+                margin: 0px !important;
+                padding: 0px !important;
+                height: 83px !important;
+
+                tr  {
+
+                    &:nth-child(2) {
+                        height: 37px;
+                    }
+                    &:nth-child(3) {
+                        height: 47px;
+                    }
+
+                    td {
+                        text-align: center;
+                        background-color: $hd-grid-bg-color !important;
+                        border-color: $hd-grid-br-color !important;
+                        color: #ffffff;
+                        padding: 0px;
+    
+                        div {
+                            @include dp_flex;
+                            height: 100%;
+                            padding: 0px !important;
+    
+                            input {
+                                margin: 0px;
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .objbox {
+            @include dp_flex($al_item: flex-start);
+            width: 100% !important;
+            height: 805px !important;
+            background-color: transparent !important;
+
+            &::-webkit-scrollbar {
+                position: absolute;
+                width: 3px !important;
+
+                &-thumb {
+                    width: 3px !important;
+                    background-color: #D9D9D9;
+                }
+
+                &-track {
+                    width: 3px !important;
+                }
+            }
+
+            table tbody td {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                input {
+                    margin: 0px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .ev_material {
+                background-color: #ffffff !important;
+            }
+
+            .odd_material {
+                background-color: #F8F8F8 !important;
+            }
+        }
+    }
+
+
+}

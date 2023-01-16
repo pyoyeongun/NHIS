@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +24,12 @@
     <script src="../../js/pageChange.js"></script> <!--페이지 변경 js-->
     <script src="../../js/isCheckbox.js"></script> <!--모든 체크박스 선택 js-->
     <script src="../../js/system/prdInfoMg.js"></script> <!--상품 정보 리스트 js-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/pop/system/setValueAddPop.css"> <!--설정값 추가 팝업 css-->
+    <!-- 팝업 javascript -->
+    <script src="../../js/pop/popDown.js"></script> <!--팝업 닫기-->
 </head>
+
 <body>
     <!-- header -->
     <header class="headerBox">
@@ -55,14 +61,14 @@
                 <a href="./accessAuthList.html">접근 권한 리스트</a>
                 <a href="./userMg.html">사용자 관리</a>
                 <a href="./gpMg.html">그룹(부서) 관리</a>
-                <a href="">권한 관리</a>
-                <a href="">조회 조건/항목 관리</a>
+                <a href="./authMg.html">권한 관리</a>
+                <a href="./selCdtItemMg.html">조회 조건/항목 관리</a>
                 <a class="currentMenu" href="./prdInfoMg.html">상품 정보 관리</a>
-                <a href="">시스템 코드 관리</a>
-            </div>  
+                <a href="./systemCodeMg.html">시스템 코드 관리</a>
+            </div>
             <div class="sideWaveBgImg"></div>
         </section>
-        
+
         <div class="bodyBox">
             <!-- 검색 -->
             <section class="searchCdt">
@@ -106,10 +112,18 @@
                     <li id="pageStartMove" class="startArrGrayImg" onclick="pageMove(this.id)"></li>
                     <li id="pageLeftMove" class="leftArrGrayImg" onclick="pageMove(this.id)"></li>
                     <li>
-                        <span class="pageNum currentMovePage" onchange="curentPage()"><p>1</p></span>
-                        <span class="pageNum" onchange="curentPage()"><p>2</p></span>
-                        <span class="pageNum" onchange="curentPage()"><p>3</p></span>
-                        <span class="pageNum" onchange="curentPage()"><p>4</p></span>
+                        <span class="pageNum currentMovePage" onchange="curentPage()">
+                            <p>1</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>2</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>3</p>
+                        </span>
+                        <span class="pageNum" onchange="curentPage()">
+                            <p>4</p>
+                        </span>
                     </li>
                     <li id="pageRightMove" class="rightArrBlackImg" onclick="pageMove(this.id)"></li>
                     <li id="pageEndMove" class="endArrBlackImg" onclick="pageMove(this.id)"></li>
@@ -118,6 +132,96 @@
                 </div>
             </footer>
         </div>
+
+        <!-- 설정 값 추가 팝업 -->
+        <section class="popBox" id="setValueAddPop" style="display: none;">
+            <div class="overlay"></div>
+            <div class="popMain">
+                <div class="popHeader">
+                    <p>설정 값 추가</p>
+                    <div>
+                        <button class="popBasicBtnStyle1">
+                            <p>적용</p>
+                        </button>
+                        <button><span class="cancelWhiteImg" onclick="setValueAddPopdown()"></span></button>
+                    </div>
+                </div>
+                <div class="popBody">
+                    <!-- 타입 -->
+                    <div>
+                        <p>타입</p>
+                        <span class="greenText">*</span>
+                        <select name="rs_prd_Type">
+                            <option value="" selected>내용확인</option>
+                            <option value="타입1">타입1</option>
+                            <option value="타입2">타입2</option>
+                            <option value="타입3">타입3</option>
+                        </select>
+                    </div>
+                    <!-- 상품코드 -->
+                    <div>
+                        <p>상품코드</p>
+                        <span class="greenText">*</span>
+                        <input type="text" name="rs_prd_code">
+                    </div>
+                    <!-- 상품명 -->
+                    <div>
+                        <p>상품명</p>
+                        <span class="greenText">*</span>
+                        <input type="text" name="rs_prd_name">
+                    </div>
+                    <!-- 사용 여부(rs_use_yn) -->
+                    <div>
+                        <p>사용 여부(rs_use_yn)</p>
+                        <span class="greenText">*</span>
+                        <select name="rs_use_yn">
+                            <option value="" selected>내용확인</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <!-- 그룹 여부(re_group_yn) -->
+                    <div>
+                        <p>그룹 여부(re_group_yn)</p>
+                        <span class="greenText">*</span>
+                        <select name="re_group_yn">
+                            <option value="" selected>내용확인</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <!-- 대표 코드(re_group_code) -->
+                    <div>
+                        <p>대표 코드(re_group_code)</p>
+                        <span class="greenText">*</span>
+                        <select name="re_group_code">
+                            <option value="" selected>내용확인</option>
+                            <option value="내용1">내용1</option>
+                            <option value="내용2">내용2</option>
+                            <option value="내용3">내용3</option>
+                        </select>
+                    </div>
+                    <!-- (rs_sysdis_type) -->
+                    <div>
+                        <p>(rs_sysdis_type)</p>
+                        <span class="greenText">*</span>
+                        <select name="rs_sysdis_type">
+                            <option value="" selected>내용확인</option>
+                            <option value="내용1">내용1</option>
+                            <option value="내용2">내용2</option>
+                            <option value="내용3">내용3</option>
+                        </select>
+                    </div>
+                    <!-- (rs_product_attributes) -->
+                    <div>
+                        <p>(rs_product_attributes)</p>
+                        <span class="greenText">*</span>
+                        <input type="text" name="rs_product_attributes">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
+
 </html>

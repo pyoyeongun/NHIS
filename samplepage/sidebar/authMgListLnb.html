@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>권한 그룹 관리 사이드바</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/groupSideList.css"> <!--그룹 리스트 사이드바 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/system/userMg.js"></script> <!--사용자 관리 js-->
+</head>
+
+<body>
+    <!-- 그룹 리스트 -->
+    <section class="groupList">
+        <div>
+            <button type="button" onclick="authAddPopup()">
+                <span class="addFileImg"></span>
+                <p>권한그룹 추가</p>
+            </button>
+            <button type="button" onclick="authMdPopup()">
+                <span class="editImg"></span>
+                <p>권한그룹 수정</p>
+            </button>
+            <button type="button">
+                <span class="wastebasketBlackImg"></span>
+            </button>
+        </div>
+        <!-- treeView -->
+        <section class="sideListView">
+            <div id="authGroupList"></div>
+        </section>
+    </section>
+</body>
+
+</html>

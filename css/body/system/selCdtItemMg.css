@@ -1,0 +1,112 @@
+.bodyBox {
+  width: 1465px !important;
+}
+
+.buttonBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  margin-right: 14px;
+}
+.buttonBox button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #353535;
+  border-radius: 100px;
+  width: auto;
+  height: 30px;
+}
+
+.selCdtItemListGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 940px;
+  width: 100%;
+}
+.selCdtItemListGrid table {
+  overflow: scroll !important;
+  border-collapse: collapse;
+}
+.selCdtItemListGrid table tr {
+  height: 36px;
+}
+.selCdtItemListGrid table tr td {
+  border: 1px solid #B8C0C7 !important;
+}
+.selCdtItemListGrid .gridbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 97.3% !important;
+  height: 100% !important;
+  border-color: transparent !important;
+}
+.selCdtItemListGrid .gridbox .xhdr {
+  width: 100% !important;
+  height: 36px !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+.selCdtItemListGrid .gridbox .xhdr table {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.selCdtItemListGrid .gridbox .xhdr table tr:nth-child(2) td {
+  background-color: #8898A7 !important;
+  border-color: #677989 !important;
+  color: #ffffff;
+}
+.selCdtItemListGrid .gridbox .xhdr table tr:nth-child(2) td div {
+  padding: 0px !important;
+}
+.selCdtItemListGrid .gridbox .xhdr table tr:nth-child(2) td div input {
+  margin: 0px;
+  width: 16px;
+  height: 16px;
+}
+.selCdtItemListGrid .gridbox .objbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100% !important;
+  height: 904px !important;
+  background-color: transparent !important;
+}
+.selCdtItemListGrid .gridbox .objbox::-webkit-scrollbar {
+  position: absolute;
+  width: 3px !important;
+}
+.selCdtItemListGrid .gridbox .objbox::-webkit-scrollbar-thumb {
+  width: 3px !important;
+  background-color: #D9D9D9;
+}
+.selCdtItemListGrid .gridbox .objbox::-webkit-scrollbar-track {
+  width: 3px !important;
+}
+.selCdtItemListGrid .gridbox .objbox table tbody td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.selCdtItemListGrid .gridbox .objbox table tbody td input {
+  margin: 0px;
+  width: 16px;
+  height: 16px;
+}
+.selCdtItemListGrid .gridbox .objbox .ev_material {
+  background-color: #ffffff !important;
+}
+.selCdtItemListGrid .gridbox .objbox .odd_material {
+  background-color: #F8F8F8 !important;
+}/*# sourceMappingURL=selCdtItemMg.css.map */

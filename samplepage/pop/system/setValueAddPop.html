@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설정 값 추가 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/system/setValueAddPop.css"> <!--설정값 추가 팝업 css-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body>
+    <!-- 설정 값 추가 팝업 -->
+    <section class="popBox" id="setValueAddPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>설정 값 추가</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="setValueAddPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 타입 -->
+                <div>
+                    <p>타입</p>
+                    <span class="greenText">*</span>
+                    <select name="rs_prd_Type">
+                        <option value="" selected>내용확인</option>
+                        <option value="타입1">타입1</option>
+                        <option value="타입2">타입2</option>
+                        <option value="타입3">타입3</option>
+                    </select>
+                </div>
+                <!-- 상품코드 -->
+                <div>
+                    <p>상품코드</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="rs_prd_code">
+                </div>
+                <!-- 상품명 -->
+                <div>
+                    <p>상품명</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="rs_prd_name">
+                </div>
+                <!-- 사용 여부(rs_use_yn) -->
+                <div>
+                    <p>사용 여부(rs_use_yn)</p>
+                    <span class="greenText">*</span>
+                    <select name="rs_use_yn">
+                        <option value="" selected>내용확인</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <!-- 그룹 여부(re_group_yn) -->
+                <div>
+                    <p>그룹 여부(re_group_yn)</p>
+                    <span class="greenText">*</span>
+                    <select name="re_group_yn">
+                        <option value="" selected>내용확인</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <!-- 대표 코드(re_group_code) -->
+                <div>
+                    <p>대표 코드(re_group_code)</p>
+                    <span class="greenText">*</span>
+                    <select name="re_group_code">
+                        <option value="" selected>내용확인</option>
+                        <option value="내용1">내용1</option>
+                        <option value="내용2">내용2</option>
+                        <option value="내용3">내용3</option>
+                    </select>
+                </div>
+                <!-- (rs_sysdis_type) -->
+                <div>
+                    <p>(rs_sysdis_type)</p>
+                    <span class="greenText">*</span>
+                    <select name="rs_sysdis_type">
+                        <option value="" selected>내용확인</option>
+                        <option value="내용1">내용1</option>
+                        <option value="내용2">내용2</option>
+                        <option value="내용3">내용3</option>
+                    </select>
+                </div>
+                <!-- (rs_product_attributes) -->
+                <div>
+                    <p>(rs_product_attributes)</p>
+                    <span class="greenText">*</span>
+                    <input type="text" name="rs_product_attributes">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -391,6 +391,20 @@
   background-size: 20px;
 }
 
+.folderImg {
+  background: transparent url(../img/pngImg/icon_folder.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
+.saveImg {
+  background: transparent url(../img/pngImg/icon_save.png) 0% 0% no-repeat padding-box;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+
 /*
     버튼 이미지
 */
@@ -474,6 +488,10 @@
 
 .greenText {
   color: #00B140 !important;
+}
+
+.opacityQt {
+  opacity: 0.25;
 }
 
 /*

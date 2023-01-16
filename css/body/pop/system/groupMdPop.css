@@ -1,3 +1,41 @@
+#authMdPop {
+  z-index: 1003;
+}
+#authMdPop .popMain {
+  width: 600px;
+  height: 184px;
+}
+#authMdPop .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#authMdPop .popBody > div {
+  margin-top: 14px;
+}
+#authMdPop .popBody > div input {
+  width: 572px !important;
+}
+
+#sysGpMdPop {
+  z-index: 1003;
+}
+#sysGpMdPop .popMain {
+  width: 600px;
+  height: 184px;
+}
+#sysGpMdPop .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+#sysGpMdPop .popBody > div {
+  margin-top: 14px;
+}
+
 #groupMdPop {
   z-index: 1003;
 }
@@ -12,21 +50,22 @@
   align-items: center;
   width: 100%;
 }
-#groupMdPop .popBody p {
+
+.popBody p {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 70px;
 }
-#groupMdPop .popBody span {
+.popBody span {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 5%;
 }
-#groupMdPop .popBody select {
+.popBody select {
   background-color: #EAEAEA;
   border: 1px solid;
   border-color: #B8C0C7;
@@ -35,7 +74,7 @@
   height: 30px;
   background-position: 100% 50%;
 }
-#groupMdPop .popBody input {
+.popBody input {
   background-color: #ffffff;
   border: 1px solid;
   border-color: #B8C0C7;

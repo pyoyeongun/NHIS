@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>권한그룹 추가 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/system/groupAddPop.css"> <!--권한그룹 추가 pop-->
+    <!-- 팝업 javascript -->
+    <script src="../../../js/pop/system/groupAddPop.js"></script> <!--그룹 추가 팝업 js-->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기-->
+</head>
+
+<body>
+    <!-- 권한그룹 추가 팝업 -->
+    <section class="popBox" id="authAddPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>권한그룹 추가</p>
+                <div>
+                    <button class="popBasicBtnStyle1">
+                        <p>적용</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="authAddPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <div>
+                    <input type="text" placeholder="권한명을 입력해주세요.">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

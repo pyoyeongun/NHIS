@@ -13,34 +13,66 @@
     width: $wd;
     height: $ht;
 }
+// 권한그룹 수정 팝업
+#authMdPop {
+    z-index: 1003;
+    .popMain {
+        width: 600px;
+        height: 184px;
+    }
+    .popBody {
+        @include dp_flex(column, flex-start);
+        >div {
+            margin-top: 14px;
+            input {
+                width: 572px !important;
+            }
+        }
+    }
+}
+// 시스템 그룹 수정 팝업
+#sysGpMdPop {
+    z-index: 1003;
+    .popMain {
+        width: 600px;
+        height: 184px;
+    }
+    .popBody {
+        @include dp_flex(column, flex-start);
+        width: 100%;
 
-// 그룹 추가 팝업
+        > div {
+            margin-top: 14px;
+        }
+    }
+}
+// 그룹 수정 팝업
 #groupMdPop {
     z-index: 1003;
     .popMain {
         width: 600px;
         height: 226px;
     }
-
-
-    
     .popBody {
         @include dp_flex(column, space-around);
         width: 100%;
-        p {
-            @include dp_flex($jt_content: flex-end);
-            width: 70px;
-        }
-        span {
-            @include dp_flex;
-            width: 5%;
-        }
-        select {
-            @include customBtnStyle(4px, 497px !important, 30px, #B8C0C7, #EAEAEA);
-            background-position: 100% 50%;
-        }
-        input {
-            @include customBtnStyle(4px, 488px !important, 26px, #B8C0C7);
-        }
+
+    }
+}
+.popBody {
+    p {
+        @include dp_flex($jt_content: flex-end);
+        width: 70px;
+    }
+    span {
+        @include dp_flex;
+        width: 5%;
+    }
+    select {
+        @include customBtnStyle(4px, 497px !important, 30px, #B8C0C7, #EAEAEA);
+        background-position: 100% 50%;
+    }
+    input {
+        @include customBtnStyle(4px, 488px !important, 26px, #B8C0C7);
     }
 }

@@ -37,7 +37,7 @@ function listenPopdown() {
 function listenRqPopdown() {
     document.getElementById("listenRqPop").style.display = "none";
 }
-// 녹취 파일 다운로드 신청서
+// 녹취 파일 다운로드 신청서 팝업
 function rcdFileDlPopdown() {
     document.getElementById("rcdFileDlPop").style.display = "none";
 }
@@ -46,11 +46,15 @@ function rcdFileDlPopdown() {
 function rqAuthListPopdown() {
     document.getElementById("rqAuthListPop").style.display = "none";
 }
-// 재녹취여부
+// 재녹취여부 팝업
 function isRRcdPopdown() {
     document.getElementById("isRRcdPop").style.display = "none";
 }
 
+// 재녹취 승인요청 팝업
+function approveRqPopdown() {
+    document.getElementById("approveRqPop").style.display = "none";
+}
 /*
     스크립트 조회 팝업
 */
@@ -67,7 +71,17 @@ function sptAuthPopdown() {
     document.getElementById("sptAuthPop").style.display = "none";
 }
 
-
+/*
+    권한 관리 페이지
+*/
+// 권한 그룹 추가 팝업
+function authAddPopdown() {
+    document.getElementById("authAddPop").style.display = "none";
+}
+// 권한 그룹 수정 팝업
+function authMdPopdown() {
+    document.getElementById("authMdPop").style.display = "none";
+}
 /*
     시스템 관리 팝업
 */
@@ -103,4 +117,13 @@ function userMgPopdown() {
 // 설정값 추가 팝업
 function setValueAddPopdown() {
     document.getElementById("setValueAddPop").style.display = "none";
+}
+// 그룹 수정 팝업
+function sysGpMdPopdown() {
+    document.getElementById("sysGpMdPop").style.display = "none";
+}
+
+// 공통코드 추가 팝업
+function commonCodeAddPopdown() {
+    document.getElementById("commonCodeAddPop").style.display = "none";
 }

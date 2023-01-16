@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>재녹취 승인요청 팝업</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/management/sptSel/authHistory.css">
+    <!--스크립트 가져오기 pop-->
+    <!-- 팝업 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/pop/rcdMg/approveRqPop.css"> <!-- 재녹취 승인요청 팝업 css-->
+    <!-- 팝업 js -->
+    <script src="../../../js/pop/popDown.js"></script> <!--팝업 닫기 js-->
+</head>
+
+<body>
+    <!-- 재녹취 승인요청 팝업 -->
+    <section class="popBox" id="approveRqPop">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>재녹취 승인요청</p>
+                <div>
+                    <button class="popBasicBtnStyle1" type="button">
+                        <p>확인</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="approveRqPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 승인번호 -->
+                <div>
+                    <p>승인번호</p>
+                    <span class="greenText">*</span>
+                    <input type="text" placeholder="입력하세요.">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

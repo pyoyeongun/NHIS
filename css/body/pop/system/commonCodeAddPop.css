@@ -1,0 +1,36 @@
+#commonCodeAddPop {
+  z-index: 1003;
+}
+#commonCodeAddPop .popMain {
+  width: 600px;
+  height: 184px;
+}
+#commonCodeAddPop .popMain .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#commonCodeAddPop .popMain .popBody p {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 70px;
+}
+#commonCodeAddPop .popMain .popBody span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+}
+#commonCodeAddPop .popMain .popBody input {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #B8C0C7;
+  border-radius: 4px;
+  width: 470px !important;
+  height: 26px;
+}/*# sourceMappingURL=commonCodeAddPop.css.map */

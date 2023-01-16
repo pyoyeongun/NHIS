@@ -305,7 +305,7 @@
   background: transparent url(../img/pngImg/icon_minus.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
-// 쓰레기통 이미지 {
+// 쓰레기통 이미지
 .wastebasketImg {
   background: transparent url(../img/pngImg/icon_wastebasket.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
@@ -314,24 +314,34 @@
   background: transparent url(../img/pngImg/icon_wastebasket_black.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
-// 파일 추가 이미지 {
+// 파일 추가 이미지
 .addFileImg {
   background: transparent url(../img/pngImg/icon_add_file.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
-// 수정 이미지 {
+// 수정 이미지
 .editImg {
   background: transparent url(../img/pngImg/icon_edit.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
-// 열쇠 이미지 {
+// 열쇠 이미지
 .keyImg {
   background: transparent url(../img/pngImg/icon_key.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
-// 사용자 추가 {
+// 사용자 추가
 .addPerson {
   background: transparent url(../img/pngImg/icon_add_person.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
+// 폴더 이미지
+.folderImg {
+  background: transparent url(../img/pngImg/icon_folder.png) 0% 0% no-repeat padding-box;
+  @include screenImgSize(20px, 20px, 20px);
+}
+// 저장 이미지
+.saveImg {
+  background: transparent url(../img/pngImg/icon_save.png) 0% 0% no-repeat padding-box;
   @include screenImgSize(20px, 20px, 20px);
 }
 /*
@@ -403,6 +413,9 @@
 }
 .greenText {
   color: #00B140 !important;
+}
+.opacityQt {
+  opacity: 0.25;
 }
 /*
     Gif 이미지

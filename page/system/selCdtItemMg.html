@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조회 조건/항복 관리 페이지</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/nhHeader.css"> <!--헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/header/navHeader.css"> <!--네이게이션 헤더 css-->
+    <link rel="stylesheet" type="text/css" href="../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <link rel="stylesheet" type="text/css" href="../../css/sidebar/groupSideList.css"> <!--그룹 리스트 사이드바 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../css/body/system/selCdtItemMg.css"> <!-- 조회 조건/항복 관리 페이지 css-->
+    <!-- 기본 javascript -->
+    <script src="../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../js/system/searchItemList.js"></script> <!--조회 조건/항복 관리 페이지 js-->
+</head>
+
+<body>
+    <!-- header --> 
+    <header class="headerBox">
+        <div>
+            <span class="nhLogoHeaderImg"></span>
+            <span class="logoTitleAlramImg"></span>  
+        </div>
+        <div>
+            <span>관리자 홍길동님</span>
+            <button class="" type="button">
+                <span class="logoutImg"></span>
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </header>
+    <!-- 네비게이션 탭바 -->
+    <nav class="navBox">
+        <a href="../../page/rcdMg.html">녹취관리</a>
+        <a href="../../page/scriptSel/scriptSel.html">스크립트 조회</a>
+        <a href="../../page/downloadList.html">다운로드 이력</a>
+        <a class="currentPage" href="../../page/system/accessAuthList.html">시스템 관리</a>
+    </nav>
+    <!-- 시스템관리 본문 -->
+    <div class="sideBox">
+        <!-- 사이트 메뉴 -->
+        <section class="sideMenu">
+            <div class="menuList">
+                <a href="./accessAuthList.html">접근 권한 리스트</a>
+                <a href="./userMg.html">사용자 관리</a>
+                <a href="./gpMg.html">그룹(부서) 관리</a>
+                <a href="./authMg.html">권한 관리</a>
+                <a class="currentMenu" href="./selCdtItemMg.html">조회 조건/항목 관리</a>
+                <a href="./prdInfoMg.html">상품 정보 관리</a>
+                <a href="./systemCodeMg.html">시스템 코드 관리</a>
+            </div>
+            <div class="sideWaveBgImg"></div>
+        </section>
+        <!-- 그룹 리스트 -->
+        <section class="groupList">
+            <div>
+                <span>권한리스트 목록</span>
+            </div>
+            <!-- treeView -->
+            <section class="sideListView">
+                <div id="authGroupList"></div>
+            </section>
+        </section>
+        <!-- 본문 -->
+        <div class="bodyBox">
+            <!-- 변경사항 적용 -->
+            <section class="buttonBox">
+                <button>
+                    <span class="saveImg"></span>
+                    <p>변경사항 적용</p>
+                </button>
+            </section>
+            <!-- 사용자 관리 리스트 -->
+            <secrion class="selCdtItemListGrid">
+                <div id="searchItemList"></div>
+                <div id="searchItemUsed"></div>
+                <div id="selItemList"></div>
+                <div id="selItemUsed"></div>
+            </secrion>
+        </div>
+    </div>
+</body>
+
+</html>

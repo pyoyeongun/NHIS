@@ -1,3 +1,23 @@
+#authAddPop {
+  z-index: 1003;
+}
+#authAddPop .popMain {
+  width: 600px;
+  height: 184px;
+}
+#authAddPop .popBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+#authAddPop .popBody > div {
+  margin-top: 14px;
+}
+#authAddPop .popBody > div input {
+  width: 572px !important;
+}
+
 #groupAddPop {
   z-index: 1003;
 }
@@ -10,23 +30,26 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.popBody {
   width: 100%;
 }
-#groupAddPop .popBody p {
+.popBody p {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 70px;
 }
-#groupAddPop .popBody span {
+.popBody span {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 5%;
+  width: 30px;
 }
-#groupAddPop .popBody select {
+.popBody select {
   background-color: #ffffff;
   border: 1px solid;
   border-color: #B8C0C7;
@@ -35,7 +58,7 @@
   height: 30px;
   background-position: 100% 50%;
 }
-#groupAddPop .popBody input {
+.popBody input {
   background-color: #ffffff;
   border: 1px solid;
   border-color: #B8C0C7;

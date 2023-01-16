@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시스템 코드 관리</title>
+    <!-- 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/header/bace.css"> <!--베이스 css-->
+    <link rel="stylesheet" type="text/css" href="../../../img/allImage.css"> <!--모든 이미지 css-->
+    <link rel="stylesheet" type="text/css" href="../../../dhtmlxSuite/codebase/dhtmlx.css"> <!--DHTMLX css-->
+    <!-- 사이드바 기본 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/sidebar/sideMenu.css"> <!--사이드바 메뉴 css-->
+    <!-- 해당 페이지관련 css -->
+    <link rel="stylesheet" type="text/css" href="../../../css/body/system/systemCodeMg.css"> <!--시스템 코드 관리 css-->
+    <!-- 기본 javascript -->
+    <script src="../../../dhtmlxSuite/codebase/dhtmlx.js"></script> <!--DTMLX js파일-->
+    <script src="../../../js/jquery-3.6.1.min.js"></script> <!--jquery-->
+    <!-- 필요에 의한 javascript -->
+    <script src="../../../js/isCheckbox.js"></script> <!--모든 체크박스 체크 js-->
+    <script src="../../../js/system/systemCodeMg.js"></script> <!--시스템 코드 관리 js-->
+</head>
+
+<body>
+    <!-- header -->
+
+    <!-- 네비게이션 탭바 -->
+
+
+    <!-- 시스템관리 본문 -->
+    <div class="sideBox">
+        <!-- 사이트 메뉴 -->
+
+        <!-- 그룹 리스트 -->
+
+        <!-- 본문 -->
+        <div class="bodyBox">
+            <!-- 검색 -->
+            <section class="searchCdt">
+                <form>
+                    <div>
+                        <select>
+                            <option value="전체" selected>전체</option>
+                            <option value="제목">제목</option>
+                            <option value="내용">내용</option>
+                            <option value="제목+내용">제목+내용</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="입력하시오.">
+                        <button>
+                            <span class="magnifierBlackImg"></span>
+                            <p>조회</p>
+                        </button>
+                    </div>
+                </form>
+                <div>
+                    <button type="button" onclick="commonCodeAddPopup()">
+                        <span class="plusBlackImg"></span>
+                        <p>공동코드 추가</p>
+                    </button>
+                </div>
+            </section>
+            <!-- 시스템 코드 관리 -->
+            <secrion class="sysCodeListGrid">
+                <div id="sysCodeList"></div>
+            </secrion>
+            <!-- footer -->
+        </div>
+    </div>
+
+    <!-- 그룹 수정 팝업 -->
+    
+    <!-- 공통코드 추가 팝업 -->
+    
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+{
+    "head": [
+        {
+            "id": "number",
+            "type": "ro",
+            "align": "center",
+            "width": "60",
+            "value": "No"
+        },
+        {
+            "id": "isCheck",
+            "type": "ro",
+            "align": "center",
+            "width": "44",
+            "value": "<input type='checkbox' onchange='selectAll(this)'>"
+        },
+        {
+            "id": "gpCode",
+            "type": "ro",
+            "align": "center",
+            "width": "225",
+            "value": "그룹코드"
+        },
+        {
+            "id": "gpName",
+            "type": "ro",
+            "align": "center",
+            "width": "179",
+            "value": "그룹명"
+        },
+        {
+            "id": "codeValue",
+            "type": "ro",
+            "align": "center",
+            "width": "178",
+            "value": "코드값"
+        },
+        {
+            "id": "codeName",
+            "type": "ro",
+            "align": "center",
+            "width": "209",
+            "value": "코드이름"
+        },
+        {
+            "id": "arrOrder",
+            "type": "ro",
+            "align": "center",
+            "width": "179",
+            "value": "정렬순서"
+        },
+        {
+            "id": "isUse",
+            "type": "ro",
+            "align": "center",
+            "width": "179",
+            "value": "사용여부"
+        },
+        {
+            "id": "codeDel",
+            "type": "ro",
+            "align": "center",
+            "width": "166",
+            "value": "삭제"
+        }
+    ],
+    "rows": [
+        {
+            "id": "1001",
+            "data": [
+                "1",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1002",
+            "data": [
+                "2",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1003",
+            "data": [
+                "3",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1004",
+            "data": [
+                "4",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1005",
+            "data": [
+                "5",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1006",
+            "data": [
+                "6",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1007",
+            "data": [
+                "7",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1008",
+            "data": [
+                "8",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1009",
+            "data": [
+                "9",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1010",
+            "data": [
+                "10",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1011",
+            "data": [
+                "11",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1012",
+            "data": [
+                "12",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1013",
+            "data": [
+                "13",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1014",
+            "data": [
+                "14",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1015",
+            "data": [
+                "15",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1016",
+            "data": [
+                "16",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1017",
+            "data": [
+                "17",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1018",
+            "data": [
+                "18",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1019",
+            "data": [
+                "19",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        },
+        {
+            "id": "1020",
+            "data": [
+                "20",
+                "<input type='checkbox' name='isChecked' onchange='selectLine()'>",
+                "approveReason",
+                "승인사유",
+                "APRV03",
+                "최종 승인대기",
+                "0",
+                "사용",
+                "코드삭제"
+            ]
+        }
+    ]
+}

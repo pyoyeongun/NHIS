@@ -33,11 +33,12 @@
     <script src="../js/isCheckbox.js"></script> <!--체크박스 관련 js-->
     <script src="../js/rcdMg.js"></script><!--녹취관리 js파일-->
     <!-- 팝업 css -->
-    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenPop.css"> <!--청취 pop-->
-    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenRqPop.css"> <!--청취 요청 pop-->
-    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/rcdFileDlPop.css"> <!--녹취 파일 다운로드 신청서 pop-->
-    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/rqAuthListPop.css">
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenPop.css"> <!--청취 팝업 css-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/listenRqPop.css"> <!--청취 요청 팝업 css-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/rcdFileDlPop.css"> <!--녹취 파일 다운로드 신청서 팝업 css-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/rqAuthListPop.css"> <!--청취/다운로드 요청 결재 팝업 css-->
     <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/isRRcdPop.css"> <!--재녹취 여부 팝업 css-->
+    <link rel="stylesheet" type="text/css" href="../css/body/pop/rcdMg/approveRqPop.css"> <!-- 재녹취 승인요청 팝업 css-->
     <!-- 팝업 javascript -->
     <script src="../js/pop/rcdListPop.js"></script> <!--청취 팝업 js-->
     <script src="../js/pop/rqAuthListPop.js"></script> <!--청취/다운로드 요청 결재 목록 팝업 js-->
@@ -269,14 +270,14 @@
     <!-- 청취 팝업 -->
     <section class="popBox" id="listenPop" style="display: none;">
         <div class="overlay"></div>
-        <div class="popMain">
+        <div class="popMain" >
             <div class="popHeader">
                 <p>청취</p>
                 <div>
                     <button class="popBasicBtnStyle1">
                         <p>추가녹취</p>
                     </button>
-                    <button class="popBasicBtnStyle1">
+                    <button class="popBasicBtnStyle1" type="button" onclick="approveRqPopup()">
                         <p>재녹취</p>
                     </button>
                     <button><span class="cancelWhiteImg" onclick="listenPopdown()"></span></button>
@@ -499,6 +500,30 @@
             <div class="popBody">
                 <div class="isRRcdBox">
                     <div id="isRRcdGrid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 재녹취 승인요청 팝업 -->
+    <section class="popBox" id="approveRqPop" style="display: none;">
+        <div class="overlay"></div>
+        <div class="popMain">
+            <div class="popHeader">
+                <p>재녹취 승인요청</p>
+                <div>
+                    <button class="popBasicBtnStyle1" type="button" onclick="faceRdOpen()">
+                        <p>확인</p>
+                    </button>
+                    <button><span class="cancelWhiteImg" onclick="approveRqPopdown()"></span></button>
+                </div>
+            </div>
+            <div class="popBody">
+                <!-- 승인번호 -->
+                <div>
+                    <p>승인번호</p>
+                    <span class="greenText">*</span>
+                    <input type="text" placeholder="입력하세요.">
                 </div>
             </div>
         </div>
